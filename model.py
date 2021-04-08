@@ -4,8 +4,6 @@ from datetime import datetime
 db = SQLAlchemy()
 
 
-# Replace this with your code!
-
 class User(db.Model):
     """Users table."""
 
@@ -19,6 +17,11 @@ class User(db.Model):
     email = db.Column(db.String(50), nullable=False, unique=True,)
     password = db.Column(db.String(50), nullable=False,)
     
+# making the class User and Users table
+# id is the primary key, it autoincrements with each new user
+# column names = id, user_name, email, password
+# only user_name and email have to be unique
+# all columns must have values, no NULL
 
 class UserPlant(db.Model):
     """Plants table."""
@@ -36,6 +39,13 @@ class UserPlant(db.Model):
     plant_name = db.Column(db.String(50), nullable=False)
     
     user = db.relationship("User", backref = "plants")
+
+# making the class UserPlant and plants table
+# id is the primary key, it autoincrements with each new plant
+# column names = id, user_id, plant_name
+# user_id is the foreign key that connects UserPlant to User
+# using backref to create relationship between the 2 tables
+# and saving that relationship in a variable, user
 
 
 class GrowLog(db.Model):
@@ -56,6 +66,15 @@ class GrowLog(db.Model):
     photo_url = db.Column(db.String, nullable=True)
 
     userplants = db.relationship("UserPlant", backref = "growlogs")
+
+# making the class GrowLog and growlogs table
+# id is the primary key, it autoincrements with each new plant
+# column names = user_plant_id, comment, timestamp, photo_url
+# users_plant_id is the foreign key that connects GrowLog to UserPlant
+# using backref to create relationship between the 2 tables
+# and saving that relationship in a variable, userplants
+
+
 
 def connect_to_db(flask_app, db_uri='postgresql:///project', echo=True):
     flask_app.config['SQLALCHEMY_DATABASE_URI'] = db_uri
