@@ -1,63 +1,61 @@
 from flask_sqlalchemy import SQLAlchemy
+from datetime import datetime
 
 db = SQLAlchemy()
 
 
 # Replace this with your code!
 
-class users(db.Model):
+class User(db.Model):
     """Users table."""
 
     __tablename__ = "users"
 
-    id = db.Column(db.Integer, # should this be plant_id or id? 
+    id = db.Column(db.Integer,  
                        primary_key=True,
                        autoincrement=True,
                        )
     user_name = db.Column(db.String(50), nullable=False, unique=True,)
     email = db.Column(db.String(50), nullable=False, unique=True,)
-    password = db.Column(db.String(50), nullable=False, unique=True,)
+    password = db.Column(db.String(50), nullable=False,)
     
 
-class userPlants(db.Model):
+class UserPlant(db.Model):
     """Plants table."""
 
     __tablename__ = "plants"
 
-    id = db.Column(db.Integer, # should this be plant_id or id? 
+    id = db.Column(db.Integer, 
                        primary_key=True,
                        autoincrement=True,
                        )
 
     user_id = db.Column(db.Integer, 
-                        foreign_key=True,
-                        autoincrement=True,
+                        db.ForeignKey("users.id"),
                         )
-    plant_name = db.Column(db.String(50), nullable=False, unique=True,)
-    photo_url = db.Column(db.) # unsure of how to code in a table for image information, is a string for the url?
+    plant_name = db.Column(db.String(50), nullable=False)
+    
+    user = db.relationship("User", backref = "plants")
 
 
-class growLogs(db.Model):
+class GrowLog(db.Model):
     """Grow log table."""
 
-    __tablename__ = "growlog"
+    __tablename__ = "growlogs"
 
     id = db.Column(db.Integer, 
                        primary_key=True,
                        autoincrement=True,
                        )
     users_plant_id = db.Column(db.Integer,
-                       foreign_key=True,
-                       autoincrement=True,
+                       db.ForeignKey("plants.id")
                        )
-    plant_name = db.Column(db.String(50), nullable=False, unique=True,)
-    photo_url = db.Column(db.(), nullable=True,) 
-    # unsure of how to code in a table for image information, is a string for the url?
-    # new photo for each entry; not pulling from user_plants' photo_url
-    comment = db.Column(db.String(200), nullable=True,)
+    
+    comment = db.Column(db.String(200), nullable=True)
+    timestamp = db.Column(db.DateTime)
+    photo_url = db.Column(db.String, nullable=True)
 
-
- 
+    userplants = db.relationship("UserPlant", backref = "growlogs")
 
 def connect_to_db(flask_app, db_uri='postgresql:///project', echo=True):
     flask_app.config['SQLALCHEMY_DATABASE_URI'] = db_uri
