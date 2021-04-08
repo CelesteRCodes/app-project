@@ -94,3 +94,11 @@ if __name__ == '__main__':
     # query it executes.
 
     connect_to_db(app)
+
+    
+# get user info, create new one, store info in db
+# when they log in, you check that and see if that matches
+# isn't safe to store their data in plain text (can do for our MVP)
+# will use hashlib (Python library), creates a hash of password
+# we store that hash in our db and compare the hash of what they typed in 
+# with what we have stored in our db

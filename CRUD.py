@@ -19,8 +19,14 @@ def create_plant(user_id, plant_name):
     plant = UserPlant(user_id=user_id, plant_name=plant_name)
     db.session.add(plant)
     db.session.commit()
-    
     return plant
+
+def get_all_plants():
+    return UserPlant.query.all()
+
+def get_plant_by_id(id):
+    return UserPlant.query.filter_by(id = id).first()
+
 
 def create_entry(users_plant_id, timestamp, comment=None, photo_url=None):
     entry = GrowLog(users_plant_id=users_plant_id, timestamp=timestamp, 
@@ -28,9 +34,20 @@ def create_entry(users_plant_id, timestamp, comment=None, photo_url=None):
     db.session.add(entry)
     db.session.commit()
 
+def get_all_entries():
+    return GrowLog.query.all()
 
+def get_entry_by_id(id):
+    return GrowLog.query.filter_by(id = id).first()
 
 
 if __name__ == '__main__':
     from server import app
     connect_to_db(app)
+
+
+
+# create - post
+# read - get
+# update - put
+# delete - delete

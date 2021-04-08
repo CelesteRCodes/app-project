@@ -33,7 +33,7 @@ comments = ["watered with ph water and no nutrients",
             "added amethyst to soil",
             "added citrine to soil"]
 
-images = ["/static/aloe.jpg",
+photo_url = ["/static/aloe.jpg",
               "/static/bamboo.jpg",
               "/static/ginger.jpg",
               "/static/spiderplant.jpg",
