@@ -58,7 +58,6 @@ app.secret_key = 'SECRETSECRETSECRET'
 #                            data=data,
 #                            grow_log=grow_log)
 
-# # should the input-form display just be the user profile (for first sprint)?
 
 
 # @app.route('/user-profile/<id>')
@@ -81,3 +80,9 @@ app.secret_key = 'SECRETSECRETSECRET'
 if __name__ == '__main__':
     app.debug = True
     app.run(host='0.0.0.0')
+
+
+
+# homepage where user logs in 
+# entry page 
+# grow log page that displays all entries in descending order (most recent first)

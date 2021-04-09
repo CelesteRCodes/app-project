@@ -33,27 +33,42 @@ comments = ["watered with ph water and no nutrients",
             "added amethyst to soil",
             "added citrine to soil"]
 
-photo_url = ["/static/aloe.jpg",
-              "/static/bamboo.jpg",
-              "/static/ginger.jpg",
-              "/static/spiderplant.jpg",
-              "/static/lavendar.jpg",
-              "/static/orchid.jpg",
-              "/static/sage.jpg",
-              "/static/tomato.jpg",
-              "/static/avocado.jpg",
-              "/static/celery.jpg",
-              "/static/spinach.jpg",
-              "/static/cucumber.jpg"]
+photo_urls = {"aloe": "/static/aloe.jpg",
+             "bamboo": "/static/bamboo.jpg",
+              "ginger":"/static/ginger.jpg",
+              "spider plant":"/static/spiderplant.jpg",
+              "lavendar":"/static/lavendar.jpg",
+              "orchid":"/static/orchid.jpg",
+              "sage":"/static/sage.jpg",
+              "tomato":"/static/tomato.jpg",
+              "avocado": "/static/avocado.jpg",
+              "celery":"/static/celery.jpg",
+              "spinach":"/static/spinach.jpg",
+              "cucumber":"/static/cucumber.jpg"}
 
 for n in range(10):
     email = f'user{n}@test.com'  
     password = 'test'
     user_name = f'user_name{n}'
-    
+    # variables to pass into CRUD.create_user
+
     user = CRUD.create_user(user_name, email, password)
-    plant = CRUD.create_plant(user.id, choice(plants))
-    # new_entry = CRUD.create_entry(user.id, choice(images))
+    # creates the user (db.session.add/commit in CRUD.py)
+
+    plant_choice = choice(plants)
+    # randomly chooses a plant
+
+    plant = CRUD.create_plant(user.id, plant_choice)
+    # creates the plant for user
+
+    photo_url = photo_urls[plant_choice]
+    # can key into photo_url using plant_choice 
+
+    new_entry = CRUD.create_entry(plant.id, datetime.now(), photo_url=photo_url)
+    # creates the new entry for grow log
+
+
+
 
 # logs = GrowLog.query.filter_by(id=id).order_by(desc(timestamp)).all()
 # shows us the growlog by most recent posting first (descending order)
