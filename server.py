@@ -1,5 +1,7 @@
 from flask import Flask, render_template, request, redirect
 
+import flash
+
 import CRUD
 import model
 import os
@@ -31,21 +33,23 @@ def homepage():
 #     """ Show login for user on homepage."
 #     return 
 
-# @app.route('/login', methods=['POST'])
-# def register_user():
-#     """Create a new user."""
+@app.route('/login', methods=['POST'])
+def register_user():
+    """Create a new user."""
 
-#     email = request.form.get('email')
-#     password = request.form.get('password')
+    username = request.form.get('username')
+    email = request.form.get('email')
+    password = request.form.get('password')
 
-#     user = CRUD.get_user_by_email(email)
-#     if user:
-#         flash('Cannot create an account with that email. Try again.')
-#     else:
-#         CRUD.create_user(email, password)
-#         flash('Account created! Please log in.')
+    user = CRUD.get_user_by_email(email)
+    
+    if user:
+        flash('Cannot create an account with that email. Try again.')
+    else:
+        CRUD.create_user(username, email, password)
+        flash('Account created! Please log in.')
 
-#     return redirect('/')
+    return redirect('/')
 
 
 @app.route('/inputform')

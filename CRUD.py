@@ -12,6 +12,9 @@ def create_user(user_name, email, password):
 def get_all_users():
     return User.query.all()
 
+def get_user_by_email(email):
+    return User.query.all()
+
 def get_user_by_id(id):
     return User.query.filter_by(id = id).first()
 
