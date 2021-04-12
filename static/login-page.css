@@ -11,7 +11,10 @@ html {
     align-items: center;
     background-color: #3a3a3a;
   }
-  
+  /* grid display to center it's contents align-items (vertically) 
+  and justify-items (horizontally) */
+
+  /* #main-holder is the id selector for <main> */
   #main-holder {
     width: 50%;
     height: 70%;
@@ -49,12 +52,15 @@ html {
   }
   
   #login-form {
-    align-self: flex-start;
+    align-self: flex-start;  /*  vertically aligns to the top of its row */
     display: grid;
     justify-items: center;
     align-items: center;
   }
   
+
+  /* class selector for login <form> 
+  only want to change placeholders of elements that have this class */
   .login-form-field::placeholder {
     color: #3a3a3a;
   }

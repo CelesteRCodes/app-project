@@ -25,31 +25,42 @@ def homepage():
 
 # # should just have the log in on the homepage,
 # # after user logs in, it takes them to the input form page
-# # after submitting input (can skip this step),
+# # after submitting input (user can skip this step, 
+# # may need a 'skip' button),
 # # the user's grow log with all entries is shown
 
-# @app.route('/login')
-# def show_login():
-#     """ Show login for user on homepage."
-#     return 
-
-@app.route('/login', methods=['POST'])
-def register_user():
-    """Create a new user."""
+@app.route('/login')
+def show_login():
+    """ Show login for user on homepage."""
 
     username = request.form.get('username')
-    email = request.form.get('email')
     password = request.form.get('password')
 
-    user = CRUD.get_user_by_email(email)
-    
-    if user:
-        flash('Cannot create an account with that email. Try again.')
-    else:
-        CRUD.create_user(username, email, password)
-        flash('Account created! Please log in.')
+# do i need to store the user's password/username first
+# to be able to compare to what the user inputs for the login?
 
-    return redirect('/')
+    if username == username and password == password:
+        return render_template('input-form.html')
+    else:
+        return render_template('homepage.html')
+
+# @app.route('/login', methods=['POST'])
+# def register_user():
+#     """Create a new user."""
+
+#     username = request.form.get('username')
+#     email = request.form.get('email')
+#     password = request.form.get('password')
+
+#     user = CRUD.get_user_by_email(email)
+    
+#     if user:
+#         flash('Cannot create an account with that email. Try again.')
+#     else:
+#         CRUD.create_user(username, email, password)
+#         flash('Account created! Please log in.')
+
+#     return redirect('/')
 
 
 @app.route('/inputform')
