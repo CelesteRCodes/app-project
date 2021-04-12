@@ -2,6 +2,11 @@
 
 // USER LOGIN
 
+// maybe set up an empty list or dictionary to store user's info 
+// to check against user input in the login form 
+// or do i need a session? 
+
+
 const loginForm = document.getElementById("login-form");
 const loginButton = document.getElementById("login-form-submit");
 const loginErrorMsg = document.getElementById("login-error-msg");

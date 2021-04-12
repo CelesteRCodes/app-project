@@ -13,7 +13,7 @@ class User(db.Model):
                        primary_key=True,
                        autoincrement=True,
                        )
-    user_name = db.Column(db.String(50), nullable=False, unique=True,)
+    username = db.Column(db.String(50), nullable=False, unique=True,)
     email = db.Column(db.String(50), nullable=False, unique=True,)
     password = db.Column(db.String(50), nullable=False,)
     

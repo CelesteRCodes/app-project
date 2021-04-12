@@ -44,6 +44,10 @@ def show_login():
     else:
         return render_template('homepage.html')
 
+# want to be able to take in a new username/pw 
+# and ask if user wants to create a new account
+
+
 # @app.route('/login', methods=['POST'])
 # def register_user():
 #     """Create a new user."""
@@ -63,11 +67,28 @@ def show_login():
 #     return redirect('/')
 
 
-@app.route('/inputform')
+@app.route('/input-form')
 def show_input_form():
-    """Show user input form."""
+   
+    """Create a new entry."""
 
-    return render_template('input-form.html')
+    comment = request.form.get('username')
+    timestamp = request.form.get('email')
+    photo_url = request.form.get('password')
+
+    users_plant_id = CRUD.get_user_by_id(id)
+    
+    if comment == None:
+        flash('Nothing to add?')
+    else:
+        CRUD.create_entry(users_plant_id=users_plant_id, timestamp=timestamp, comment=comment, photo_url=None)
+        flash('New entry created! Click submit to see log.')
+
+    # do i need an if statement so user doesn't have to input an entry, they can skip
+    # or just a skip button in JS
+
+    return redirect('/grow-log.html')
+    
 
 
 @app.route('/grow-log')

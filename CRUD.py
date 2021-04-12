@@ -1,8 +1,8 @@
 from model import User, UserPlant, GrowLog, db, connect_to_db
 
 
-def create_user(user_name, email, password):
-    user = User(user_name = user_name, 
+def create_user(username, email, password):
+    user = User(username = username, 
         email = email, password = password)
     
     db.session.add(user)
@@ -13,6 +13,9 @@ def get_all_users():
     return User.query.all()
 
 def get_user_by_email(email):
+    return User.query.all()
+
+def get_user_by_username(username):
     return User.query.all()
 
 def get_user_by_id(id):
@@ -32,10 +35,11 @@ def get_plant_by_id(id):
 
 
 def create_entry(users_plant_id, timestamp, comment=None, photo_url=None):
-    entry = GrowLog(users_plant_id=users_plant_id, timestamp=timestamp, 
+    new_entry = GrowLog(users_plant_id=users_plant_id, timestamp=timestamp, 
         comment=comment, photo_url=photo_url)
-    db.session.add(entry)
+    db.session.add(new_entry)
     db.session.commit()
+    return new_entry
 
 def get_all_entries():
     return GrowLog.query.all()

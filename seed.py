@@ -49,10 +49,10 @@ photo_urls = {"aloe": "/static/aloe.jpg",
 for n in range(10):
     email = f'user{n}@test.com'  
     password = 'test'
-    user_name = f'user_name{n}'
+    username = f'username{n}'
     # variables to pass into CRUD.create_user
 
-    user = CRUD.create_user(user_name, email, password)
+    user = CRUD.create_user(username, email, password)
     # creates the user (db.session.add/commit in CRUD.py)
 
     plant_choice = choice(plants)
