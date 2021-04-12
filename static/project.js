@@ -22,7 +22,7 @@ loginButton.addEventListener("click", (evt) => {
 
     if (username === "user" && password === "12345") {
         alert("You have successfully logged in.");
-        location.reload();      // need to change to load input-form.html
+        location.load("/input-form.html");      // need to change to load input-form.html
     } else {
         loginErrorMsg.style.opacity = 1;        
         // error msg is set to show with opacity of 1

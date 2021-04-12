@@ -39,7 +39,7 @@ def show_login():
 # do i need to store the user's password/username first
 # to be able to compare to what the user inputs for the login?
 
-    if username == username and password == password:
+    if username == 'user' and password == '12345':
         return render_template('input-form.html')
     else:
         return render_template('homepage.html')
@@ -67,7 +67,7 @@ def show_login():
 def show_input_form():
     """Show user input form."""
 
-    return redirect('input-form.html')
+    return render_template('input-form.html')
 
 
 @app.route('/grow-log')
