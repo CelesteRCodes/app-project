@@ -29,7 +29,7 @@ def homepage():
 # # may need a 'skip' button),
 # # the user's grow log with all entries is shown
 
-@app.route('/login')
+@app.route('/login', methods=['POST'])
 def show_login():
     """ Show login for user on homepage."""
 
@@ -38,15 +38,26 @@ def show_login():
 
 # do i need to store the user's password/username first
 # to be able to compare to what the user inputs for the login?
+# need to query into database for email given, if object with email, 
+# grab password and compare it to password given
 
     if username == 'user' and password == '12345':
-        return render_template('input-form.html')
+        return redirect('/show-form')
     else:
-        return render_template('homepage.html')
+        return redirect('/')
+
+@app.route('/show-form', methods=['GET'])
+def show_input_form():
+    """ Show form."""
+
+    return render_template("/input-form.html")
+   
 
 # want to be able to take in a new username/pw 
 # and ask if user wants to create a new account
 
+# will have one route to show the form
+# another to process the form
 
 # @app.route('/login', methods=['POST'])
 # def register_user():
@@ -67,19 +78,19 @@ def show_login():
 #     return redirect('/')
 
 
-@app.route('/input-form')
-def show_input_form():
+@app.route('/process-form', methods=['POST'])
+def process_input_form():
    
     """Create a new entry."""
 
-    comment = request.form.get('username')
-    timestamp = request.form.get('email')
-    photo_url = request.form.get('password')
+    comment = request.form.get('comment')
+    timestamp = request.form.get('timestamp')
+    photo_url = request.form.get('photo_url')
 
     users_plant_id = CRUD.get_user_by_id(id)
     
     if comment == None:
-        flash('Nothing to add?')
+        flash('No new updates?')
     else:
         CRUD.create_entry(users_plant_id=users_plant_id, timestamp=timestamp, comment=comment, photo_url=None)
         flash('New entry created! Click submit to see log.')
@@ -87,7 +98,7 @@ def show_input_form():
     # do i need an if statement so user doesn't have to input an entry, they can skip
     # or just a skip button in JS
 
-    return redirect('/grow-log.html')
+    return render_template('/grow-log.html')
     
 
 

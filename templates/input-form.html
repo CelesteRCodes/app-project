@@ -8,30 +8,44 @@
   
 
 
-  <link href= "/static/input-page.css" rel="stylesheet" type="text/css">
+  <link href= "/static/input-form.css" rel="stylesheet" type="text/css">
 
-  <link rel="stylesheet" href="/static/input-page.css">
+  <link rel="stylesheet" href="/static/input-form.css">
+
+  <h2>
+      <a>Track Your Progress with Dated Logs to Watch Your Growth</a>
+    </h2>
 
 </head>
 <body>
   <div>
-    <h1>
-      <a>When You Know Better, You Grow Better</a>
-    </h1>
+    
 
 
-    <h2>Input New Entry</h2>
-
-  <form id="entry-form">
+    <center><h3>Input New Entry</h3></center>
+   
+  <form action="/login" method='POST' id="entry-form">
     <div class="form-group">
-      <label>Entry Form
-        <input class="form-control" type="text" name="new-entry" id="entry-field">
+      <label>Plant Name
+        <input class="form-control" type="text" name="new-entry" id="entry-field" multiple>
+        
       </label>
+      <ul id="fieldList">
+        <li>
+          <input name="comment[]" type="text" placeholder="Comment" />
+        </li>
+        <li>
+          <input name="time[]" type="text" placeholder="Date and Time" />
+        </li>
+        <li>
+          <input name="photo_url[]" type="text" placeholder="Photo">
+        </li>
+      </ul>
     </div>
 
-    <div class="form-group">
+   <center><div class="form-group">
       <button type="submit" id="entry-form-button" class="btn btn-primary">Submit New Entry</button>
-    </div>
+    </div></center> 
 
   </form>
 
