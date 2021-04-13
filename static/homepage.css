@@ -8,7 +8,7 @@ html {
     height: 100%;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url('static/img/loginback.jpg');
+    background-image: url("loginback.jpg");
     display: grid;
     justify-items: center;
     align-items: center;

@@ -7,10 +7,16 @@ html {
   body {
     height: 100%;
     margin: 0;
-    background-image: url('static/img/loginback.jpg');
+    background-color:grey;
     font-family: Arial, Helvetica, sans-serif;
+    
     display: grid;
     justify-items: center;
     align-items: center;
-    background-color:green;
+  
   }
+
+  /* #entry-form {
+    background-color:green;
+    /* opacity: 0; */
+    /* } */ 

@@ -12,10 +12,11 @@
 
   <link rel="stylesheet" href="/static/input-form.css">
 
-  <h2>
+  <h3>
       <a>Track Your Progress with Dated Logs to Watch Your Growth</a>
-    </h2>
-
+    </h3>
+    
+    <h4>See where you’ve been and see how you grow!</h4>
 </head>
 <body>
   <div>
@@ -25,33 +26,139 @@
     <center><h3>Input New Entry</h3></center>
    
   <form action="/login" method='POST' id="entry-form">
-    <div class="form-group">
-      <label>Plant Name
-        <input class="form-control" type="text" name="new-entry" id="entry-field" multiple>
-        
-      </label>
-      <ul id="fieldList">
-        <li>
-          <input name="comment[]" type="text" placeholder="Comment" />
-        </li>
-        <li>
-          <input name="time[]" type="text" placeholder="Date and Time" />
-        </li>
-        <li>
-          <input name="photo_url[]" type="text" placeholder="Photo">
-        </li>
-      </ul>
-    </div>
-
    <center><div class="form-group">
+      <br>
+      <label><strong>Plant's Name</strong> <br>
+        <input class="form-control" type="text" name="name" id="entry-field" placeholder="Name of Plant">
+        
+      </label><br>
+
+          <label><strong>Watered?</strong></label><br>
+          <select name="water">
+            <option value="min"></option>
+            <option value="sprinkle">0.5-3 mL</option>
+            <option value="cup">3-5 mL</option>
+            <option value="puddle">5-10 mL</option>
+            <option value="pond">10- 15 mL</option>
+            <option value="lake">15-20 mL</option>
+            <option value="sea">20-30 mL</option>
+            <option value="ocean">Greater than 30 mL</option>
+          </select>
+          
+        <!-- water can be a drop down menu for amounts of water by mLs -->
+         <br><br>
+        
+          <label><strong>Nutrients Given?</strong></label><br>
+
+          <input name="nutrientname" type="text" placeholder="Name of Nutrient/Type" /> 
+          <select name="nutrients">
+            <option value="min"></option>
+            <option value="smallest">0.5-3 mL</option>
+            <option value="smaller">3-5 mL</option>
+            <option value="small">5-10 mL</option>
+            <option value="medium">10- 15 mL</option>
+            <option value="large">15-20 mL</option>
+            <option value="larger">20-30 mL</option>
+            <option value="largest">Greater than 30 mL</option>
+          </select> <br>
+
+          <input name="nutrientname2" type="text" placeholder="Name of Nutrient/Type" /> 
+          <select name="nutrients">
+            <option value="min"></option>
+            <option value="smallest">0.5-3 mL</option>
+            <option value="smaller">3-5 mL</option>
+            <option value="small">5-10 mL</option>
+            <option value="medium">10- 15 mL</option>
+            <option value="large">15-20 mL</option>
+            <option value="larger">20-30 mL</option>
+            <option value="largest">Greater than 30 mL</option>
+          </select> <br>
+
+          <input name="nutrientname3" type="text" placeholder="Name of Nutrient/Type" /> 
+          <select name="nutrients">
+            <option value="min"></option>
+            <option value="smallest">0.5-3 mL</option>
+            <option value="smaller">3-5 mL</option>
+            <option value="small">5-10 mL</option>
+            <option value="medium">10- 15 mL</option>
+            <option value="large">15-20 mL</option>
+            <option value="larger">20-30 mL</option>
+            <option value="largest">Greater than 30 mL</option>
+          </select> <br>
+
+          <input name="nutrientname4" type="text" placeholder="Name of Nutrient/Type" /> 
+          <select name="nutrients">
+            <option value="min"></option>
+            <option value="smallest">0.5-3 mL</option>
+            <option value="smaller">3-5 mL</option>
+            <option value="small">5-10 mL</option>
+            <option value="medium">10- 15 mL</option>
+            <option value="large">15-20 mL</option>
+            <option value="larger">20-30 mL</option>
+            <option value="largest">Greater than 30 mL</option>
+          </select>
+          
+         <br><br>
+        <!-- nutrients can be a drop down menu for amounts of nutrients by mLs 
+        and a text field for nutrient name; might need more than one of these text fields 
+        for multiple nutrients  -->     
+          
+          <strong> Choose current temp range of environment:</strong>
+            <br>(Fahrenheit)<br>
+            <select name="temp">
+              <option value="min"></option>
+              <option value="toolow">Less Than 60</option>
+              <option value="six">60-65</option>
+              <option value="sixtyfive">65-70</option>
+              <option value="seven">70-75</option>
+              <option value="seventyfive">75-80</option>
+              <option value="eight">80-85</option>
+              <option value="toohigh">Greater than 85</option>
+
+            </select>
+        
+          <br><br>
+            
+          <strong> Choose current humidity level:</strong>
+              <br>
+          <select name="humidity">
+            <option value="min"></option>
+            <option value="min">Less Than 30%</option>
+            <option value="thirties">30-39%</option>
+            <option value="fourties">40-49%</option>
+            <option value="fifties">50-59%</option>
+            <option value="sixties">60-69%</option>
+            <option value="seventies">70-79%</option>
+            <option value="eighties">80-89%</option>
+            <option value="max">Greater than 89%</option>
+
+          </select> <br><br>
+       
+        <label><strong>Comments</strong></label><br>
+        <input name="comment" type="text" placeholder="How are the leaves looking?"/>
+          
+        <br>
+
+          <label><strong>Date</strong></label><br>(00/00/0000)<br>
+          <input name="timestamp" type="text" placeholder="Date" />
+          <br>
+          <label><strong>Time</strong></label><br>(00:00)EST<br>
+          <input name="timestamp" type="text" placeholder="Time" />
+          <br><br>
+      
+          <label><strong>Upload Photo</strong></label><br><br>
+          <input type="file" id="myFile" name="photo_url">
+          <input type="submit">
+          <br> <br>
+
       <button type="submit" id="entry-form-button" class="btn btn-primary">Submit New Entry</button>
-    </div></center> 
+      <br><br>
 
-  </form>
+      <button type="submit" id="skip-entry-button" class="btn btn-primary">Skip Input and Show Log</button></li>
+  </form></center>
 
-  <div id="growlog-entry-form"></div>
-   
-
+  <!-- both buttons should take user to grow-log.html -->
+  
  
 </body>
 

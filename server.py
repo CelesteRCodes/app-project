@@ -83,54 +83,63 @@ def process_input_form():
    
     """Create a new entry."""
 
+    users_plant_id = CRUD.get_user_by_id(id)
     comment = request.form.get('comment')
     timestamp = request.form.get('timestamp')
+    water = request.form.get('water')
+    nutrients = request.form.get('nutrients')
+    temp = request.form.get('temp')
+    humidity = request.form.get('humidity')
+    
+    
     photo_url = request.form.get('photo_url')
-
-    users_plant_id = CRUD.get_user_by_id(id)
+    
     
     if comment == None:
         flash('No new updates?')
     else:
-        CRUD.create_entry(users_plant_id=users_plant_id, timestamp=timestamp, comment=comment, photo_url=None)
+        CRUD.create_entry(users_plant_id=users_plant_id, comment=comment, timestamp=timestamp, 
+            water=None, nutrients=None, temp=None, humidity=None, photo_url=None)
         flash('New entry created! Click submit to see log.')
 
     # do i need an if statement so user doesn't have to input an entry, they can skip
     # or just a skip button in JS
 
-    return render_template('/grow-log.html')
+    return redirect('/grow-log.html')
     
 
 
-@app.route('/grow-log')
-def display_input():
+@app.route('/grow-log', methods=['GET'])
+def display_growlog():
     """Show user's grow log."""
 
     # keyword = request.args.get('keyword', '')
     
     # userplants = request.args.get('plants', '')
-    growlogs = request.args.get('growlogs', '')
+    # growlogs = request.args.get('growlogs', '')
     
 
-    url = 'grow-log.html'
-    payload = {
-            #  'keyword': keyword,
-            #    'userplants': plants,
-               'growlog': growlogs}
+    # url = 'grow-log.html'
+    # payload = {
+    #         #  'keyword': keyword,
+    #         #    'userplants': plants,
+    #            'growlog': growlogs}
 
-    response = request.get(url, params=payload)
+    # response = request.get(url, params=payload)
 
-    data = response.json()
-    growlog = data['_embedded']['growlog']
+    # data = response.json()
+    # growlog = data['_embedded']['growlog']
 
-    return render_template('grow-log.html',
+    return render_template("/grow-log.html")
+
                         #    pformat=pformat,
                         #    userplants=userplants,
-                           data=data,
-                           growlog=growlog)
+                        #    data=data,
+                        #    growlog=growlog)
 
 
-
+# have to query the db for all the user's growlogs 
+# and then use jinja to display them on grow-log
 
 if __name__ == '__main__':
     app.debug = True
