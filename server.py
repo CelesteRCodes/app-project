@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, session
 
 import flash
 
@@ -35,16 +35,21 @@ def show_login():
 
     username = request.form.get('username')
     password = request.form.get('password')
+    user = CRUD.get_user_by_username(username)
+    
 
+
+    
+    if user and password == user.password:
+        session["id"] = user.id
+        redirect('/show-form')
+    else:
+        redirect('/homepage') 
 # do i need to store the user's password/username first
 # to be able to compare to what the user inputs for the login?
 # need to query into database for email given, if object with email, 
 # grab password and compare it to password given
 
-    if username == 'user' and password == '12345':
-        return redirect('/show-form')
-    else:
-        return redirect('/')
 
 @app.route('/show-form', methods=['GET'])
 def show_input_form():
@@ -82,60 +87,43 @@ def show_input_form():
 def process_input_form():
    
     """Create a new entry."""
+    if "id" in session:
+        id = session["id"]
+        users_plant_id = CRUD.get_user_by_id(id)
 
-    users_plant_id = CRUD.get_user_by_id(id)
-    comment = request.form.get('comment')
-    timestamp = request.form.get('timestamp')
-    water = request.form.get('water')
-    nutrients = request.form.get('nutrients')
-    temp = request.form.get('temp')
-    humidity = request.form.get('humidity')
+        comment = request.form.get('comment')
+        timestamp = request.form.get('timestamp')
+        water = request.form.get('water')
+        nutrients = request.form.get('nutrients')
+        temp = request.form.get('temp')
+        humidity = request.form.get('humidity')
+        
+        
+        photo_url = request.form.get('photo_url')
     
     
-    photo_url = request.form.get('photo_url')
-    
-    
-    if comment == None:
-        flash('No new updates?')
-    else:
-        CRUD.create_entry(users_plant_id=users_plant_id, comment=comment, timestamp=timestamp, 
-            water=None, nutrients=None, temp=None, humidity=None, photo_url=None)
-        flash('New entry created! Click submit to see log.')
+        if comment == None:
+            flash('No new updates?')
+        else:
+            CRUD.create_entry(users_plant_id=users_plant_id, comment=comment, timestamp=timestamp, 
+                water=None, nutrients=None, temp=None, humidity=None, photo_url=None)
+            flash('New entry created! Click submit to see log.')
 
     # do i need an if statement so user doesn't have to input an entry, they can skip
     # or just a skip button in JS
 
-    return redirect('/grow-log.html')
-    
+        return redirect('/grow-log')
+    else: 
+        return redirect('/homepage')
 
 
 @app.route('/grow-log', methods=['GET'])
 def display_growlog():
     """Show user's grow log."""
 
-    # keyword = request.args.get('keyword', '')
     
-    # userplants = request.args.get('plants', '')
-    # growlogs = request.args.get('growlogs', '')
-    
-
-    # url = 'grow-log.html'
-    # payload = {
-    #         #  'keyword': keyword,
-    #         #    'userplants': plants,
-    #            'growlog': growlogs}
-
-    # response = request.get(url, params=payload)
-
-    # data = response.json()
-    # growlog = data['_embedded']['growlog']
 
     return render_template("/grow-log.html")
-
-                        #    pformat=pformat,
-                        #    userplants=userplants,
-                        #    data=data,
-                        #    growlog=growlog)
 
 
 # have to query the db for all the user's growlogs 

@@ -19,18 +19,48 @@
 
 
 <div>
-
-  <h2>Grower's Log
-  </h2>
-
-  
+  <h2>Grower's Log</h2>
     <button id="entries" class="btn btn-primary">Get Entries</button>
-  
 </div>
-  <div id="growlog-entries">
 
+
+<!-- one table per entry 
+how to populate multiple to show multiple grow-logs at once?-->
+
+  <div id="growlog-entry">
+<table style="width:100%">
+<tr>
+  <th>user_plant_id</th>
+  <th>comment</th>
+  <th>timestamp</th>
+  <th>water</th>
+  <th>nutrients</th>
+  <th>temp</th>
+  <th>humidity</th>         
+  <th> photo_url </th>
+</tr>
+
+<!-- can i change the order of data in tables without having to change other files? -->
+
+<!-- need to format date/time, timestamp on input-form -->
+
+<tr>
+  <td>1</td>
+  <td>"Leaves are green"</td>
+  <td>date and time</td>
+  <td>1-3 mL</td>
+  <td>5-10 mL</td>
+  <td>70-75</td>
+  <td>30%</td>
+  <td>photo_url</td>
+</tr>
+</table>
 
   </div>
+
+<!-- th is for header of table/column name
+td is for the data 
+tr is for the table row  -->
 
 <!-- user grow log data stored in db as tables,
 can just display the data in tables on this page  -->

@@ -1,0 +1,18 @@
+fix input-form.html so when user clicks submit/skip, it takes them to the grow-log.html not back to homepage.html
+the upload photo submit button also takes user back to homepage 
+
+display info from input-form.html on grow-log.html in tables
+
+figure out how to upload a photo, store it in database and display it on the grow-log.html in it's respective table
+
+make sure that the info (commment at min) that user submits is actually stored in the db as a new entry 
+
+TESTS!
+
+styling of pages
+
+create a new user, store new user information
+
+log out button/function
+
+ability to delete a grow log entry

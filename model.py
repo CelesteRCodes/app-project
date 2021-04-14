@@ -14,7 +14,7 @@ class User(db.Model):
                        autoincrement=True,
                        )
     username = db.Column(db.String(50), nullable=False, unique=True,)
-    email = db.Column(db.String(50), nullable=False, unique=True,)
+    email = db.Column(db.String(100), nullable=False, unique=True,)
     password = db.Column(db.String(50), nullable=False,)
     
 # making the class User and Users table
@@ -64,7 +64,12 @@ class GrowLog(db.Model):
     comment = db.Column(db.String(200), nullable=True)
     timestamp = db.Column(db.DateTime)
     photo_url = db.Column(db.String, nullable=True)
-
+    water= db.Column(db.String, nullable=True)
+    nutrients = db.Column(db.String, nullable=True)
+    temp = db.Column(db.String, nullable=True)
+    humidity = db.Column(db.String, nullable=True)
+    photo_url = db.Column(db.String, nullable=True)
+    
     userplants = db.relationship("UserPlant", backref = "growlogs")
 
 # making the class GrowLog and growlogs table

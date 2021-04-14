@@ -46,6 +46,7 @@ photo_urls = {"aloe": "/static/aloe.jpg",
               "spinach":"/static/spinach.jpg",
               "cucumber":"/static/cucumber.jpg"}
 
+
 for n in range(10):
     email = f'user{n}@test.com'  
     password = 'test'
@@ -61,10 +62,12 @@ for n in range(10):
     plant = CRUD.create_plant(user.id, plant_choice)
     # creates the plant for user
 
-    photo_url = photo_urls[plant_choice]
+    # photo_url = photo_urls[plant_choice]
     # can key into photo_url using plant_choice 
 
-    new_entry = CRUD.create_entry(plant.id, datetime.now(), photo_url=photo_url)
+    new_entry = CRUD.create_entry(plant.id, "leaves are green", datetime.now(), water=None, nutrients=None, temp=None, 
+    humidity=None, photo_url=None)
+
     # creates the new entry for grow log
 
 
