@@ -5,33 +5,33 @@
 {% block content %}
 
 <head>
+
+  <link href= "/static/new-enty-form.css" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="/static/new-enty-form.css">
+<h3>Create A New Entry For Your Plant's Log</h3>
   
-
-
-  <link href= "/static/input-form.css" rel="stylesheet" type="text/css">
-
-  <link rel="stylesheet" href="/static/input-form.css">
-
-  <h3>
-      <a>Track Your Progress with Dated Logs to Watch Your Growth</a>
-    </h3>
     
-    <h4>See where you’ve been and see how you grow!</h4>
 </head>
 <body>
   <div>
     
-
-
-    <center><h3>Input New Entry</h3></center>
+    <center><h4>
+      <a>pssst... here's a *hint*: <br><br>
+        Update Frequently to See Your Progress</a>
+    </h4></center>
    
   <form action="/process-form" method='POST' id="entry-form">
    <center><div class="form-group">
       <br>
-      <label><strong>Plant's Name</strong> <br>
+
+      <!-- <label><strong>Plant's Name</strong> <br>
         <input class="form-control" type="text" name="name" id="entry-field" placeholder="Name of Plant">
         
-      </label><br>
+      </label><br>   
+
+      shouldn't need Plant's Name since it's just a
+      dding an entry to a specific plant with this form-->
 
           <label><strong>Watered?</strong></label><br>
           <select name="water">
@@ -147,15 +147,24 @@
           <br><br>
       
           <label><strong>Upload Photo</strong></label><br><br>
+
           <input type="file" id="myFile" name="photo_url">
-          <input type="submit">
+          <input type="submit"> 
           <br> <br>
+<!-- photo_url submit button throws a 404, doesn't take user to grow-log.html 
+is trying to take them to localhost:5000/process-form which doesn't exist-->
 
-      <button type="submit" id="entry-form-button" class="btn btn-primary">Submit New Entry</button>
-      <br><br>
+          <form action="/grow-log">
+            <input type="submit" value="Submit New Entry"/>
+            </form>
+            <br>
 
-      <button type="submit" id="skip-entry-button" class="btn btn-primary">Skip Input and Show Log</button></li>
-  </form></center>
+      <form action="/grow-log">
+        <input type="submit" value="Just Show Log"/>
+        </form>
+        <br>
+
+    
 
   <!-- both buttons should take user to grow-log.html -->
   

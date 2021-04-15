@@ -6,16 +6,9 @@ import CRUD
 import model
 import os
 
-
-
 app = Flask(__name__)
 app.secret_key = 'SECRETSECRETSECRET'
 
-# API_KEY = os.environ['TICKETMASTER_KEY']
-
-# # not sure I need an API for this part; 
-# # using one to gather info from Trefle for references
-# # for sprint 2 
 
 @app.route('/')
 def homepage():
@@ -23,11 +16,6 @@ def homepage():
 
     return render_template('homepage.html')
 
-# # should just have the log in on the homepage,
-# # after user logs in, it takes them to the input form page
-# # after submitting input (user can skip this step, 
-# # may need a 'skip' button),
-# # the user's grow log with all entries is shown
 
 @app.route('/login', methods=['POST'])
 def show_login():
@@ -37,59 +25,84 @@ def show_login():
     password = request.form.get('password')
     user = CRUD.get_user_by_username(username)
     
-
-
-    
     if user and password == user.password:
         session["id"] = user.id
-        redirect('/show-form')
+        return redirect('/show-user-plants')
     else:
-        redirect('/homepage') 
-# do i need to store the user's password/username first
-# to be able to compare to what the user inputs for the login?
-# need to query into database for email given, if object with email, 
-# grab password and compare it to password given
+        return redirect('/login') 
+
+# login should take user to their plant's page (DONE)
+# that shows all of the user's plants (don't know how 
+# to display inputted plants from user, maybe a dictionary?)
+
+# each plant should be clickable, (could have a button under 
+# plant or make the actual plant name a link for user)
+
+# take user to the input new entry form for that 
+# specific plant
+
+@app.route('/show-user-plants', methods=['GET', 'POST'])
+def show_user_plants():
+    """ Show user's plants."""
+
+    return render_template("/user-plants.html")
+
+@app.route('/show-new-plant-form', methods=['GET', 'POST'])
+def show_new_plant_form():
+    """ Show form for a new plant."""
+
+    return render_template("/new-plant.html")
 
 
-@app.route('/show-form', methods=['GET'])
-def show_input_form():
-    """ Show form."""
+@app.route('/process-new-plant-form', methods=['GET', 'POST'])
+def process_new_plant_form():
+   
+    """Add a new plant to user-plants.html"""
 
-    return render_template("/input-form.html")
+    if "id" in session:
+        id = session["id"]
+
+        # users_id = CRUD.get_user_by_id(id)
+        user_id = CRUD.get_user_by_id(id)  
+        # this is picking the entire user profile
+
+        # is there a way to pick just the user's id 
+        # and not everything attached to the user's id?
+
+        plant_name = request.form.get('plant_name')
+        plant_type = request.form.get('plant_type')
+
+        
+        CRUD.create_plant(user_id, plant_name, plant_type)
+        flash('New plant added!')
+
+
+        return redirect('/show-user-plants')
+    
+
+
+@app.route('/show-new-entry-form', methods=['GET', 'POST'])
+def show_new_entry_form():
+    """ Show form for a new entry/update log of a plant."""
+
+    return render_template("/new-entry.html")
    
 
-# want to be able to take in a new username/pw 
-# and ask if user wants to create a new account
 
-# will have one route to show the form
-# another to process the form
-
-# @app.route('/login', methods=['POST'])
-# def register_user():
-#     """Create a new user."""
-
-#     username = request.form.get('username')
-#     email = request.form.get('email')
-#     password = request.form.get('password')
-
-#     user = CRUD.get_user_by_email(email)
-    
-#     if user:
-#         flash('Cannot create an account with that email. Try again.')
-#     else:
-#         CRUD.create_user(username, email, password)
-#         flash('Account created! Please log in.')
-
-#     return redirect('/')
-
-
-@app.route('/process-form', methods=['POST'])
-def process_input_form():
+@app.route('/process-new-entry-form', methods=['GET', 'POST'])
+def process_new_entry_form():
    
     """Create a new entry."""
     if "id" in session:
         id = session["id"]
-        users_plant_id = CRUD.get_user_by_id(id)
+
+        # users_id = CRUD.get_user_by_id(id)
+        users_plant_id = CRUD.get_user_by_id(id)  
+        # this is picking the entire user profile
+
+        # is there a way to pick just the user's id 
+        # and not everything attached to the user's id?
+
 
         comment = request.form.get('comment')
         timestamp = request.form.get('timestamp')
@@ -116,8 +129,10 @@ def process_input_form():
     else: 
         return redirect('/homepage')
 
-
-@app.route('/grow-log', methods=['GET'])
+## on 4/15: currently getting a TypeError: 'module' 
+# object is not callable
+ 
+@app.route('/grow-log', methods=['GET', 'POST'])
 def display_growlog():
     """Show user's grow log."""
 
@@ -127,10 +142,11 @@ def display_growlog():
 
 
 # have to query the db for all the user's growlogs 
-# and then use jinja to display them on grow-log
+# and then use jinja to display them on grow-log?
 
 if __name__ == '__main__':
     app.debug = True
+    model.connect_to_db(app)
     app.run(host='0.0.0.0')
 
 

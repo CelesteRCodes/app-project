@@ -37,6 +37,7 @@ class UserPlant(db.Model):
                         db.ForeignKey("users.id"),
                         )
     plant_name = db.Column(db.String(50), nullable=False)
+    plant_type = db.Column(db.String(50), nullable=False)
     
     user = db.relationship("User", backref = "plants")
 
@@ -98,7 +99,7 @@ if __name__ == '__main__':
     # too annoying; this will tell SQLAlchemy not to print out every
     # query it executes.
 
-    connect_to_db(app)
+    # connect_to_db(app)
 
     
 # get user info, create new one, store info in db

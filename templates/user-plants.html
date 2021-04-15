@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+<head>
+
+    <link href= "/static/users-plants.css" rel="stylesheet" type="text/css">
+  
+    <link rel="stylesheet" href="/static/user-plants.css">
+  <h3>Come To Check On Your Babies?</h3>
+    
+      
+  </head>
+  <body>
+    <div>
+      
+    
+         
+      <form action="/show-new-plant-form">
+        <input type="submit" value="Add New Plant"/>
+        </form>
+        <br>
+
+        <form action="/show-new-entry-form">
+          <input type="submit" value="Add New Log Entry"/>
+          </form>
+          <br>
+
+          <!-- this should actually be a list of plants (maybe as objects 
+            that we can manipulate or turn into links?)
+          each plant should have the option to 'Add New Log Entry' -->
+
+
+        <form action="/grow-log">
+          <input type="submit" value="Just Show Log"/>
+          </form>
+          <br>
+       
+    
+    <!-- just show log button should actually be the specific plant name for that specific log -->
+    <!-- both buttons should take user to grow-log.html -->
+    
+   
+  </body>
+
+
+{% endblock %}

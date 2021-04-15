@@ -48,8 +48,8 @@ def get_user_by_id(id):
 
 # <User 11>
 
-def create_plant(user_id, plant_name):
-    plant = UserPlant(user_id=user_id, plant_name=plant_name)
+def create_plant(user_id, plant_name, plant_type):
+    plant = UserPlant(user_id=user_id, plant_name=plant_name, plant_type=plant_type)
     db.session.add(plant)
     db.session.commit()
     return plant
