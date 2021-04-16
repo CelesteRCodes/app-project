@@ -4,7 +4,8 @@
 # should be able to click on any of the plants and go to that growlog 
 # on that growlog page (page 2), should be a form to add a new entry for this plant
 
-FORMS CREATED, BUTTONS WORK EXCEPT FOR 'add new plant' on new-plant.html, geting a 404
+FORMS CREATED, BUTTONS WORK EXCEPT FOR 'add new plant' on new-plant.html 
+and 'add new entry' on new-entry.html, geting a 404
 
 
 the upload photo submit button also takes user back 

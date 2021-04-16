@@ -19,6 +19,7 @@ model.db.create_all()
 plants = ['aloe', 'ginger', 'bamboo', 'spider plant', 'sage', 'lavendar', 
         'tomato', 'orchid', 'avocado tree', 'spinach', 'cucumber', 'celery']
 
+names = ['A', 'b', 'c', 'd']
 
 comments = ["watered with ph water and no nutrients",
             "added nutrients",
@@ -56,10 +57,12 @@ for n in range(10):
     user = CRUD.create_user(username, email, password)
     # creates the user (db.session.add/commit in CRUD.py)
 
-    plant_choice = choice(plants)
+    plant_type = choice(plants)
     # randomly chooses a plant
+    
+    plant_name = choice(names)
 
-    plant = CRUD.create_plant(user.id, plant_choice)
+    plant = CRUD.create_plant(user.id, plant_name, plant_type)
     # creates the plant for user
 
     # photo_url = photo_urls[plant_choice]
@@ -67,7 +70,8 @@ for n in range(10):
 
     new_entry = CRUD.create_entry(plant.id, "leaves are green", datetime.now(), water=None, nutrients=None, temp=None, 
     humidity=None, photo_url=None)
-
+    
+    # db.session.commit()
     # creates the new entry for grow log
 
 

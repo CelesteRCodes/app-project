@@ -41,6 +41,34 @@ def show_login():
 # take user to the input new entry form for that 
 # specific plant
 
+@app.route('/show-new-user-form', methods=['GET', 'POST'])
+def show_new_user_form():
+    """ Show form to create a new user."""
+
+    return render_template("/new-user.html")
+
+@app.route('/process-new-user-form', methods=['GET', 'POST'])
+def process_new_user_form():
+    """ Process new user form."""
+
+    if "email" in session:
+        email = session["email"]
+
+        # user_id = CRUD.get_user_id_by_id(id)
+
+        username = request.form.get('username')
+        email = request.form.get('email')
+        password = request.form.get('password')
+
+        
+        CRUD.create_user(username, email, password)
+        flash("You Are In!")
+    
+
+    return redirect("/login")
+
+
+
 @app.route('/show-user-plants', methods=['GET', 'POST'])
 def show_user_plants():
     """ Show user's plants."""
@@ -62,10 +90,15 @@ def process_new_plant_form():
     if "id" in session:
         id = session["id"]
 
-        # users_id = CRUD.get_user_by_id(id)
-        user_id = CRUD.get_user_by_id(id)  
+        # user_id = CRUD.get_user_id_by_id(id)
+
+        user = CRUD.get_user_by_id(id)  
         # this is picking the entire user profile
 
+# changing CRUD.py to have 
+# def get_user_id_by_id(id):
+#   return User.query.filter_by(id=id).one()
+#  can change user_id = CRUD.get_id_by_id
         # is there a way to pick just the user's id 
         # and not everything attached to the user's id?
 
@@ -73,7 +106,7 @@ def process_new_plant_form():
         plant_type = request.form.get('plant_type')
 
         
-        CRUD.create_plant(user_id, plant_name, plant_type)
+        CRUD.create_plant(user.id, plant_name, plant_type)
         flash('New plant added!')
 
 
@@ -97,9 +130,17 @@ def process_new_entry_form():
         id = session["id"]
 
         # users_id = CRUD.get_user_by_id(id)
+
         users_plant_id = CRUD.get_user_by_id(id)  
         # this is picking the entire user profile
 
+        # is there a way to pick just the user's id 
+        # and not everything attached to the user's id?
+
+# changing CRUD.py to have 
+# def get_user_id_by_id(id):
+#   return User.query.filter_by(id=id).one()
+#  can change user_id = CRUD.get_id_by_id
         # is there a way to pick just the user's id 
         # and not everything attached to the user's id?
 

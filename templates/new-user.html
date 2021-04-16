@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+<head>
+  
+
+
+  <link href= "/static/new-user.css" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="/static/new-user.css">
+
+  <h3>
+      <a>Sign up to start tracking your plant's growth here!</a>
+    </h3>
+    
+    <h4>See where you’ve been and see how you grow!</h4>
+    
+    
+</head>
+<body>
+  <div>
+    
+
+
+    <center><h3>Hi, New User! </h3></center>
+   
+  <form action="/process-new-user-form" method='POST' id="new-user-form">
+   <center><div class="form-group">
+      <br>
+      <label><strong>Email</strong> <br>
+        soandso@gmail.com
+        <input class="form-control" type="text" name="email" id="entry-field" placeholder="Email">
+        
+      </label><br>
+
+      <label><strong>Username</strong> <br>
+        
+        <input class="form-control" type="text" name="username" id="entry-field" placeholder="Username">
+        
+      </label><br>
+
+      <label><strong>Password</strong> <br>
+        <input class="form-control" type="text" name="password" id="entry-field" placeholder="Password">
+        
+      </label><br>
+
+      <form action="/login">
+        <input type="submit" value="Add New User"/>
+        </form>
+        <br>
+
+
+      <form action="/login">
+        <input type="submit" value="Cancel"/>
+        </form>
+        <br>
+
+      
+
+  <!-- both buttons should take user to grow-log.html -->
+  
+  <!-- when clicking add new plant, I get a 404, instead of button taking 
+  user back to user-plants.html with a new plant added -->
+ 
+</body>
+
+{% endblock %}

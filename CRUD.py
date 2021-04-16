@@ -29,6 +29,11 @@ def get_user_by_email(email):
 
 # <User 11>
 
+
+# def get_user_id_by_id(id):
+#     return User.query.filter_by(id=id).one()
+
+
 def get_user_by_username(username):
     return User.query.filter_by(username=username).first()
     
@@ -39,7 +44,7 @@ def get_user_by_username(username):
 # <User 11>
 
 def get_user_by_id(id):
-    print(id)
+   
     return User.query.filter_by(id = id).first()
 
 # test
