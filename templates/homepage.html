@@ -13,10 +13,7 @@
   </head>
   <body>
   
-    <form action="/show-new-user-form">
-      <input type="submit" value="Create New User"/>
-      </form>
-      <br>
+    
 
   <!-- <h2>Login Form</h2> -->
   
@@ -32,21 +29,29 @@
       <label for="psw"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="password" required>
           
-      <button type="submit">Login</button>
+      <button type="submit"><a href="/show-user-plants"></a>Login</button>
       <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
     </div>
   
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="/">password?</a></span>
+    <div class="container">
+     
+      <button type="psw"><a href="/">Forgot password?</a></button>
+     </div>
+     
+     <br>
+
+     <div class="container">
+      <button type="submit"><a href="/show-new-user-form">Create New User</a></button>
+      <br>
     </div>
+    
+   
+
   </form>
-  
 
-
-
+      
   </body>
       
 {% endblock %}

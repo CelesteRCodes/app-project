@@ -64,7 +64,6 @@ class GrowLog(db.Model):
     
     comment = db.Column(db.String(200), nullable=True)
     timestamp = db.Column(db.DateTime)
-    photo_url = db.Column(db.String, nullable=True)
     water= db.Column(db.String, nullable=True)
     nutrients = db.Column(db.String, nullable=True)
     temp = db.Column(db.String, nullable=True)

@@ -1,10 +1,5 @@
-# need 2 forms to add a new plant
-# second form to make an update for that specific plant
-# page 1: my plants, has list of user's plants with a form to add a new plant
-# should be able to click on any of the plants and go to that growlog 
-# on that growlog page (page 2), should be a form to add a new entry for this plant
 
-FORMS CREATED, BUTTONS WORK EXCEPT FOR 'add new plant' on new-plant.html 
+NEW FORMS CREATED, BUTTONS WORK EXCEPT FOR 'add new plant' on new-plant.html 
 and 'add new entry' on new-entry.html, geting a 404
 
 
@@ -15,10 +10,12 @@ to homepage
 display info from input-form.html on grow-log.html in tables
 
 
-figure out how to upload a photo, store it in database and display it on the grow-log.html in it's respective table
+figure out how to upload a photo, store it in database and display 
+it on the grow-log.html in it's respective table
 
 
-make sure that the info (commment at min) that user submits is actually stored in the db as a new entry 
+make sure that the info (commment at min) that user submits is actually 
+stored in the db as a new entry 
 
 
 TESTS! (unit and integration tests)
@@ -39,33 +36,36 @@ ability to delete a grow log entry
 
 
 
-5 web pages in total:
+6 web pages in total:
 
 1. homepage with login
-    user and password are hard coded for now; will update in sprint 2
+    -'forgot password' button currently takes user back to homepage; 
+    can add a retrieve password page in sprint 2
+    -
 
-2. user-plants.html shows all the plants for that user
+2. new-user.html register a new user, should add user's 
+    info to db so login can check against it
+    -submit button takes user back to login on homepage 
+
+3. user-plants.html shows all the plants for that user
     -can also click on each plant to add a new entry to that plant's log
     -can also click on "add new plant" button to add a new plant
 
-3. new-plant.html form to add a new plant to user's plants page
+4. new-plant.html form to add a new plant to user's plants page
     -takes in plant name and plant type, adds it to the user-plants.html
     -once added to user-plant.html, a button is added that takes user 
         to new-entry.html to add a new grow log entry
 
-4. new-entry.html form to add a new entry for a specific plant's grow login
+5. new-entry.html form to add a new entry for a specific plant's grow login
     -can only get to this form by clicking on that specific plant; only used 
         to update that specific plants grow log
 
-5. grow-log.html displays all the entries for that specific plant
+6. grow-log.html displays all the entries for that specific plant
+    - has signout button that takes user back to homepage to log back in 
     
 *it goes from user-plant.html, to new-entry.html (or new-plant.html first),
     then finally to grow-log.html for that specific plant
-* can also add a sign out button to homepage.html, user-plants.html and grow-log.html
-    that will log out user and take them back to homepage.html (spring 2)
 
-# want to be able to take in a new username/pw 
-# and ask if user wants to create a new account
 
 # will have one route to show the form
 # another to process the form
@@ -89,17 +89,8 @@ ability to delete a grow log entry
 #     return redirect('/')
 
 
-# do i need to store the user's password/username first
-# to be able to compare to what the user inputs for the login?
 # need to query into database for email given, if object with email, 
 # grab password and compare it to password given
-
-
-# # should just have the log in on the homepage,
-# # after user logs in, it takes them to the input form page
-# # after submitting input (user can skip this step, 
-# # may need a 'skip' button),
-# # the user's grow log with all entries is shown
 
 
 # API_KEY = os.environ['TICKETMASTER_KEY']

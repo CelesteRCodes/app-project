@@ -19,7 +19,8 @@ model.db.create_all()
 plants = ['aloe', 'ginger', 'bamboo', 'spider plant', 'sage', 'lavendar', 
         'tomato', 'orchid', 'avocado tree', 'spinach', 'cucumber', 'celery']
 
-names = ['A', 'b', 'c', 'd']
+names = ['Alan', 'Bernice', 'Charlie', 'Derrica', 'Selene', 
+        'Zuri', 'Shannon', 'Malcolm', 'Jessie', 'Noel', 'Nat', 'Nadine']
 
 comments = ["watered with ph water and no nutrients",
             "added nutrients",
@@ -46,6 +47,13 @@ photo_urls = {"aloe": "/static/aloe.jpg",
               "celery":"/static/celery.jpg",
               "spinach":"/static/spinach.jpg",
               "cucumber":"/static/cucumber.jpg"}
+
+# username = 'soandso'
+# email = 'soandso@gmail.com'
+# password = '12345'
+# so apparently, the user 'soandso' does exist, 
+# was getting an error after running seed.py trying to hard code it in
+# create new user function is working 
 
 
 for n in range(10):

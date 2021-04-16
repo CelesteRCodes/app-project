@@ -29,7 +29,7 @@ def show_login():
         session["id"] = user.id
         return redirect('/show-user-plants')
     else:
-        return redirect('/login') 
+        return redirect('/') 
 
 # login should take user to their plant's page (DONE)
 # that shows all of the user's plants (don't know how 
@@ -107,7 +107,7 @@ def process_new_plant_form():
 
         
         CRUD.create_plant(user.id, plant_name, plant_type)
-        flash('New plant added!')
+        # flash('New plant added!')
 
 
         return redirect('/show-user-plants')
@@ -151,8 +151,6 @@ def process_new_entry_form():
         nutrients = request.form.get('nutrients')
         temp = request.form.get('temp')
         humidity = request.form.get('humidity')
-        
-        
         photo_url = request.form.get('photo_url')
     
     
@@ -161,7 +159,7 @@ def process_new_entry_form():
         else:
             CRUD.create_entry(users_plant_id=users_plant_id, comment=comment, timestamp=timestamp, 
                 water=None, nutrients=None, temp=None, humidity=None, photo_url=None)
-            flash('New entry created! Click submit to see log.')
+            # flash('New entry created! Click submit to see log.')
 
     # do i need an if statement so user doesn't have to input an entry, they can skip
     # or just a skip button in JS
