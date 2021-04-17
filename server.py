@@ -106,7 +106,7 @@ def process_new_plant_form():
         plant_type = request.form.get('plant_type')
 
         
-        CRUD.create_plant(user.id, plant_name, plant_type)
+        CRUD.create_plant(user, plant_name, plant_type)
         # flash('New plant added!')
 
 
@@ -131,11 +131,8 @@ def process_new_entry_form():
 
         # users_id = CRUD.get_user_by_id(id)
 
-        users_plant_id = CRUD.get_user_by_id(id)  
+        users_plant_id = CRUD.get_plant_by_id(id)  
         # this is picking the entire user profile
-
-        # is there a way to pick just the user's id 
-        # and not everything attached to the user's id?
 
 # changing CRUD.py to have 
 # def get_user_id_by_id(id):
@@ -157,8 +154,11 @@ def process_new_entry_form():
         if comment == None:
             flash('No new updates?')
         else:
-            CRUD.create_entry(users_plant_id=users_plant_id, comment=comment, timestamp=timestamp, 
-                water=None, nutrients=None, temp=None, humidity=None, photo_url=None)
+            CRUD.create_entry(users_plant_id=users_plant_id, 
+            comment=comment, timestamp=timestamp, 
+            water=water, nutrients=nutrients, temp=temp, 
+            humidity=humidity, photo_url=None)
+
             # flash('New entry created! Click submit to see log.')
 
     # do i need an if statement so user doesn't have to input an entry, they can skip

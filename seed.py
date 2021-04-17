@@ -48,6 +48,16 @@ photo_urls = {"aloe": "/static/aloe.jpg",
               "spinach":"/static/spinach.jpg",
               "cucumber":"/static/cucumber.jpg"}
 
+temps = ["45", "50-55", "60-65", "70-75", "80-85", "90"]
+
+water_level = ["0.5-1mL", "2-3mL", "4-5mL", "6-9mL", "10-15mL"]
+
+nutes = ["0.5-1mL", "2-3mL", "4-5mL", "6-9mL", "10-15mL"]
+
+humidity_list = ["30-35%", "40-45%", "50-55%", "60-65%", "70-75%", "80-85%"]
+
+timestamps = ["13:33", "16:16", "12:22", "14:44", "11:11", "15:55"]
+
 # username = 'soandso'
 # email = 'soandso@gmail.com'
 # password = '12345'
@@ -76,12 +86,12 @@ for n in range(10):
     # photo_url = photo_urls[plant_choice]
     # can key into photo_url using plant_choice 
 
-    new_entry = CRUD.create_entry(plant.id, "leaves are green", datetime.now(), water=None, nutrients=None, temp=None, 
-    humidity=None, photo_url=None)
+    new_entry = CRUD.create_entry(users_plant_id=users_plant_id, 
+        comment=comments, timestamp=timestamps, water=water_level, 
+        nutrients=nutes, temp=temps, humidity=humidity_list, photo_url=photo_urls)
     
     # db.session.commit()
     # creates the new entry for grow log
-
 
 
 

@@ -1,0 +1,29 @@
+html {
+    height: 100%;
+  }
+  
+
+
+  /* body {
+    height: 100%;
+    margin: 0;
+    background-color:grey;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  
+  } */
+
+  form {
+    background-image: url("/static/img/seedling.jpg");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+    background-color: #cccccc;
+   }
+
+  /* #entry-form {
+    background-color:green;
+     opacity: 0; */

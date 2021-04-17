@@ -44,8 +44,8 @@ def get_user_by_username(username):
 # <User 11>
 
 def get_user_by_id(id):
-   
-    return User.query.filter_by(id = id).first()
+    user_id = User.query.filter_by(id = id).first()
+    return user_id
 
 # test
 
@@ -70,7 +70,10 @@ def get_all_plants():
     return UserPlant.query.all()
 
 def get_plant_by_id(id):
-    return UserPlant.query.filter_by(id = id).first()
+    users_plant_id = UserPlant.query.filter_by(id = id).first()
+    return users_plant_id
+ 
+# does this get users_plant_id? or just plant_id?
 
 # test
 
@@ -78,10 +81,15 @@ def get_plant_by_id(id):
 
 # <UserPlant 3>
 
-def create_entry(users_plant_id, comment, timestamp, water=None, nutrients=None, temp=None, 
+def create_entry(users_plant_id, comment, timestamp, 
+    water=None, nutrients=None, temp=None, 
     humidity=None, photo_url=None):
-    new_entry = GrowLog(users_plant_id=users_plant_id, comment=comment, timestamp=timestamp, water=water, nutrients=nutrients, temp=temp, 
-        humidity=humidity, photo_url=None)
+
+    new_entry = GrowLog(users_plant_id=users_plant_id, 
+        comment=comment, timestamp=timestamp, water=None, 
+        nutrients=None, temp=None, 
+        humidity=None, photo_url=None)
+
     db.session.add(new_entry)
     db.session.commit()
     return new_entry
