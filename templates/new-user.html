@@ -11,13 +11,13 @@
   <link href= "/static/new-user.css" rel="stylesheet" type="text/css">
 
   <link rel="stylesheet" href="/static/new-user.css">
-
-  <h3>
-      <a>Sign up to start tracking your plant's growth here!</a>
-    </h3>
+  <center>
+  <h2>
+      <a>Hi, New User! </a>
+    </h2>
     
-    <h4>See where you’ve been and see how you grow!</h4>
-    
+    <!-- <h4>See where you’ve been and see how you grow!</h4> -->
+  </center>
     
 </head>
 <body>
@@ -25,13 +25,13 @@
     
 
 
-    <center><h3>Hi, New User! </h3></center>
+    <center><h3>Sign up to start tracking your plant's growth here!</h3></center>
    
   <form action="/login" method='POST' id="new-user-form">
    <center><div class="form-group">
       <br>
       <label><strong>Email</strong> <br>
-        soandso@gmail.com
+        
         <input class="form-control" type="text" name="email" id="entry-field" placeholder="Email">
         
       </label><br>
@@ -48,14 +48,14 @@
       </label><br>
 
       
-        <input type="submit" value="Add New User"/>
+     <center><button type="submit"><a href="/process-new-user-form"></a>Add New User</button>
+      <label><br><br>
         
-        <br>
+        </center>
+      </form>
 
-
+      <button type="submit"><a href="/"></a>Cancel</button>
       
-        <input type="submit" value="Cancel"/>
-        </form>
         <br>
 
       

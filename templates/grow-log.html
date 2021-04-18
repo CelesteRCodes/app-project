@@ -16,24 +16,24 @@
 </head>
 <body>
 
-  <h2>Grower's Log</h2>
+  <center><h1>Grower's Log</h1></center>
   
 
 
 <!-- one table per entry 
 how to populate multiple to show multiple grow-logs at once?-->
 
-  <div id="growlog-entry">
+  <center><div id="growlog-entry">
 <table style="width:100%">
 <tr>
-  <th>user_plant_id</th>
-  <th>comment</th>
-  <th>timestamp</th>
-  <th>water</th>
-  <th>nutrients</th>
-  <th>temp</th>
-  <th>humidity</th>         
-  <th> photo_url </th>
+  <th>User_Plant_Id</th>
+  <th>Comment</th>
+  <th>Timestamp</th>
+  <th>Water</th>
+  <th>Nutrients</th>
+  <th>Temp</th>
+  <th>Humidity</th>         
+  <th>Photo</th>
 </tr>
 
 <!-- can i change the order of data in tables without having to change other files? -->
@@ -43,14 +43,14 @@ how to populate multiple to show multiple grow-logs at once?-->
 <tr>
   <td>1</td>
   <td>"Leaves are green"</td>
-  <td>date and time</td>
+  <td>4/14 13:33</td>
   <td>1-3 mL</td>
   <td>5-10 mL</td>
   <td>70-75</td>
   <td>30%</td>
-  <td>photo_url</td>
+  <td>/static/img/aloe.jpg</td>
 </tr>
-</table>
+</table></center>
 
   </div>
 
@@ -61,16 +61,19 @@ tr is for the table row  -->
 <!-- user grow log data stored in db as tables,
 can just display the data in tables on this page  -->
 
-<form action="/show-user-plants">
-  <input type="submit" value="Show My All Plants"/>
-  </form>
-
-<form action="/">
-  <input type="submit" value="Logout"/>
-  </form>
 
 
-  <br>
+
+  <center> <div class="container">
+     
+    <a href="/show-user-plants"><button type="submit">Show My Plants</button></a>
+  </div></center>
+
+  <center><div class="container">
+     
+    <a href="/"><button type="submit">Logout</button></a>
+  </div></center>
+
 </body>
 
       

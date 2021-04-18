@@ -20,20 +20,22 @@ stored in the db as a new entry
 
 TESTS! (unit and integration tests)
 unit tests can be docstrings
+- added tests to CRUD.py
+
+styling of pages (currently working on now)
 
 
-styling of pages
+create a new user, store new user information (created one new user 'soandso'; 
+not sure if it's still working, tried with new data and user was not created)
 
 
-create a new user, store new user information
-
-
-log out button/function
+log out button/function (DONE)
 
 
 ability to delete a grow log entry
 
 
+make a README for project
 
 
 6 web pages in total:

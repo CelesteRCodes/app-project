@@ -11,21 +11,14 @@
   <link href= "/static/new-plant.css" rel="stylesheet" type="text/css">
 
   <link rel="stylesheet" href="/static/new-plant.css">
-
-  <h3>
-      <a>Track Your Progress with Dated Logs to Watch Your Growth</a>
-    </h3>
-    
-    <h4>See where you’ve been and see how you grow!</h4>
-    <h4>Start tracking your plant's growth here!</h4> 
-    
+  
 </head>
 <body>
 
   
   <div>
-
-    <center><h3>Start New Log</h3></center>
+<br>
+    <center><h2>Add New Plant Baby Below</h2></center>
    
   <form action="/process-new-plant-form" method='POST' id="entry-form">
    <center><div class="form-group">
@@ -40,20 +33,18 @@
         
       </label><br>
 
-      <form action="/show-new-plant-form">
-        <input type="submit" value="Add New Plant"/>
-        </form>
-        <br>
 
+      <button type="submit">Add New Plant</button><br>
+       </form> </center>
 
-      <form action="/show-user-plants">
-        <input type="submit" value="Cancel"/>
-        </form>
-        <br>
+    <center>
+    <div class="container">
+     
+      <a href="/show-user-plants"><button type="cancel">Cancel</button></a>
+    </div></center>
 
-      
+    
 
-  <!-- both buttons should take user to grow-log.html -->
   
   <!-- when clicking add new plant, I get a 404, instead of button taking 
   user back to user-plants.html with a new plant added -->

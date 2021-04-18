@@ -1,171 +1,31 @@
-html {
-    height: 100%;
+.header {
+  padding: 20px;
+  text-align: center;
+  /* background: #1abc9c; */
+  color: white;
+  
   }
   
-
-
-  body {
-    height: 100%;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url("loginback.jpg");
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    
-  }
-  /* grid display to center it's contents align-items (vertically) 
-  and justify-items (horizontally) */
-
-  form {
-    border: 3px solid #f1f1f1;
-  
-
-  }
-  
-  input[type=text], input[type=password] {
-    width: 80%;
-    padding: 14px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-  }
-  
-  button, input[type=submit] {
+  button {
     background-color: #28532a;
     color: white;
     padding: 14px 20px;
     margin: auto;
-
+  
     border: none;
     cursor: pointer;
-    width: 100%;
+    width: 30%;
   }
   
   button:hover {
     opacity: 0.8;
   }
   
-  .cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #f44336;
-  }
-  
-  .imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
-  }
-  
-  img.avatar {
-    width: 30%;
-    height: 30%;
-    border-radius: 40%;
-  }
-  
-  .container {
-    padding: 16px;
-    
-  }
-  
-  /* password container */
-  span.psw {
-    float: right;
-    padding-top: 16px;
-  }
-  
-  /* change styles for span and cancel button on extra small screens */
-
-  @media screen and (max-width: 300px) {
-    span.psw {
-       display: block;
-       float: none;
-    }
-    .cancelbtn {
-       width: 100%;
-    }
-  }
-
-
-  /* #main-holder is the id selector for <main> */
-  #main-holder {
-    width: 50%;
-    height: 70%;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    background-color: white;
-    border-radius: 7px;
-    box-shadow: 0px 0px 5px 2px black;
-  }
-  
-  #login-error-msg-holder {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-  }
-  
-  #login-error-msg {
-    width: 23%;
-    text-align: center;
-    margin: 0;
-    padding: 5px;
-    font-size: 12px;
-    font-weight: bold;
-    color: #8a0000;
-    border: 1px solid #8a0000;
-    background-color: #e58f8f;
-    opacity: 0;
-  }
-  
-  #error-msg-second-line {
-    display: block;
-  }
-  
-  #login-form {
-    align-self: flex-start;  /*  vertically aligns to the top of its row */
-    display: grid;
-    justify-items: center;
-    align-items: center;
+  table, th, td {
+    border: 1px solid white;
   }
   
 
-  /* class selector for login <form> 
-  only want to change placeholders of elements that have this class */
-  .login-form-field::placeholder {
-    color: #3a3a3a;
-  }
   
-  .login-form-field {
-    border: none;
-    border-bottom: 1px solid #3a3a3a;
-    margin-bottom: 10px;
-    border-radius: 3px;
-    outline: none;
-    padding: 0px 0px 5px 5px;
-  }
   
-  #login-form-submit {
-    width: 100%;
-    padding: 7px;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-weight: bold;
-    background-color: #3a3a3a;
-    cursor: pointer;
-    outline: none;
-  }
-
-  .center {
-    margin: auto;
-    width: 50%;
-    border: 3px solid black;
-    padding: 10px;
-  }
-
-
   
