@@ -1,4 +1,7 @@
 from flask import Flask, render_template, request, redirect, session
+from datetime import datetime
+
+from jinja2 import StrictUndefined
 
 import flash
 
@@ -8,7 +11,7 @@ import os
 
 app = Flask(__name__)
 app.secret_key = 'SECRETSECRETSECRET'
-
+app.jinja_env.undefined = StrictUndefined
 
 @app.route('/')
 def homepage():
@@ -31,15 +34,26 @@ def show_login():
     else:
         return redirect('/') 
 
-# login should take user to their plant's page (DONE)
-# that shows all of the user's plants (don't know how 
-# to display inputted plants from user, maybe a dictionary?)
+@app.route('/show-forgotpw', methods=['GET', 'POST'])
+def show_forgotpw():
+    """ Show form to retrieve user's info."""
 
-# each plant should be clickable, (could have a button under 
-# plant or make the actual plant name a link for user)
+    return render_template("/forgotpw.html")
 
-# take user to the input new entry form for that 
-# specific plant
+
+@app.route('/process-forgotpw', methods=['GET', 'POST'])
+def process_forgotpw():
+    """ Process new user form."""
+    
+    # if "email" in session:
+    #     email = session["email"]
+    #     user_email = CRUD.get_user_by_email(email)
+    #     if user_email == None:
+    #         return redirect("/")
+    
+    return redirect("/")
+
+
 
 @app.route('/show-new-user-form', methods=['GET', 'POST'])
 def show_new_user_form():
@@ -54,19 +68,14 @@ def process_new_user_form():
     if "email" in session:
         email = session["email"]
 
-        # user_id = CRUD.get_user_id_by_id(id)
-
         username = request.form.get('username')
         email = request.form.get('email')
         password = request.form.get('password')
 
         
         CRUD.create_user(username, email, password)
-        flash("You Are In!")
     
-
     return redirect("/login")
-
 
 
 @app.route('/show-user-plants', methods=['GET', 'POST'])
@@ -90,29 +99,15 @@ def process_new_plant_form():
     if "id" in session:
         id = session["id"]
 
-        # user_id = CRUD.get_user_id_by_id(id)
-
         user = CRUD.get_user_by_id(id)  
-        # this is picking the entire user profile
-
-# changing CRUD.py to have 
-# def get_user_id_by_id(id):
-#   return User.query.filter_by(id=id).one()
-#  can change user_id = CRUD.get_id_by_id
-        # is there a way to pick just the user's id 
-        # and not everything attached to the user's id?
-
+        
         plant_name = request.form.get('plant_name')
         plant_type = request.form.get('plant_type')
-
-        
-        CRUD.create_plant(user, plant_name, plant_type)
-        # flash('New plant added!')
-
+ 
+        CRUD.create_plant(user.id, plant_name, plant_type)
 
         return redirect('/show-user-plants')
     
-
 
 @app.route('/show-new-entry-form', methods=['GET', 'POST'])
 def show_new_entry_form():
@@ -129,21 +124,12 @@ def process_new_entry_form():
     if "id" in session:
         id = session["id"]
 
-        # users_id = CRUD.get_user_by_id(id)
-
-        users_plant_id = CRUD.get_plant_by_id(id)  
-        # this is picking the entire user profile
-
-# changing CRUD.py to have 
-# def get_user_id_by_id(id):
-#   return User.query.filter_by(id=id).one()
-#  can change user_id = CRUD.get_id_by_id
-        # is there a way to pick just the user's id 
-        # and not everything attached to the user's id?
-
+        users_plant_id = CRUD.get_user_plant_by_id(id)  
+        
 
         comment = request.form.get('comment')
         timestamp = request.form.get('timestamp')
+        # timestamp = datetime.now()
         water = request.form.get('water')
         nutrients = request.form.get('nutrients')
         temp = request.form.get('temp')
@@ -154,34 +140,34 @@ def process_new_entry_form():
         if comment == None:
             flash('No new updates?')
         else:
-            CRUD.create_entry(users_plant_id=users_plant_id, 
-            comment=comment, timestamp=timestamp, 
+            CRUD.create_entry(users_plant_id=users_plant_id.user_id, 
+            comment=comment, timestamp=datetime.now(), 
             water=water, nutrients=nutrients, temp=temp, 
             humidity=humidity, photo_url=None)
-
-            # flash('New entry created! Click submit to see log.')
-
-    # do i need an if statement so user doesn't have to input an entry, they can skip
-    # or just a skip button in JS
 
         return redirect('/grow-log')
     else: 
         return redirect('/homepage')
 
-## on 4/15: currently getting a TypeError: 'module' 
-# object is not callable
  
 @app.route('/grow-log', methods=['GET', 'POST'])
 def display_growlog():
     """Show user's grow log."""
 
-    
+    # users_plant_id = CRUD.get_user_plant_by_id(id)
 
-    return render_template("/grow-log.html")
+    entries = CRUD.get_all_entries()
 
+    # return render_template("/grow-log.html", users_plant_id=users_plant_id.user_id, 
+    # comment=comment, timestamp=datetime.now(), water=None, nutrients=None, 
+    # temp=None, humidity=None, photo_url=None)
+
+    return render_template("/grow-log.html", entries=entries)
 
 # have to query the db for all the user's growlogs 
+# pass info in return render_template for growlog
 # and then use jinja to display them on grow-log?
+
 
 if __name__ == '__main__':
     app.debug = True

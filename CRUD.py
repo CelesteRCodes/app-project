@@ -45,6 +45,7 @@ def get_user_by_username(username):
 
 def get_user_by_id(id):
     user_id = User.query.filter_by(id = id).first()
+    print(user_id)
     return user_id
 
 # test
@@ -69,9 +70,11 @@ def create_plant(user_id, plant_name, plant_type):
 def get_all_plants():
     return UserPlant.query.all()
 
-def get_plant_by_id(id):
+def get_user_plant_by_id(id):
     users_plant_id = UserPlant.query.filter_by(id = id).first()
-    return users_plant_id
+    print(users_plant_id)
+    return users_plant_id 
+    # user-plant object returned, not id
  
 # does this get users_plant_id? or just plant_id?
 

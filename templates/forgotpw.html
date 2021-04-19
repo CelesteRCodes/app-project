@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+<head>
+  
+
+
+  <link href= "/static/forgotpw.css" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="/static/forgotpw.css">
+  
+</head>
+<body>
+
+  
+  <div>
+<br>
+    <center><h2>Brain Fart? No problem!</h2></center>
+
+   <center><h4>If we find an account associated with information 
+       provided below, <br> we will email you (within 24 hours) with details <br> 
+       to create a new password to access your account.</h4> </center>
+
+  <form action="/process-forgotpw" method='POST' id="entry-form">
+   <center><div class="form-group">
+      <br>
+      <label><strong>Email:</strong> <br>
+        <input class="form-control" type="text" name="reovery-email" id="email-entry-field" placeholder="Email">
+        
+      </label><br>
+
+      <label><strong>Username:</strong> <br>
+        <input class="form-control" type="text" name="recovery-username" id="entry-field" placeholder="Username">
+        
+      </label><br>
+
+
+      <button type="submit">Find My Info, Please!</button><br>
+       </form> </center>
+
+    <center>
+    <div class="container">
+     
+      <a href="/"><button type="cancel">Cancel</button></a>
+    </div></center>
+
+    
+
+  
+  <!-- when clicking add new plant, I get a 404, instead of button taking 
+  user back to user-plants.html with a new plant added -->
+ 
+</body>
+
+{% endblock %}

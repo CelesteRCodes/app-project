@@ -1,10 +1,10 @@
+create a new user, store new user information (created one new user 'soandso'; 
+not sure if it's still working, tried with new data and user was not created)
+(NOT GETTING ANY ERRORS, BUT NEW USERS ARE NOT BEING CREATED/STORED IN DB)
 
-NEW FORMS CREATED, BUTTONS WORK EXCEPT FOR 'add new plant' on new-plant.html 
-and 'add new entry' on new-entry.html, geting a 404
-
-
-the upload photo submit button also takes user back 
-to homepage 
+user-plants.html should show all the user's plants and have buttons to 
+update each specific plant;
+it should store all the plants added from new-plant.html 
 
 
 display info from input-form.html on grow-log.html in tables
@@ -25,11 +25,6 @@ unit tests can be docstrings
 styling of pages (currently working on now)
 
 
-create a new user, store new user information (created one new user 'soandso'; 
-not sure if it's still working, tried with new data and user was not created)
-
-
-log out button/function (DONE)
 
 
 ability to delete a grow log entry
@@ -37,6 +32,14 @@ ability to delete a grow log entry
 
 make a README for project
 
+NEW FORMS CREATED, BUTTONS WORK EXCEPT FOR 'add new plant' on new-plant.html 
+and 'add new entry' on new-entry.html, geting a 404 (CLOSED, BUTTONS WORK - 4/19)
+
+
+the upload photo submit button also takes user back 
+to homepage (CLOSED, TAKES USER TO GROWLOG.HTML - 4/19)
+
+log out button/function (DONE)
 
 6 web pages in total:
 
@@ -44,6 +47,8 @@ make a README for project
     -'forgot password' button currently takes user back to homepage; 
     can add a retrieve password page in sprint 2
     -
+# need to query into database for email given, if object with email, 
+# grab password and compare it to password given
 
 2. new-user.html register a new user, should add user's 
     info to db so login can check against it
@@ -69,30 +74,6 @@ make a README for project
     then finally to grow-log.html for that specific plant
 
 
-# will have one route to show the form
-# another to process the form
-
-# @app.route('/login', methods=['POST'])
-# def register_user():
-#     """Create a new user."""
-
-#     username = request.form.get('username')
-#     email = request.form.get('email')
-#     password = request.form.get('password')
-
-#     user = CRUD.get_user_by_email(email)
-    
-#     if user:
-#         flash('Cannot create an account with that email. Try again.')
-#     else:
-#         CRUD.create_user(username, email, password)
-#         flash('Account created! Please log in.')
-
-#     return redirect('/')
-
-
-# need to query into database for email given, if object with email, 
-# grab password and compare it to password given
 
 
 # API_KEY = os.environ['TICKETMASTER_KEY']
@@ -100,3 +81,14 @@ make a README for project
 # # not sure I need an API for this part; 
 # # using one to gather info from Trefle for references
 # # for sprint 2 
+
+
+# for user's plants page:
+# that shows all of the user's plants (don't know how 
+# to display inputted plants from user, maybe a dictionary?)
+
+# each plant should be clickable, (could have a button under 
+# plant or make the actual plant name a link for user)
+
+# take user to the input new entry form for that 
+# specific plant
