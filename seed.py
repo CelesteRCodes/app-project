@@ -58,12 +58,7 @@ humidity_list = ["30-35%", "40-45%", "50-55%", "60-65%", "70-75%", "80-85%"]
 
 timestamps = ["13:33", "16:16", "12:22", "14:44", "11:11", "15:55"]
 
-# username = 'soandso'
-# email = 'soandso@gmail.com'
-# password = '12345'
-# so apparently, the user 'soandso' does exist, 
-# was getting an error after running seed.py trying to hard code it in
-# create new user function is working 
+
 
 
 for n in range(10):
@@ -90,6 +85,9 @@ for n in range(10):
         comment=comments, timestamp=timestamps, water=water_level, 
         nutrients=nutes, temp=temps, humidity=humidity_list, photo_url=photo_urls)
     
+# datetime.strptime([growlog'timestamp'], '%Y-%m-%d')
+# is this correct to get a timestamp of current time from user's input?
+
     # db.session.commit()
     # creates the new entry for grow log
 

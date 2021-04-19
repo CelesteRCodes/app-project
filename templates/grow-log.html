@@ -56,9 +56,10 @@ use templating {{ }}, to show each piece of info  -->
 <!-- can i change the order of data in tables without having to change other files? -->
 
 <!-- need to format date/time, timestamp on input-form -->
+{% for entries in get_all_entries() %} 
 
 <tr>
-  <td>{{growlog.User_Plant_Id}}</td>
+  <td>{{growlog.users_plant_id}}</td>
   <td>{{growlog.comment}}</td>
   <td>{{growlog.timestamp}}</td>
   <td>{{growlog.water}}</td>
@@ -66,7 +67,10 @@ use templating {{ }}, to show each piece of info  -->
   <td>{{growlog.temp}}</td>
   <td>{{growlog.humidity}}</td>
   <td>{{growlog.photo_url}}</td>
-</tr>
+</tr> 
+
+{% endfor %}
+
 </table></center>
 
   </div>

@@ -162,7 +162,7 @@ def display_growlog():
     # comment=comment, timestamp=datetime.now(), water=None, nutrients=None, 
     # temp=None, humidity=None, photo_url=None)
 
-    return render_template("/grow-log.html", entries=entries)
+    return render_template("grow-log.html", entries=entries)
 
 # have to query the db for all the user's growlogs 
 # pass info in return render_template for growlog
