@@ -82,7 +82,9 @@ def process_new_user_form():
 def show_user_plants():
     """ Show user's plants."""
 
-    return render_template("/user-plants.html")
+    all_plants = CRUD.get_all_plants()
+
+    return render_template("/user-plants.html", all_plants=all_plants)
 
 @app.route('/show-new-plant-form', methods=['GET', 'POST'])
 def show_new_plant_form():

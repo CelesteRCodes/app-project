@@ -10,12 +10,33 @@
   
     <link rel="stylesheet" href="/static/user-plants.css">
   
-    
-      
   </head>
   <body>
     <div>
       <h2>Come To Check On Your Babies?</h2>
+
+     <center><div id="all-plants">
+        <table style="width:100%">
+        <tr>
+         
+          <th>Plant Name</th>
+          <th>Plant Type</th>
+        </tr>
+        
+        {% for plants in all_plants %} 
+        
+        <tr>
+          
+          <td>{{ plants.plant_name }}</td>
+          <td>{{ plants.plant_type }}</td>
+        </tr> 
+        
+        {% endfor %}
+        
+        </table></center>
+        
+          <!-- </div>
+
       <form action="/show-new-plant-form">
         <input type="submit" value="Add New Plant"/>
         </form>
@@ -30,19 +51,12 @@
             that we can manipulate or turn into links?)
           each plant should have the option to 'Add New Log Entry' -->
 
-
         <form action="/grow-log">
           <input type="submit" value="Just Show Log"/>
           </form>
           <br>
-       
     
-    <!-- just show log button should actually be the specific plant name for that specific log -->
-    <!-- both buttons should take user to grow-log.html -->
-    
-   
   </body>
-
 
 {% endblock %}
 

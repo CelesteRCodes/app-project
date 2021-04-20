@@ -7,30 +7,23 @@ update each specific plant;
 it should store all the plants added from new-plant.html 
 
 
-display info from input-form.html on grow-log.html in tables
-
-
 figure out how to upload a photo, store it in database and display 
 it on the grow-log.html in it's respective table
-
-
-make sure that the info (commment at min) that user submits is actually 
-stored in the db as a new entry 
 
 
 TESTS! (unit and integration tests)
 unit tests can be docstrings
 - added tests to CRUD.py
 
+
 styling of pages (currently working on now)
-
-
 
 
 ability to delete a grow log entry
 
 
 make a README for project
+
 
 NEW FORMS CREATED, BUTTONS WORK EXCEPT FOR 'add new plant' on new-plant.html 
 and 'add new entry' on new-entry.html, geting a 404 (CLOSED, BUTTONS WORK - 4/19)
@@ -39,7 +32,18 @@ and 'add new entry' on new-entry.html, geting a 404 (CLOSED, BUTTONS WORK - 4/19
 the upload photo submit button also takes user back 
 to homepage (CLOSED, TAKES USER TO GROWLOG.HTML - 4/19)
 
+
 log out button/function (DONE)
+
+
+make sure that the info (commment at min) that user submits is actually 
+stored in the db as a new entry 
+(DONE)
+
+
+display info from input-form.html on grow-log.html in tables
+(DONE)
+
 
 6 web pages in total:
 
@@ -92,3 +96,26 @@ log out button/function (DONE)
 
 # take user to the input new entry form for that 
 # specific plant
+
+
+<!-- <center><div id="all-plants">
+        <table style="width:100%">
+        <tr>
+         
+          <th>Plant Name</th>
+          <th>Plant Type</th>
+        </tr>
+        
+        {% for plants in all_plants %} 
+        
+        <tr>
+          
+          <td>{{ all_plants.plant_name }}</td>
+          <td>{{ all_plants.plant_type }}</td>
+        </tr> 
+        
+        {% endfor %}
+        
+        </table></center> -->
+        
+          <!-- </div> -->

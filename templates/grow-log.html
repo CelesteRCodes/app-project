@@ -37,36 +37,18 @@ how to populate multiple to show multiple grow-logs at once?-->
 </tr>
 
 
-<!-- <h1>All Users</h1>
 
-  <ul>
-    {% for user in users %}
-      <li>
-        <a href="/users/{{ user.user_id }}">
-          {{ user.email }}
-        </a>
-      </li>
-    {% endfor %}
-  </ul> -->
-
-
-<!-- on growlog, jinja for loop, 
-use templating {{ }}, to show each piece of info  -->
-
-<!-- can i change the order of data in tables without having to change other files? -->
-
-<!-- need to format date/time, timestamp on input-form -->
-{% for entries in get_all_entries() %} 
+{% for entry in entries %} 
 
 <tr>
-  <td>{{growlog.users_plant_id}}</td>
-  <td>{{growlog.comment}}</td>
-  <td>{{growlog.timestamp}}</td>
-  <td>{{growlog.water}}</td>
-  <td>{{growlog.nutrients}}</td>
-  <td>{{growlog.temp}}</td>
-  <td>{{growlog.humidity}}</td>
-  <td>{{growlog.photo_url}}</td>
+  <td>{{ entry.users_plant_id }}</td>
+  <td>{{ entry.comment }}</td>
+  <td>{{ entry.timestamp }}</td>
+  <td>{{ entry.water }}</td>
+  <td>{{ entry.nutrients }}</td>
+  <td>{{ entry.temp }}</td>
+  <td>{{ entry.humidity }}</td>
+  <td>{{ entry.photo_url }}</td>
 </tr> 
 
 {% endfor %}
