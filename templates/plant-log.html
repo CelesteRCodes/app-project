@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+<head>
+  <meta charset="UTF-8">
+  <title>Grow Better</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href= "/static/grow-log.css" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="/static/grow-log.css">
+
+</head>
+<body>
+
+  <center><h1>Plant Log</h1></center>
+  
+
+
+<!-- one table per entry 
+how to populate multiple to show multiple grow-logs at once?-->
+
+  <center><div id="growlog-entry">
+<table style="width:100%">
+<tr>
+  <th>User_Plant_Id</th>
+  <th>Comment</th>
+  <th>Timestamp</th>
+  <th>Water</th>
+  <th>Nutrients</th>
+  <th>Temp</th>
+  <th>Humidity</th>         
+  <th>Photo</th>
+</tr>
+
+
+
+{% for entry in entries %} 
+
+<tr>
+  <td>{{ entry.users_plant_id }}</td>
+  <td>{{ entry.comment }}</td>
+  <td>{{ entry.timestamp }}</td>
+  <td>{{ entry.water }}</td>
+  <td>{{ entry.nutrients }}</td>
+  <td>{{ entry.temp }}</td>
+  <td>{{ entry.humidity }}</td>
+  <td>{{ entry.photo_url }}</td>
+</tr> 
+
+{% endfor %}
+
+</table></center>
+
+  </div>
+
+<!-- th is for header of table/column name
+td is for the data 
+tr is for the table row  -->
+
+<!-- user grow log data stored in db as tables,
+can just display the data in tables on this page  -->
+
+
+
+
+  <center> <div class="container">
+     
+    <a href="/show-user-plants"><button type="submit">Show My Plants</button></a>
+  </div></center>
+
+  <center><div class="container">
+     
+    <a href="/"><button type="submit">Logout</button></a>
+  </div></center>
+
+</body>
+
+      
+{% endblock %}
+
+

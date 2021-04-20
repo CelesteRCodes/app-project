@@ -13,7 +13,7 @@
   </head>
   <body>
     <div>
-      <h2>Come To Check On Your Babies?</h2>
+      <h1>Come To Check On Your Babies?</h1><br>
 
      <center><div id="all-plants">
         <table style="width:100%">
@@ -27,32 +27,37 @@
         
         <tr>
           
-          <td>{{ plants.plant_name }}</td>
-          <td>{{ plants.plant_type }}</td>
+          <td><strong>{{ plants.plant_name }}</strong><br><br>
+            <a href="/show-new-entry-form/{{ plants.id }}">Update Plant's Log</a>
+            <br><br>
+            <a href="/plant-log/{{ plants.id }}">Show Plant's Log</a>
+            <br><br>
+          </td> 
+
+          <td>
+            <strong>{{ plants.plant_type }}</strong>
+          </td>
         </tr> 
         
         {% endfor %}
         
         </table></center>
-        
-          <!-- </div>
+        <br> 
+        <br>
+    </div>
 
       <form action="/show-new-plant-form">
         <input type="submit" value="Add New Plant"/>
         </form>
         <br>
 
-        <form action="/show-new-entry-form">
-          <input type="submit" value="Add New Log Entry"/>
-          </form>
-          <br>
-
+        
           <!-- this should actually be a list of plants (maybe as objects 
             that we can manipulate or turn into links?)
           each plant should have the option to 'Add New Log Entry' -->
 
         <form action="/grow-log">
-          <input type="submit" value="Just Show Log"/>
+          <input type="submit" value="Show Master Log"/>
           </form>
           <br>
     

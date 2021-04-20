@@ -80,18 +80,22 @@ def get_user_plant_by_id(id):
 
 # test
 
-# >>> get_plant_by_id(3)
+# >>> get_user_plant_by_id(3)
 
 # <UserPlant 3>
+
+# def get_plant_by_id(id):
+#    plant_id = UserPlant.query.filter_by(id=id).one()
+#    return plant_id
 
 def create_entry(users_plant_id, comment, timestamp, 
     water=None, nutrients=None, temp=None, 
     humidity=None, photo_url=None):
 
     new_entry = GrowLog(users_plant_id=users_plant_id, 
-        comment=comment, timestamp=timestamp, water=None, 
-        nutrients=None, temp=None, 
-        humidity=None, photo_url=None)
+        comment=comment, timestamp=timestamp, water=water, 
+        nutrients=nutrients, temp=temp, 
+        humidity=humidity, photo_url=photo_url)
 
     db.session.add(new_entry)
     db.session.commit()

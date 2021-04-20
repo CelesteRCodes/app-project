@@ -58,8 +58,7 @@ humidity_list = ["30-35%", "40-45%", "50-55%", "60-65%", "70-75%", "80-85%"]
 
 timestamps = ["13:33", "16:16", "12:22", "14:44", "11:11", "15:55"]
 
-
-
+users_plant_ids = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 
 for n in range(10):
     email = f'user{n}@test.com'  
@@ -78,7 +77,9 @@ for n in range(10):
     plant = CRUD.create_plant(user.id, plant_name, plant_type)
     # creates the plant for user
 
-    # photo_url = photo_urls[plant_choice]
+    users_plant_id = choice(users_plant_ids)
+    photo_url = choice(photo_urls)
+    
     # can key into photo_url using plant_choice 
 
     new_entry = CRUD.create_entry(users_plant_id=users_plant_id, 

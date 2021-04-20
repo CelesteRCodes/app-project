@@ -54,29 +54,29 @@ def process_forgotpw():
     return redirect("/")
 
 
-
 @app.route('/show-new-user-form', methods=['GET', 'POST'])
 def show_new_user_form():
     """ Show form to create a new user."""
 
     return render_template("/new-user.html")
 
+
 @app.route('/process-new-user-form', methods=['GET', 'POST'])
 def process_new_user_form():
     """ Process new user form."""
 
-    if "email" in session:
-        email = session["email"]
+    if "username" in session:
+        username = session["username"]
 
         username = request.form.get('username')
         email = request.form.get('email')
         password = request.form.get('password')
 
-        
         CRUD.create_user(username, email, password)
     
     return redirect("/login")
 
+# new users are not being created, stored in db; no errors are thrown
 
 @app.route('/show-user-plants', methods=['GET', 'POST'])
 def show_user_plants():
@@ -85,6 +85,16 @@ def show_user_plants():
     all_plants = CRUD.get_all_plants()
 
     return render_template("/user-plants.html", all_plants=all_plants)
+
+@app.route('/show-new-entry-form/<int:id>')
+def show_specific_plant_entry_form(id):
+    """Show the post with the given id, the id is an integer."""
+
+    return render_template("/new-entry.html")
+
+# need to store id in a session to ensure that the entry 
+# is being stored with that id
+# when rendering template, show plant's name on top
 
 @app.route('/show-new-plant-form', methods=['GET', 'POST'])
 def show_new_plant_form():
@@ -111,14 +121,6 @@ def process_new_plant_form():
         return redirect('/show-user-plants')
     
 
-@app.route('/show-new-entry-form', methods=['GET', 'POST'])
-def show_new_entry_form():
-    """ Show form for a new entry/update log of a plant."""
-
-    return render_template("/new-entry.html")
-   
-
-
 @app.route('/process-new-entry-form', methods=['GET', 'POST'])
 def process_new_entry_form():
    
@@ -127,7 +129,8 @@ def process_new_entry_form():
         id = session["id"]
 
         users_plant_id = CRUD.get_user_plant_by_id(id)  
-        
+        # plant_id = CRUD.get_plant_id(id)  
+        # should i change this to plant_id?
 
         comment = request.form.get('comment')
         timestamp = request.form.get('timestamp')
@@ -147,37 +150,41 @@ def process_new_entry_form():
             water=water, nutrients=nutrients, temp=temp, 
             humidity=humidity, photo_url=None)
 
-        return redirect('/grow-log')
+        return redirect('/plant-log')
     else: 
-        return redirect('/homepage')
+        return redirect('/show-user-plants')
 
  
+# @app.route('/plant-log/<int:id>')
+# def display_plantlog(id):
+#     """Show the post with the given id, the id is an integer."""
+
+#     entries = CRUD.get_entry_by_id(id)
+
+#     return render_template("plant-log.html", entries=entries)
+
+# not showing page for plant log with id, throwing a 404 
+# will show plant log without id, all the entries 
+
+@app.route('/plant-log', methods=['GET', 'POST'])
+def display_plantlog():
+    """Show user's plant log."""
+
+    entries = CRUD.get_all_entries()
+
+    return render_template("plant-log.html", entries=entries)
+
+
 @app.route('/grow-log', methods=['GET', 'POST'])
 def display_growlog():
     """Show user's grow log."""
 
-    # users_plant_id = CRUD.get_user_plant_by_id(id)
-
     entries = CRUD.get_all_entries()
 
-    # return render_template("/grow-log.html", users_plant_id=users_plant_id.user_id, 
-    # comment=comment, timestamp=datetime.now(), water=None, nutrients=None, 
-    # temp=None, humidity=None, photo_url=None)
-
     return render_template("grow-log.html", entries=entries)
-
-# have to query the db for all the user's growlogs 
-# pass info in return render_template for growlog
-# and then use jinja to display them on grow-log?
 
 
 if __name__ == '__main__':
     app.debug = True
     model.connect_to_db(app)
     app.run(host='0.0.0.0')
-
-
-
-# homepage where user logs in 
-# entry page 
-# grow log page that displays all entries in descending order (most recent first)
