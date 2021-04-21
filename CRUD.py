@@ -68,7 +68,8 @@ def create_plant(user_id, plant_name, plant_type):
 # <UserPlant 11>
 
 def get_all_plants():
-    return UserPlant.query.all()
+    plants = UserPlant.query.all()
+    return plants
 
 def get_user_plant_by_id(id):
     users_plant_id = UserPlant.query.filter_by(id = id).first()
@@ -84,13 +85,15 @@ def get_user_plant_by_id(id):
 
 # <UserPlant 3>
 
-# def get_plant_by_id(id):
-#    plant_id = UserPlant.query.filter_by(id=id).one()
-#    return plant_id
+def get_plant_by_id(id):
+   plant_id = UserPlant.query.filter_by(id=id).one()
+   return plant_id
 
 def create_entry(users_plant_id, comment, timestamp, 
     water=None, nutrients=None, temp=None, 
     humidity=None, photo_url=None):
+    
+    
 
     new_entry = GrowLog(users_plant_id=users_plant_id, 
         comment=comment, timestamp=timestamp, water=water, 

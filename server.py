@@ -1,4 +1,6 @@
 from flask import Flask, render_template, request, redirect, session
+import cloudinary.uploader
+
 from datetime import datetime
 
 from jinja2 import StrictUndefined
@@ -10,8 +12,10 @@ import model
 import os
 
 app = Flask(__name__)
-app.secret_key = 'SECRETSECRETSECRET'
-app.jinja_env.undefined = StrictUndefined
+CLOUDINARY_KEY = os.environ['CLOUDINARY_KEY']
+CLOUDINARY_KEY_SECRET = os.environ['CLOUDINARY_SECRET']
+app.secret_key = 'asldkfj;aslfjd;lj'
+
 
 @app.route('/')
 def homepage():
@@ -86,11 +90,22 @@ def show_user_plants():
 
     return render_template("/user-plants.html", all_plants=all_plants)
 
-@app.route('/show-new-entry-form/<int:id>')
-def show_specific_plant_entry_form(id):
-    """Show the post with the given id, the id is an integer."""
 
-    return render_template("/new-entry.html")
+@app.route('/show-new-entry-form/<int:plant_id>')
+def show_specific_plant_entry_form(plant_id):
+    """Show the post with the given id, the id is an integer."""
+    
+    plant = CRUD.get_plant_by_id(plant_id)
+    return render_template("/new-entry.html", plant=plant)
+
+
+@app.route('/plant-log/<int:plant_id>')
+def show_plant_log(plant_id):
+
+    # plant = UserPlant.query.get(plant_id)
+    plant = CRUD.get_plant_by_id(plant_id)
+
+    return render_template('plant-log.html', plant=plant)
 
 # need to store id in a session to ensure that the entry 
 # is being stored with that id
@@ -116,12 +131,12 @@ def process_new_plant_form():
         plant_name = request.form.get('plant_name')
         plant_type = request.form.get('plant_type')
  
-        CRUD.create_plant(user.id, plant_name, plant_type)
+        plant = CRUD.create_plant(user.id, plant_name, plant_type)
 
-        return redirect('/show-user-plants')
+        return redirect('/show-user-plants', plant=plant)
     
 
-@app.route('/process-new-entry-form', methods=['GET', 'POST'])
+@app.route('/process-new-entry-form/<int:plant_id>', methods=['GET', 'POST'])
 def process_new_entry_form():
    
     """Create a new entry."""
@@ -139,16 +154,20 @@ def process_new_entry_form():
         nutrients = request.form.get('nutrients')
         temp = request.form.get('temp')
         humidity = request.form.get('humidity')
-        photo_url = request.form.get('photo_url')
-    
-    
+        # photo_url = request.form.get('photo_url')
+        my_file = request.files['my-file']
+        result = cloudinary.uploader.upload(my_file, api_key=CLOUDINARY_KEY,
+                                            api_secret=CLOUDINARY_KEY_SECRET,
+                                            cloud_name='celestercodes')
+        img_url = result['secure_url']
+
         if comment == None:
             flash('No new updates?')
         else:
             CRUD.create_entry(users_plant_id=users_plant_id.user_id, 
             comment=comment, timestamp=datetime.now(), 
             water=water, nutrients=nutrients, temp=temp, 
-            humidity=humidity, photo_url=None)
+            humidity=humidity, photo_url=img_url)
 
         return redirect('/plant-log')
     else: 
@@ -166,13 +185,14 @@ def process_new_entry_form():
 # not showing page for plant log with id, throwing a 404 
 # will show plant log without id, all the entries 
 
-@app.route('/plant-log', methods=['GET', 'POST'])
-def display_plantlog():
-    """Show user's plant log."""
+# @app.route('/plant-log', methods=['GET', 'POST'])
+# def display_plantlog():
+#     """Show user's plant log."""
 
-    entries = CRUD.get_all_entries()
+#     entries = CRUD.get_all_entries()
 
-    return render_template("plant-log.html", entries=entries)
+#     return render_template("plant-log.html", entries=entries)
+
 
 
 @app.route('/grow-log', methods=['GET', 'POST'])

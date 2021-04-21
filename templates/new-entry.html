@@ -17,7 +17,7 @@
   <div>
   
    
-  <form action="/process-new-entry-form" method='POST' id="entry-form">
+  <form action="/plant-log/{{ plant.plant_id }}" method='POST' id="entry-form" enctype="multipart/form-data">
    <center><div class="form-group">
       <br>
 
@@ -141,20 +141,21 @@
       
           <label><strong>Upload Photo</strong></label><br><br>
 
-          <input type="file" id="myFile" name="photo_url">
-          <input type="submit"> 
+          <input type="file" name="my-file" id="my-file" name="photo_url">
+          <br> <br>
+          <button type="submit">Add New Entry</button> 
           <br> <br>
 <!-- photo_url submit button throws a 404, doesn't take user to grow-log.html 
 is trying to take them to localhost:5000/process-form which doesn't exist-->
 
 
-      <button type="submit">Add New Entry</button><br>
-      </form> </center>
+      <!-- <button type="submit">Add New Entry</button><br>
+      </form> </center> -->
 
     <center>
     <div class="container">
      
-      <a href="/plant-log"><button type="cancel">Just Show Plant Log</button></a>
+      <a href='/show-user-plants'><button type="cancel">Cancel</button></a>
     </div></center>
 
     

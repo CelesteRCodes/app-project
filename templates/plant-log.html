@@ -38,20 +38,21 @@ how to populate multiple to show multiple grow-logs at once?-->
 
 
 
-{% for entry in entries %} 
+
 
 <tr>
-  <td>{{ entry.users_plant_id }}</td>
-  <td>{{ entry.comment }}</td>
-  <td>{{ entry.timestamp }}</td>
-  <td>{{ entry.water }}</td>
-  <td>{{ entry.nutrients }}</td>
-  <td>{{ entry.temp }}</td>
-  <td>{{ entry.humidity }}</td>
-  <td>{{ entry.photo_url }}</td>
+  <td>{{ plant.users_plant_id }}</td>
+  <td>{{ plant.comment }}</td>
+  <td>{{ plant.timestamp }}</td>
+  <td>{{ plant.water }}</td>
+  <td>{{ plant.nutrients }}</td>
+  <td>{{ plant.temp }}</td>
+  <td>{{ plant.humidity }}</td>
+  <td>{{ plant.img_url }}</td>
+  
 </tr> 
 
-{% endfor %}
+
 
 </table></center>
 
