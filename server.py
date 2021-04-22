@@ -96,15 +96,16 @@ def show_specific_plant_entry_form(plant_id):
     """Show the post with the given id, the id is an integer."""
     
     plant = CRUD.get_plant_by_id(plant_id)
+    print(plant)
     return render_template("/new-entry.html", plant=plant)
 
 
-@app.route('/plant-log/<int:plant_id>')
+@app.route('/plant-log/<int:plant_id>', methods=['POST'])
 def show_plant_log(plant_id):
 
     # plant = UserPlant.query.get(plant_id)
     plant = CRUD.get_plant_by_id(plant_id)
-
+    
     return render_template('plant-log.html', plant=plant)
 
 # need to store id in a session to ensure that the entry 
@@ -143,9 +144,7 @@ def process_new_entry_form():
     if "id" in session:
         id = session["id"]
 
-        users_plant_id = CRUD.get_user_plant_by_id(id)  
-        # plant_id = CRUD.get_plant_id(id)  
-        # should i change this to plant_id?
+        plant_id = CRUD.get_plant_by_id(id)  
 
         comment = request.form.get('comment')
         timestamp = request.form.get('timestamp')
@@ -154,7 +153,6 @@ def process_new_entry_form():
         nutrients = request.form.get('nutrients')
         temp = request.form.get('temp')
         humidity = request.form.get('humidity')
-        # photo_url = request.form.get('photo_url')
         my_file = request.files['my-file']
         result = cloudinary.uploader.upload(my_file, api_key=CLOUDINARY_KEY,
                                             api_secret=CLOUDINARY_KEY_SECRET,
@@ -164,7 +162,7 @@ def process_new_entry_form():
         if comment == None:
             flash('No new updates?')
         else:
-            CRUD.create_entry(users_plant_id=users_plant_id.user_id, 
+            CRUD.create_entry(plant_id==plant_id.id, 
             comment=comment, timestamp=datetime.now(), 
             water=water, nutrients=nutrients, temp=temp, 
             humidity=humidity, photo_url=img_url)
@@ -172,27 +170,6 @@ def process_new_entry_form():
         return redirect('/plant-log')
     else: 
         return redirect('/show-user-plants')
-
- 
-# @app.route('/plant-log/<int:id>')
-# def display_plantlog(id):
-#     """Show the post with the given id, the id is an integer."""
-
-#     entries = CRUD.get_entry_by_id(id)
-
-#     return render_template("plant-log.html", entries=entries)
-
-# not showing page for plant log with id, throwing a 404 
-# will show plant log without id, all the entries 
-
-# @app.route('/plant-log', methods=['GET', 'POST'])
-# def display_plantlog():
-#     """Show user's plant log."""
-
-#     entries = CRUD.get_all_entries()
-
-#     return render_template("plant-log.html", entries=entries)
-
 
 
 @app.route('/grow-log', methods=['GET', 'POST'])

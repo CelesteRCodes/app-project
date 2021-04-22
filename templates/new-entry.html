@@ -17,18 +17,11 @@
   <div>
   
    
-  <form action="/plant-log/{{ plant.plant_id }}" method='POST' id="entry-form" enctype="multipart/form-data">
+  <form action="/plant-log/{{ plant.id }}" method='POST' id="entry-form" enctype="multipart/form-data">
    <center><div class="form-group">
       <br>
 
-      <!-- <label><strong>Plant's Name</strong> <br>
-        <input class="form-control" type="text" name="name" id="entry-field" placeholder="Name of Plant">
-        
-      </label><br>   
-
-      shouldn't need Plant's Name since it's just a
-      dding an entry to a specific plant with this form-->
-
+      
           <label><strong>Watered?</strong></label><br>
           <select name="water">
             <option value="None"></option>
@@ -41,8 +34,7 @@
             <option value="30mL+">Greater than 30 mL</option>
           </select>
           
-        <!-- water can be a drop down menu for amounts of water by mLs -->
-         <br><br>
+        <br><br>
         
           <label><strong>Nutrients Given?</strong></label><br>
 
@@ -99,9 +91,7 @@
           </select>
           
          <br><br>
-        <!-- nutrients can be a drop down menu for amounts of nutrients by mLs 
-        and a text field for nutrient name; might need more than one of these text fields 
-        for multiple nutrients  -->     
+        
           
           <strong> Choose current temp range of environment:</strong>
             <br>(Fahrenheit)<br>
@@ -145,12 +135,7 @@
           <br> <br>
           <button type="submit">Add New Entry</button> 
           <br> <br>
-<!-- photo_url submit button throws a 404, doesn't take user to grow-log.html 
-is trying to take them to localhost:5000/process-form which doesn't exist-->
 
-
-      <!-- <button type="submit">Add New Entry</button><br>
-      </form> </center> -->
 
     <center>
     <div class="container">
@@ -159,10 +144,6 @@ is trying to take them to localhost:5000/process-form which doesn't exist-->
     </div></center>
 
     
-
-  <!-- both buttons should take user to grow-log.html -->
-  
- 
 </body>
 
 {% endblock %}

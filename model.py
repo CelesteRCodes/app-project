@@ -74,7 +74,7 @@ class GrowLog(db.Model):
 
 # making the class GrowLog and growlogs table
 # id is the primary key, it autoincrements with each new plant
-# column names = user_plant_id, comment, timestamp, photo_url
+# column names = users_plant_id, comment, timestamp, photo_url
 # users_plant_id is the foreign key that connects GrowLog to UserPlant
 # using backref to create relationship between the 2 tables
 # and saving that relationship in a variable, userplants
