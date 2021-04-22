@@ -131,8 +131,18 @@ def process_new_plant_form():
         
         plant_name = request.form.get('plant_name')
         plant_type = request.form.get('plant_type')
- 
-        plant = CRUD.create_plant(user.id, plant_name, plant_type)
+        germinate_date = request.form.get('germinate_date')
+        directsow = request.form.get('directsow')
+        transplant_date = request.form.get('transplant_date')
+        growing_medium = request.form.get('growing_medium')
+        location = request.form.get('location')
+        environment = request.form.get('environment')
+        lighting = request.form.get('lighting')
+
+
+        plant = CRUD.create_plant(user.id, plant_name, plant_type, germinate_date,
+                    directsow, transplant_date, growing_medium, location,
+                    environment, lighting)
 
         return redirect('/show-user-plants', plant=plant)
     

@@ -60,31 +60,80 @@ timestamps = ["13:33", "16:16", "12:22", "14:44", "11:11", "15:55"]
 
 users_plant_ids = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 
-for n in range(10):
-    email = f'user{n}@test.com'  
-    password = 'test'
-    username = f'username{n}'
-    # variables to pass into CRUD.create_user
+germinate_dates = []
 
-    user = CRUD.create_user(username, email, password)
-    # creates the user (db.session.add/commit in CRUD.py)
+directsow=n = []
+
+transplant_dates = [] 
+
+growing_mediums = []
+
+locations = []
+
+environments = []
+
+lights = []
+
+
+for n in range(10):
+    
+    comment = choice(comments)
+
+    timestamp = choice(timestamps)
+
+    water = choice(water_level)
+
+    nutrients = choice(nutes)
+
+    humidity = choice(humidity_list)
+
+    temp = choice(temps)
+
+    users_plant_id = choice(users_plant_ids)
+
+    photo_url = choice(photo_urls)
+
+    new_entry = CRUD.create_entry(users_plant_id=users_plant_id, comment=comments, 
+        timestamp=timestamps, water=water_level, 
+        nutrients=nutes, temp=temps, humidity=humidity_list, photo_url=photo_urls)
+
+for n in range(10):
 
     plant_type = choice(plants)
     # randomly chooses a plant
     
     plant_name = choice(names)
 
-    plant = CRUD.create_plant(user.id, plant_name, plant_type)
-    # creates the plant for user
-
     users_plant_id = choice(users_plant_ids)
     photo_url = choice(photo_urls)
-    
-    # can key into photo_url using plant_choice 
 
-    new_entry = CRUD.create_entry(users_plant_id=users_plant_id, 
-        comment=comments, timestamp=timestamps, water=water_level, 
-        nutrients=nutes, temp=temps, humidity=humidity_list, photo_url=photo_urls)
+    germinate_date = choice(germinate_dates)
+
+    directsow = choice(directsows)
+    transplant_date = choice(transplant_dates)
+    growing_medium = choice(growing_mediums)
+    location = choice(locations)
+    environment = choice(environments)
+    lighting = choice(lights)
+    
+
+    new_plant = CRUD.create_plant(user_id=user_id, plant_name=plant_name, 
+            plant_type=plant_type, germinate_date=germinate_date,
+            directsow=directsow, transplant_date=transplant_date, 
+            growing_medium=growing_medium, location=location,
+            environment=environment, lighting=lighting)
+
+
+for n in range(10):
+    email = f'user{n}@test.com'  
+    password = 'test'
+    username = f'username{n}'
+    # variables to pass into CRUD.create_user
+
+    
+    user = CRUD.create_user(username=username, email=email, password=password)
+
+    
     
 # datetime.strptime([growlog'timestamp'], '%Y-%m-%d')
 # is this correct to get a timestamp of current time from user's input?

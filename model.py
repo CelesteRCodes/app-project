@@ -38,7 +38,14 @@ class UserPlant(db.Model):
                         )
     plant_name = db.Column(db.String(50), nullable=False)
     plant_type = db.Column(db.String(50), nullable=False)
-    
+    germinate_date = db.Column(db.String(50), nullable=True)
+    directsow = db.Column(db.String(50), nullable= True)
+    transplant_date = db.Column(db.String(50), nullable=True)
+    growing_medium = db.Column(db.String(50), nullable=True)
+    location = db.Column(db.String(50), nullable=True)
+    environment = db.Column(db.String(50), nullable=True)
+    lighting = db.Column(db.String(50), nullable=True)
+
     user = db.relationship("User", backref = "plants")
 
 # making the class UserPlant and plants table

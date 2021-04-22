@@ -125,9 +125,6 @@ make a link tag, have end of url the route (/growlog/plant_id)
           can use end of url to query db for all logs of specific plant 
           it's a string by default, need to make it an int 
 
-
-
-
 plant-details.html will be connected to user-plants.html, 
 linked just like plant-log.html and new-entry.html
 each page is specific for plant
@@ -143,6 +140,9 @@ need to add these functions to add-plant.html, CRUD.py and in route in server.py
     drop down menu added to new-plant.html with options
     (container, specialty: dwc/rdwc/aqua/aero, raised bed, direct sow)
 
+    {{ plant.directsow }}
+    radio button(direct sow, transplant)
+    
     {{plant.location}}
     radio button 
     (indoor, outdoor)
