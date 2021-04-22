@@ -3,29 +3,31 @@ not sure if it's still working, tried with new data and user was not created)
 (NOT GETTING ANY ERRORS, BUT NEW USERS ARE NOT BEING CREATED/STORED IN DB)
 
 
-user_plant_id connected to user, not to plant 
-
 make page that shows plant's specific grow log (one template, auto populate)
+(DONE)
 
 want to see:
-master log
-log for specific plant
-update that log for specific plant
+master log (DONE)
+
+log for specific plant 
+update that log for specific plant (working on displaying data from new-entry.html)
 
 on user-plant.html
 2 links next to each plant, make a new entry, show me the logs for this plant
+(DONE, links and route working)
 
-
-how to upload a photo with each entry and display it on growlog.html?
+how to upload a photo with each entry and display it on growlog.html? 
+(DONE, added CLOUDINARY API)
 
 
 how to add a delete button for user plants and growlog to delete plants/entries? 
 
 
-how to clear log and user plants to start fresh? (RE-SEEDED DATABASE)
+how to clear log and user plants to start fresh? 
+(RE-SEEDED DATABASE)
 
 user-plants.html should show all the user's plants (DONE) 
-and have buttons to update each specific plant's growlog (PENDING)
+and have buttons to update each specific plant's growlog (DONE)
 
 
 figure out how to upload a photo, store it in database and display 
@@ -38,10 +40,10 @@ unit tests can be docstrings
 - need tests for model.py and seed.py
 
 
-styling of pages (currently working on now)
+styling of pages (PENDING)
 
 
-ability to delete a grow log entry/user plant (PENDING)
+ability to delete a grow log entry/plant (PENDING)
 
 
 make a README for project (PENDING)
@@ -49,6 +51,7 @@ make a README for project (PENDING)
 
 NEW FORMS CREATED, BUTTONS WORK EXCEPT FOR 'add new plant' on new-plant.html 
 and 'add new entry' on new-entry.html, geting a 404 (CLOSED, BUTTONS WORK - 4/19)
+4/22: GETTING ERROR: TypeError: redirect() got an unexpected keyword argument 'plant'
 
 
 the upload photo submit button also takes user back 
@@ -63,7 +66,7 @@ stored in the db as a new entry
 (DONE)
 
 
-display info from input-form.html on grow-log.html in tables
+display info from input-form.html on grow-log.html in tables (master log)
 (DONE)
 
 
@@ -81,33 +84,26 @@ display info from input-form.html on grow-log.html in tables
     -submit button takes user back to login on homepage (DONE)
 
 4. user-plants.html shows all the plants for that user
-    -can also click on each plant to add a new entry to that plant's log (PENDING)
+    -can also click on each plant to add a new entry to that plant's log (DONE)
     -can also click on "add new plant" button to add a new plant (DONE)
 
 5. new-plant.html form to add a new plant to user's plants page
     -takes in plant name and plant type, adds it to the user-plants.html (DONE)
     -once added to user-plant.html, a button is added that takes user 
-        to new-entry.html to add a new grow log entry (PENDING - working on button)
+        to new-entry.html to add a new grow log entry (DONE)
 
 6. new-entry.html form to add a new entry for a specific plant's grow login
     -can only get to this form by clicking on that specific plant; only used 
-        to update that specific plants grow log 
-        (PENDING - working on buttons for specific plants/routes to their growlog)
+        to update that specific plants grow log (DONE)
 
 7. grow-log.html displays all the entries for that specific plant
     - has signout button that takes user back to homepage to log back in (DONE)
     - should show all the plant info along with most recent photo 
     (PENDING - working on uploading/displaying photos)
-    - looks like a master grow log and I want logs for each plant (PENDING)
+    - looks like a master grow log
 
 *it goes from user-plant.html, to new-entry.html (or new-plant.html first),
     then finally to grow-log.html for that specific plant
-
-# API_KEY = os.environ['TICKETMASTER_KEY']
-
-# # not sure I need an API for this part; 
-# # using one to gather info from Trefle for references
-# # for sprint 2 
 
 
 need to add a little AJAX to project
