@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+<head>
+    <meta charset="UTF-8">
+    <title>Plant Details</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <link href= "/static/grow-log.css" rel="stylesheet" type="text/css">
+  
+    <link rel="stylesheet" href="/static/grow-log.css">
+  
+  </head>
+  <body>
+  
+    <center><h1>{{plant.plant_name}} Details</h1></center>
+    
+  
+    <center><div id="plant-details">
+  <table style="width:100%">
+
+  <tr>
+    
+    <th>Most Recent Comment</th> 
+    <th>Average Amount: Water</th>
+    <th>Average Amount: Nutrients</th>
+    <th>Average Temp</th>
+    <th>Average Humidity Level</th>         
+    <th>Most Recent Image</th>
+  </tr>
+  
+  <tr>
+    
+    <td>{{ plant.comment }}</td>
+    <td>{{ plant.water }}</td>
+    <td>{{ plant.nutrients }}</td>
+    <td>{{ plant.temp }}</td>
+    <td>{{ plant.humidity }}</td>
+    <td>{{ plant.img_url }}</td>
+    
+  </tr> 
+  
+  
+  
+  </table></center>
+  
+    </div>
+
+  
+  
+
+       <center> <div class="container">
+     
+        <a href="/show-user-plants"><button type="submit">Show My Plants</button></a>
+      </div></center>
+    
+
+      <center><div class="container">
+     
+        <a href="/"><button type="submit">Logout</button></a>
+      </div></center>
+    
+
+  
+ 
+</body>
+
+{% endblock %}
