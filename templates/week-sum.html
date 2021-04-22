@@ -6,7 +6,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Plant Details</title>
+    <title>Week Summary</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   
@@ -17,23 +17,32 @@
   </head>
   <body>
   
-    <center><h1>{{plant.plant_name}} Details</h1></center>
+    <center><h1>{{plant.plant_name}} Weekly Summary</h1></center>
     
   
-    <center><div id="plant-details">
-  
+    <center><div id="week-summary">
+  <table style="width:100%">
 
+  <tr>
+    
+    <th>Most Recent Comment</th> 
+    <th>Average Amount: Water</th>
+    <th>Average Amount: Nutrients</th>
+    <th>Average Temp</th>
+    <th>Average Humidity Level</th>         
+    <th>Most Recent Image</th>
+  </tr>
   
-<!--     
-    {{ plant.plant_type }}
-    {{ plant.img_url }}
-    {{ plant.germinate_date }}
-    {{ plant.transplant_date }}
-    {{ plant.growing_medium }}
-    {{ plant.environment }}
-    {{ plant.lighting }}
-     -->
-  
+  <tr>
+    
+    <td>{{ plant.comment }}</td>
+    <td>{{ plant.water }}</td>
+    <td>{{ plant.nutrients }}</td>
+    <td>{{ plant.temp }}</td>
+    <td>{{ plant.humidity }}</td>
+    <td>{{ plant.img_url }}</td>
+    
+  </tr> 
   
   
   

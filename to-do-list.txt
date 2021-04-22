@@ -124,3 +124,35 @@ make a link tag, have end of url the route (/growlog/plant_id)
           these are jinja variables 
           can use end of url to query db for all logs of specific plant 
           it's a string by default, need to make it an int 
+
+
+
+
+plant-details.html will be connected to user-plants.html, 
+linked just like plant-log.html and new-entry.html
+each page is specific for plant
+
+need to add these functions to add-plant.html, CRUD.py and in route in server.py
+    {{ plant.germinate_date }}
+    add a text form to new-plant.html
+
+    {{ plant.transplant_date }}
+    add a text form to new-plant.html
+
+    {{ plant.growing_medium }}
+    drop down menu added to new-plant.html with options
+    (container, specialty: dwc/rdwc/aqua/aero, raised bed, direct sow)
+
+    {{plant.location}}
+    radio button 
+    (indoor, outdoor)
+
+    {{ plant.environment }}
+    drop down menu added to new-plant.html with options
+    (indoor, grow tent/room, windowsill, outdoor, greenhouse)
+
+    {{ plant.lighting }}
+    drop down menu added to new-plant.html with options 
+    (sunlight, fluorescent, LED, HPS, CFL)
+can add lighting schedule and possible water schedule too
+

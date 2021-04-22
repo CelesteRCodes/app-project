@@ -30,8 +30,74 @@
 
       <label><strong>Plant's Type</strong> <br>
         <input class="form-control" type="text" name="plant_type" id="entry-field" placeholder="Type of Plant">
-        
       </label><br>
+
+      <label><strong>Germination Date</strong> <br>
+        <input class="form-control" type="text" name="plant_type" id="entry-field" placeholder="Type of Plant">
+      </label><br>
+
+      <h2>Did You Direct Sow or Transplant? </h2>
+      <input type="radio" id="direct" name="plantedhow" value="direct sow">
+      <label for="direct sow">Direct Sow</label><br>
+      <input type="radio" id="transplant" name="plantedhow" value="transplant">
+      <label for="transplant">Transplant</label><br>
+      
+
+      <label><strong>Transplant/Direct Sow Date</strong> <br>
+        <input class="form-control" type="text" name="plant_type" id="entry-field" placeholder="Type of Plant">
+      </label><br>
+
+
+    <h2>Indoor or Outdoor Plant? </h2>
+
+      <input type="radio" id="indoor" name="location" value="indoor">
+      <label for="indoor">Indoor</label><br>
+      <input type="radio" id="outdoor" name="location" value="outdoor">
+      <label for="outdoor">Outdoor</label><br>
+      
+
+      <label><strong>Plant's Environment</strong></label><br>
+      <select name="environment">
+        <option value="None"></option>
+        <option value="Grow Tent/Room">Grow Tent/Room</option>
+        <option value="Cabinet Greenhouse">Cabinet Greenhouse</option>
+        <option value="Windowsill">Windowsill</option>
+        <option value="Direct Sow">Direct Sow</option>
+        <option value="Raised Bed">Raised Bed</option>
+        <option value="Container">Container</option>
+        <option value="Greenhouse">Greenhouse</option>
+      </select>
+
+    <br><br>
+
+    <label><strong>Growing Medium</strong></label><br>
+      <select name="medium">
+        <option value="None"></option>
+        <option value="Soil">Soil</option>
+        <option value="Water Only (Herbs)">Water Only (Herbs)</option>
+        <option value="Perlite/Vermiculite">Perlite/Vermiculite</option> 
+        <option value="Rockwool">Rockwool</option>
+        <option value="Clay Pebbles/Hydroton">Clay Pebbles</option>
+        <option value="Coco Coir/Peat">Coco Coir/Peat</option>
+
+      </select>
+
+    <br><br>
+    <label><strong>Lighting</strong></label><br>
+          <select name="lighting">
+            <option value="None"></option>
+            <option value="Sunlight">Sunlight</option>
+            <option value="Fluorescent">Fluorescent</option>
+            <option value="LED">LED</option>
+            <option value="HPS">HPS</option>
+            <option value="CFL">CFL</option>
+            
+          </select>
+          
+        <br><br>
+
+<!-- organic grow yes or no button  -->
+
 
 
       <button type="submit">Add New Plant</button><br>
