@@ -33,27 +33,29 @@
       </label><br>
 
       <label><strong>Germination Date</strong> <br>
-        <input class="form-control" type="text" name="plant_type" id="entry-field" placeholder="Type of Plant">
+        <input class="form-control" type="text" name="plant_type" 
+        id="entry-field" placeholder="00/00/0000">
       </label><br>
 
-      <h2>Did You Direct Sow or Transplant? </h2>
+      <label><strong>Did You Direct Sow or Transplant? </strong></label><br>
       <input type="radio" id="direct" name="plantedhow" value="direct sow">
       <label for="direct sow">Direct Sow</label><br>
       <input type="radio" id="transplant" name="plantedhow" value="transplant">
-      <label for="transplant">Transplant</label><br>
+      <label for="transplant">Transplant</label><br><br>
       
 
       <label><strong>Transplant/Direct Sow Date</strong> <br>
-        <input class="form-control" type="text" name="plant_type" id="entry-field" placeholder="Type of Plant">
+        <input class="form-control" type="text" name="plant_type" id="entry-field" 
+        placeholder="00/00/0000">
       </label><br>
 
 
-    <h2>Indoor or Outdoor Plant? </h2>
-
+    
+    <label><strong>Indoor or Outdoor Plant?</strong></label><br>
       <input type="radio" id="indoor" name="location" value="indoor">
       <label for="indoor">Indoor</label><br>
       <input type="radio" id="outdoor" name="location" value="outdoor">
-      <label for="outdoor">Outdoor</label><br>
+      <label for="outdoor">Outdoor</label><br><br>
       
 
       <label><strong>Plant's Environment</strong></label><br>
@@ -83,7 +85,7 @@
       </select>
 
     <br><br>
-    <label><strong>Lighting</strong></label><br>
+    <label><strong>Type Of Lighting</strong></label><br>
           <select name="lighting">
             <option value="None"></option>
             <option value="Sunlight">Sunlight</option>
@@ -94,6 +96,25 @@
             
           </select>
           
+        <br><br>
+
+          <label><strong>Lighting Schedule</strong></label><br>
+          <input type="radio" id="mothernature" name="schedule" value="on mother nature's time">
+          <label for="mothernature">On Mother Nature's Time</label><br>
+
+          <input type="radio" id="twelve" name="schedule" value="12 hrs ON, 12 hrs OFF">
+          <label for="twelve">12 hrs ON, 12 hrs OFF</label><br>
+
+          <input type="radio" id="sixteen" name="location" value="16 hrs ON, 8 hrs OFF">
+      <label for="sixteen">16 hrs ON, 8 hrs OFF</label><br>
+
+      <input type="radio" id="six" name="schedule" value="6-10 hrs ON">
+      <label for="six">6-10 hrs ON</label><br>
+
+          <input type="radio" id="allday" name="schedule" value="24 hrs ON">
+          <label for="allday">24 hrs ON</label><br>
+
+
         <br><br>
 
 <!-- organic grow yes or no button  -->

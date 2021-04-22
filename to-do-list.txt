@@ -14,7 +14,7 @@ update that log for specific plant (working on displaying data from new-entry.ht
 
 on user-plant.html
 2 links next to each plant, make a new entry, show me the logs for this plant
-(DONE, links and route working)
+(DONE, links to add new plant is working, not show plant log)
 
 how to upload a photo with each entry and display it on growlog.html? 
 (DONE, added CLOUDINARY API)
