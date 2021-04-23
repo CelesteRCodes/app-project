@@ -35,18 +35,18 @@ comments = ["watered with ph water and no nutrients",
             "added amethyst to soil",
             "added citrine to soil"]
 
-photo_urls = {"aloe": "/static/aloe.jpg",
-             "bamboo": "/static/bamboo.jpg",
-              "ginger":"/static/ginger.jpg",
-              "spider plant":"/static/spiderplant.jpg",
-              "lavendar":"/static/lavendar.jpg",
-              "orchid":"/static/orchid.jpg",
-              "sage":"/static/sage.jpg",
-              "tomato":"/static/tomato.jpg",
-              "avocado": "/static/avocado.jpg",
-              "celery":"/static/celery.jpg",
-              "spinach":"/static/spinach.jpg",
-              "cucumber":"/static/cucumber.jpg"}
+photo_urls = ["/static/aloe.jpg",
+             "/static/bamboo.jpg",
+              "/static/ginger.jpg",
+              "/static/spiderplant.jpg",
+              "/static/lavendar.jpg",
+              "/static/orchid.jpg",
+              "/static/sage.jpg",
+              "/static/tomato.jpg",
+              "/static/avocado.jpg",
+              "/static/celery.jpg",
+              "/static/spinach.jpg",
+              "/static/cucumber.jpg"]
 
 temps = ["45", "50-55", "60-65", "70-75", "80-85", "90"]
 
@@ -56,46 +56,38 @@ nutes = ["0.5-1mL", "2-3mL", "4-5mL", "6-9mL", "10-15mL"]
 
 humidity_list = ["30-35%", "40-45%", "50-55%", "60-65%", "70-75%", "80-85%"]
 
-timestamps = ["13:33", "16:16", "12:22", "14:44", "11:11", "15:55"]
+# timestamps = ["13:33", "16:16", "12:22", "14:44", "11:11", "15:55"]
 
-users_plant_ids = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+plant_ids = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-germinate_dates = []
+user_ids = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-directsow=n = []
+germinate_dates = ["01/10/2020", "02/02/2020", "03/03/2020", "04/04/2020", "05/05/2020"]
 
-transplant_dates = [] 
+directsows = ["direct sown", "transplant"]
 
-growing_mediums = []
+transplant_dates = ["01/11/2020", "02/12/2020", "03/13/2020", "04/14/2020", "05/17/2020"] 
 
-locations = []
+growing_mediums = ["soil", "water only", "perlite", "rockwool", 
+        "clay pebbles", "coco coir"]
 
-environments = []
+locations = ["indoor", "outdoor"]
 
-lights = []
+environments = ["grow tent/room", "cabinet greenhouse", "windowsill",
+        "direct sow", "raised bed", "container", "greenhouse"]
+
+lights = ["sunlight", "fluorescent", "led", "hps", "cfl"]
 
 
 for n in range(10):
+    email = f'user{n}@test.com'  
+    password = 'test'
+    username = f'username{n}'
+    # variables to pass into CRUD.create_user
+
     
-    comment = choice(comments)
+    user = CRUD.create_user(username=username, email=email, password=password)
 
-    timestamp = choice(timestamps)
-
-    water = choice(water_level)
-
-    nutrients = choice(nutes)
-
-    humidity = choice(humidity_list)
-
-    temp = choice(temps)
-
-    users_plant_id = choice(users_plant_ids)
-
-    photo_url = choice(photo_urls)
-
-    new_entry = CRUD.create_entry(users_plant_id=users_plant_id, comment=comments, 
-        timestamp=timestamps, water=water_level, 
-        nutrients=nutes, temp=temps, humidity=humidity_list, photo_url=photo_urls)
 
 for n in range(10):
 
@@ -104,7 +96,8 @@ for n in range(10):
     
     plant_name = choice(names)
 
-    users_plant_id = choice(users_plant_ids)
+    user_id = choice(user_ids)
+    plant_id = choice(plant_ids)
     photo_url = choice(photo_urls)
 
     germinate_date = choice(germinate_dates)
@@ -124,14 +117,30 @@ for n in range(10):
             environment=environment, lighting=lighting)
 
 
-for n in range(10):
-    email = f'user{n}@test.com'  
-    password = 'test'
-    username = f'username{n}'
-    # variables to pass into CRUD.create_user
 
+
+for n in range(10):
     
-    user = CRUD.create_user(username=username, email=email, password=password)
+    comment = choice(comments)
+
+    timestamp = datetime.now()
+
+    water = choice(water_level)
+
+    nutrients = choice(nutes)
+
+    humidity = choice(humidity_list)
+
+    temp = choice(temps)
+
+    users_plant_id = choice(plant_ids)
+
+    photo_url = choice(photo_urls)
+
+    new_entry = CRUD.create_entry(users_plant_id=users_plant_id,
+        comment=comment, timestamp=timestamp, water=water, 
+        nutrients=nutrients, temp=temp, humidity=humidity, photo_url=photo_url)
+
 
     
     

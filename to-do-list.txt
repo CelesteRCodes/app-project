@@ -156,3 +156,21 @@ need to add these functions to add-plant.html, CRUD.py and in route in server.py
     (sunlight, fluorescent, LED, HPS, CFL)
 can add lighting schedule and possible water schedule too
 
+
+
+4/23:
+no ajax needed
+
+start adding bootstrap (layout/structure)
+layoutit.com for bootstrap layout
+
+more tests
+different kinds of test, one of each
+
+integration tests:
+test GET with route and test POST with tearing down db/creating
+
+unit tests
+no need to test model.py
+
+login is not tied to a specific user, all plants added to db show on user-plants.html

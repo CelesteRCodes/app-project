@@ -45,7 +45,7 @@ def get_user_by_username(username):
 
 def get_user_by_id(id):
     user_id = User.query.filter_by(id = id).first()
-    print(user_id)
+    
     return user_id
 
 # test
@@ -79,7 +79,7 @@ def get_all_plants():
 
 def get_user_plant_by_id(id):
     users_plant_id = UserPlant.query.filter_by(id = id).first()
-    print(users_plant_id)
+    
     return users_plant_id 
     # user-plant object returned, not id
  
