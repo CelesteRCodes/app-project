@@ -95,17 +95,19 @@ def show_user_plants():
 def show_specific_plant_entry_form(plant_id):
     """Show the post with the given id, the id is an integer."""
     
+    
     plant = CRUD.get_plant_by_id(plant_id)
     print(plant)
     return render_template("/new-entry.html", plant=plant)
 
 
-@app.route('/plant-log/<int:plant_id>', methods=['POST'])
-def show_plant_log(plant_id):
+@app.route('/plant-log/<int:id>', methods=['GET', 'POST'])
+def show_plant_log(id):
 
     # plant = UserPlant.query.get(plant_id)
-    plant = CRUD.get_plant_by_id(plant_id)
-    
+    # plant = CRUD.get_plant_by_id(plant_id)
+    plant = CRUD.get_entry_by_id(id)
+
     return render_template('plant-log.html', plant=plant)
 
 # need to store id in a session to ensure that the entry 
@@ -144,7 +146,7 @@ def process_new_plant_form():
                     directsow, transplant_date, growing_medium, location,
                     environment, lighting)
 
-        return redirect('/show-user-plants', plant=plant)
+        return redirect('/show-user-plants')
     
 
 @app.route('/process-new-entry-form/<int:plant_id>', methods=['GET', 'POST'])

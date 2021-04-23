@@ -174,3 +174,10 @@ unit tests
 no need to test model.py
 
 login is not tied to a specific user, all plants added to db show on user-plants.html
+
+
+
+data from new-user and new-entry are not being stored or being accessed
+check routes?
+is it being saved in db?
+problem entering or getting things out of db?
