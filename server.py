@@ -91,6 +91,16 @@ def show_user_plants():
     return render_template("/user-plants.html", all_plants=all_plants)
 
 
+@app.route('/plant-details/<int:id>', methods=['GET', 'POST'])
+def show_plant_details(id):
+
+    # plant = UserPlant.query.get(plant_id)
+    # plant = CRUD.get_plant_by_id(plant_id)
+    plant = CRUD.get_user_plant_by_id(id)
+
+    return render_template('plant-details.html', plant=plant)
+
+
 @app.route('/show-new-entry-form/<int:plant_id>')
 def show_specific_plant_entry_form(plant_id):
     """Show the post with the given id, the id is an integer."""

@@ -9,7 +9,7 @@ make page that shows plant's specific grow log (one template, auto populate)
 want to see:
 master log (DONE)
 
-log for specific plant 
+log for specific plant (DONE)
 update that log for specific plant (working on displaying data from new-entry.html)
 
 on user-plant.html
@@ -70,7 +70,7 @@ display info from input-form.html on grow-log.html in tables (master log)
 (DONE)
 
 
-7 web pages in total:
+9 web pages in total:
 
 1. homepage with login (works for one added user, not sure if it's allowing new additions to user)
 # need to query into database for email given, if object with email, 
@@ -87,16 +87,24 @@ display info from input-form.html on grow-log.html in tables (master log)
     -can also click on each plant to add a new entry to that plant's log (DONE)
     -can also click on "add new plant" button to add a new plant (DONE)
 
-5. new-plant.html form to add a new plant to user's plants page
+5. plant-details.html shows all of the specific plant's details (inputted when new plant is added)
+    -can click button back to user-plants.html (DONE)
+
+6. new-plant.html form to add a new plant to user's plants page
     -takes in plant name and plant type, adds it to the user-plants.html (DONE)
     -once added to user-plant.html, a button is added that takes user 
         to new-entry.html to add a new grow log entry (DONE)
 
-6. new-entry.html form to add a new entry for a specific plant's grow login
+7. new-entry.html form to add a new entry for a specific plant's grow login
     -can only get to this form by clicking on that specific plant; only used 
         to update that specific plants grow log (DONE)
 
-7. grow-log.html displays all the entries for that specific plant
+8. plant-log.html shows log for each specific plant
+    - has signout button that takes user back to homepage to log back in (DONE)
+    - should show all the plant info along with most recent photo 
+    (PENDING - working on uploading/displaying photos)
+
+9. grow-log.html displays all the entries for that specific plant
     - has signout button that takes user back to homepage to log back in (DONE)
     - should show all the plant info along with most recent photo 
     (PENDING - working on uploading/displaying photos)
@@ -104,57 +112,6 @@ display info from input-form.html on grow-log.html in tables (master log)
 
 *it goes from user-plant.html, to new-entry.html (or new-plant.html first),
     then finally to grow-log.html for that specific plant
-
-
-need to add a little AJAX to project
-
-
-create new route, use variable parameter
-
-    /plant_id/ or /plant_name/
-
-@app.route('/post/<int:post_id>')
-def show_post(post_id):
-    """Show the post with the given id, the id is an integer."""
-
-    return f'Blog post #{post_id}'
-
-in user-plants.html
-make a link tag, have end of url the route (/growlog/plant_id)
-          these are jinja variables 
-          can use end of url to query db for all logs of specific plant 
-          it's a string by default, need to make it an int 
-
-plant-details.html will be connected to user-plants.html, 
-linked just like plant-log.html and new-entry.html
-each page is specific for plant
-
-need to add these functions to add-plant.html, CRUD.py and in route in server.py
-    {{ plant.germinate_date }}
-    add a text form to new-plant.html
-
-    {{ plant.transplant_date }}
-    add a text form to new-plant.html
-
-    {{ plant.growing_medium }}
-    drop down menu added to new-plant.html with options
-    (container, specialty: dwc/rdwc/aqua/aero, raised bed, direct sow)
-
-    {{ plant.directsow }}
-    radio button(direct sow, transplant)
-    
-    {{plant.location}}
-    radio button 
-    (indoor, outdoor)
-
-    {{ plant.environment }}
-    drop down menu added to new-plant.html with options
-    (indoor, grow tent/room, windowsill, outdoor, greenhouse)
-
-    {{ plant.lighting }}
-    drop down menu added to new-plant.html with options 
-    (sunlight, fluorescent, LED, HPS, CFL)
-can add lighting schedule and possible water schedule too
 
 
 
