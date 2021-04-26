@@ -1,7 +1,5 @@
-create a new user, store new user information (created one new user 'soandso'; 
-not sure if it's still working, tried with new data and user was not created)
-(NOT GETTING ANY ERRORS, BUT NEW USERS ARE NOT BEING CREATED/STORED IN DB)
-
+create a new user, store new user information
+(DONE)
 
 make page that shows plant's specific grow log (one template, auto populate)
 (DONE)
@@ -10,14 +8,17 @@ want to see:
 master log (DONE)
 
 log for specific plant (DONE)
-update that log for specific plant (working on displaying data from new-entry.html)
+update that log for specific plant 
+(working on displaying PHOTO from new-entry.html)
 
 on user-plant.html
 2 links next to each plant, make a new entry, show me the logs for this plant
-(DONE, links to add new plant is working, not show plant log)
+(DONE))
 
+figure out how to upload a photo, store it in database and display 
+it on the grow-log.html in it's respective table (PENDING)
 how to upload a photo with each entry and display it on growlog.html? 
-(DONE, added CLOUDINARY API)
+(PENDING, added CLOUDINARY API)
 
 
 how to add a delete button for user plants and growlog to delete plants/entries? 
@@ -25,13 +26,10 @@ how to add a delete button for user plants and growlog to delete plants/entries?
 
 how to clear log and user plants to start fresh? 
 (RE-SEEDED DATABASE)
+on user's end? (PENDING)
 
 user-plants.html should show all the user's plants (DONE) 
 and have buttons to update each specific plant's growlog (DONE)
-
-
-figure out how to upload a photo, store it in database and display 
-it on the grow-log.html in it's respective table (PENDING)
 
 
 TESTS! (unit and integration tests)
@@ -52,7 +50,7 @@ make a README for project (PENDING)
 NEW FORMS CREATED, BUTTONS WORK EXCEPT FOR 'add new plant' on new-plant.html 
 and 'add new entry' on new-entry.html, geting a 404 (CLOSED, BUTTONS WORK - 4/19)
 4/22: GETTING ERROR: TypeError: redirect() got an unexpected keyword argument 'plant'
-
+(CLOSED)
 
 the upload photo submit button also takes user back 
 to homepage (CLOSED, TAKES USER TO GROWLOG.HTML - 4/19)
@@ -122,19 +120,19 @@ start adding bootstrap (layout/structure)
 layoutit.com for bootstrap layout
 
 more tests
-different kinds of test, one of each
+    different kinds of test, one of each
 
-integration tests:
-test GET with route and test POST with tearing down db/creating
+    integration tests:
+    test GET with route and test POST with tearing down db/creating
 
-unit tests
-no need to test model.py
+    unit tests
+    no need to test model.py
 
 login is not tied to a specific user, all plants added to db show on user-plants.html
+regardless of who signed in
 
 
-
-data from new-user and new-entry are not being stored or being accessed
+data from new-entry not being stored or being accessed
 check routes?
 is it being saved in db?
 problem entering or getting things out of db?

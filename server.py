@@ -24,7 +24,7 @@ def homepage():
     return render_template('homepage.html')
 
 
-@app.route('/login', methods=['POST'])
+@app.route('/login', methods=['GET', 'POST'])
 def show_login():
     """ Show login for user on homepage."""
 
@@ -69,8 +69,8 @@ def show_new_user_form():
 def process_new_user_form():
     """ Process new user form."""
 
-    if "username" in session:
-        username = session["username"]
+    if "username" not in session:
+        
 
         username = request.form.get('username')
         email = request.form.get('email')
