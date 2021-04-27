@@ -20,7 +20,7 @@
 <br>
     <center><h2>Add New Plant Baby Below</h2></center>
    
-  <form action="/process-new-plant-form" method='post' id="entry-form">
+  <form action="/process-new-plant-form" method='post' id="entry-form" enctype="multipart/form-data">
    <center><div class="form-group">
       <br>
       <label><strong>Plant's Name</strong> <br>
@@ -32,20 +32,22 @@
         <input class="form-control" type="text" name="plant_type" id="entry-field" placeholder="Type of Plant">
       </label><br>
 
+      
+
       <label><strong>Germination Date</strong> <br>
-        <input class="form-control" type="text" name="plant_type" 
+        <input class="form-control" type="text" name="germinate_date" 
         id="entry-field" placeholder="00/00/0000">
       </label><br>
 
       <label><strong>Did You Direct Sow or Transplant? </strong></label><br>
-      <input type="radio" id="direct" name="plantedhow" value="direct sow">
+      <input type="radio" id="direct" name="directsow" value="direct sow">
       <label for="direct sow">Direct Sow</label><br>
-      <input type="radio" id="transplant" name="plantedhow" value="transplant">
+      <input type="radio" id="transplant" name="directsow" value="transplant">
       <label for="transplant">Transplant</label><br><br>
       
 
       <label><strong>Transplant/Direct Sow Date</strong> <br>
-        <input class="form-control" type="text" name="plant_type" id="entry-field" 
+        <input class="form-control" type="text" name="transplant_date" id="entry-field" 
         placeholder="00/00/0000">
       </label><br>
 
@@ -73,7 +75,7 @@
     <br><br>
 
     <label><strong>Growing Medium</strong></label><br>
-      <select name="medium">
+      <select name="growing_medium">
         <option value="None"></option>
         <option value="Soil">Soil</option>
         <option value="Water Only (Herbs)">Water Only (Herbs)</option>
@@ -115,7 +117,11 @@
           <label for="allday">24 hrs ON</label><br>
 
 
-        <br><br>
+        <br>
+      <label><strong>Upload Photo</strong></label><br><br>
+
+            <input type="file" name="my-file" id="my-file" name="photo_url">
+            <br> <br>
 
 <!-- organic grow yes or no button  -->
 

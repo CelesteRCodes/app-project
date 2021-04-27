@@ -78,6 +78,8 @@ environments = ["grow tent/room", "cabinet greenhouse", "windowsill",
 
 lights = ["sunlight", "fluorescent", "led", "hps", "cfl"]
 
+schedules = ["on mother nature's time", "12 on, 12 off", "6-10 on", "24 on"]
+
 
 for n in range(10):
     email = f'user{n}@test.com'  
@@ -95,6 +97,7 @@ for n in range(10):
     # randomly chooses a plant
     
     plant_name = choice(names)
+    
 
     user_id = choice(user_ids)
     plant_id = choice(plant_ids)
@@ -108,13 +111,14 @@ for n in range(10):
     location = choice(locations)
     environment = choice(environments)
     lighting = choice(lights)
+    schedule = choice(schedules)
     
 
     new_plant = CRUD.create_plant(user_id=user_id, plant_name=plant_name, 
-            plant_type=plant_type, germinate_date=germinate_date,
+            plant_type=plant_type, photo_url=photo_url, germinate_date=germinate_date,
             directsow=directsow, transplant_date=transplant_date, 
             growing_medium=growing_medium, location=location,
-            environment=environment, lighting=lighting)
+            environment=environment, lighting=lighting, schedule=schedule)
 
 
 

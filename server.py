@@ -128,11 +128,22 @@ def process_new_plant_form():
         location = request.form.get('location')
         environment = request.form.get('environment')
         lighting = request.form.get('lighting')
+        schedule = request.form.get('schedule')
 
+        my_file = request.files['my-file']
+        print(my_file)
+        if my_file.filename != "":
 
-        plant = CRUD.create_plant(user_id, plant_name, plant_type, germinate_date,
-                    directsow, transplant_date, growing_medium, location,
-                    environment, lighting)
+            result = cloudinary.uploader.upload(my_file, api_key=CLOUDINARY_KEY,
+                                                api_secret=CLOUDINARY_KEY_SECRET,
+                                                cloud_name='celestercodes')
+            img_url = result['secure_url']
+        else:
+            img_url = None
+
+        plant = CRUD.create_plant(user_id, plant_name=plant_name, plant_type=plant_type, germinate_date=germinate_date,
+                    directsow=directsow, transplant_date=transplant_date, growing_medium=growing_medium,
+                     location=location, environment=environment, lighting=lighting, schedule=schedule, photo_url=img_url)
 
         return redirect(f'/show-user-plants/{user_id}')
     

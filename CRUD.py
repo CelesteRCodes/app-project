@@ -54,14 +54,14 @@ def get_user_by_id(id):
 
 # <User 11>
 
-def create_plant(user_id, plant_name, plant_type, germinate_date,
+def create_plant(user_id, plant_name, plant_type, photo_url, germinate_date,
                     directsow, transplant_date, growing_medium, location,
-                    environment, lighting):
+                    environment, lighting, schedule):
     plant = UserPlant(user_id=user_id, plant_name=plant_name, 
             plant_type=plant_type, germinate_date=germinate_date,
             directsow=directsow, transplant_date=transplant_date, 
             growing_medium=growing_medium, location=location,
-            environment=environment, lighting=lighting)
+            environment=environment, lighting=lighting, schedule=schedule, photo_url=photo_url)
     db.session.add(plant)
     db.session.commit()
     return plant
