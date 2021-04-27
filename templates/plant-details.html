@@ -23,7 +23,7 @@
     <center><div id="plant-details">
       
     <strong>Plant Type:</strong> {{ plant.plant_type }} <br><br>
-    <strong>Plant Photo:</strong>  {{ plant.img_url }} <br><br>
+    
     <strong>Germination Date: </strong> {{ plant.germinate_date }} <br><br>
     <strong>Transplant Date:</strong>  {{ plant.transplant_date }} <br><br> 
     <strong>Growing Medium:</strong>  {{ plant.growing_medium }} <br><br>
@@ -35,7 +35,7 @@
 
        <center> <div class="container">
      
-        <a href="/show-user-plants"><button type="submit">Show My Plants</button></a>
+        <a href="/show-user-plants/{{session['id']}}"><button type="submit">Show My Plants</button></a>
       </div></center>
     
 

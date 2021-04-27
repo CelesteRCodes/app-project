@@ -31,19 +31,23 @@
   <th>Photo</th>
 </tr>
 
+{% for plantlog in plantlogs %}
 <tr>
   
-  <td>{{ plant.comment }}</td>
-  <td>{{ plant.timestamp }}</td>
-  <td>{{ plant.water }}</td>
-  <td>{{ plant.nutrients }}</td>
-  <td>{{ plant.temp }}</td>
-  <td>{{ plant.humidity }}</td>
-  <td>{{ plant.img_url }}</td>
+  <td>{{ plantlog.comment }}</td>
+  <td>{{ plantlog.timestamp }}</td>
+  <td>{{ plantlog.water }}</td>
+  <td>{{ plantlog.nutrients }}</td>
+  <td>{{ plantlog.temp }}</td>
+  <td>{{ plantlog.humidity }}</td>
+  <td>{% if plantlog.photo_url %} 
+    <img src="{{plantlog.photo_url}}">
+    {% endif %}
+  </td>
   
 </tr> 
 
-
+{% endfor %}
 
 </table></center>
 
@@ -51,7 +55,7 @@
 
   <center> <div class="container">
      
-    <a href="/show-user-plants"><button type="submit">Show My Plants</button></a>
+    <a href="/show-user-plants/{{session['id']}}"><button type="submit">Show My Plants</button></a>
   </div></center>
 
   <center><div class="container">

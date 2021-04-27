@@ -77,23 +77,28 @@ def get_all_plants():
     plants = UserPlant.query.all()
     return plants
 
-def get_user_plant_by_id(id):
-    users_plant_id = UserPlant.query.filter_by(id = id).first()
+# test:
+#     
+# get_All_plants()
+# >>> [<UserPlant 1>, <UserPlant 2>, <UserPlant 3> 
+# ... <<UserPlant 10>]
+
+
+def get_plant_by_plant_id(id):
+    plant_by_id = UserPlant.query.filter_by(id = id).first()
     
-    return users_plant_id 
-    # user-plant object returned, not id
- 
-# does this get users_plant_id? or just plant_id?
+    return plant_by_id
+    # user-plant object returned
 
-# test
+    # >>> get_user_plant_by_id(3)
+    # <UserPlant 3>
 
-# >>> get_user_plant_by_id(3)
+def get_user_plants_by_user_id(user_id):
+    user_plants = UserPlant.query.filter_by(user_id=user_id).all()
+    return user_plants
 
-# <UserPlant 3>
-
-def get_plant_by_id(id):
-   plant_id = UserPlant.query.filter_by(id=id).one()
-   return plant_id
+   # get_user_plants_by_user_id(5)
+   # >>> [<UserPlant 3>, <UserPlant 7>, <UserPlant 10>]
 
 def create_entry(users_plant_id, comment, timestamp, 
     water=None, nutrients=None, temp=None, 
@@ -126,6 +131,10 @@ def get_all_entries():
 
 # <GrowLog 1> ... <GrowLog12> shows all growlogs
 
+def get_entries_by_plant_id(users_plant_id):
+    return GrowLog.query.filter_by(users_plant_id = users_plant_id).all()
+
+
 def get_entry_by_id(id):
     return GrowLog.query.filter_by(id = id).first()
 
@@ -133,6 +142,14 @@ def get_entry_by_id(id):
 # >>> get_entry_by_id(2)
 
 # <GrowLog2>
+
+
+# to get entries for a specific plant, 
+# use users_plant_id, the foreign key?
+
+# def get_get_by_users_plant_id(id):
+#     GrowLog.query.filter_by(users_plant_id=users_plant_id).all()
+
 
 if __name__ == '__main__':
     from server import app

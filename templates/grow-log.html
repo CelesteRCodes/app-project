@@ -48,7 +48,10 @@ how to populate multiple to show multiple grow-logs at once?-->
   <td>{{ entry.nutrients }}</td>
   <td>{{ entry.temp }}</td>
   <td>{{ entry.humidity }}</td>
-  <td>{{ entry.img_url }}</td>
+  <td>{% if entry.photo_url %} 
+      <img src="{{entry.photo_url}}">
+      {% endif %}
+  </td>
 </tr> 
 
 {% endfor %}
@@ -69,7 +72,7 @@ can just display the data in tables on this page  -->
 
   <center> <div class="container">
      
-    <a href="/show-user-plants"><button type="submit">Show My Plants</button></a>
+    <a href="/show-user-plants/{{session['id']}}"><button type="submit">Show My Plants</button></a>
   </div></center>
 
   <center><div class="container">

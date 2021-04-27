@@ -8,21 +8,21 @@ want to see:
 master log (DONE)
 
 log for specific plant (DONE)
-update that log for specific plant 
-(working on displaying PHOTO from new-entry.html)
+update that log for specific plant (DONE)
+working on displaying PHOTO from new-entry.html (DONE)
 
 on user-plant.html
 2 links next to each plant, make a new entry, show me the logs for this plant
-(DONE))
+(DONE)
 
 figure out how to upload a photo, store it in database and display 
-it on the grow-log.html in it's respective table (PENDING)
+it on the grow-log.html in it's respective table (DONE)
 how to upload a photo with each entry and display it on growlog.html? 
-(PENDING, added CLOUDINARY API)
+(DONE)
 
 
 how to add a delete button for user plants and growlog to delete plants/entries? 
-
+(PENDING)
 
 how to clear log and user plants to start fresh? 
 (RE-SEEDED DATABASE)
@@ -36,6 +36,7 @@ TESTS! (unit and integration tests)
 unit tests can be docstrings
 - added tests to CRUD.py
 - need tests for model.py and seed.py
+- URL testing complete, all pages/routes/functions work as intended 
 
 
 styling of pages (PENDING)
@@ -78,15 +79,16 @@ display info from input-form.html on grow-log.html in tables (master log)
 
 
 3. new-user.html register a new user, should add user's 
-    info to db so login can check against it (PENDING - checking if it'll add a new user)
+    info to db so login can check against it (DONE)
     -submit button takes user back to login on homepage (DONE)
 
 4. user-plants.html shows all the plants for that user
     -can also click on each plant to add a new entry to that plant's log (DONE)
     -can also click on "add new plant" button to add a new plant (DONE)
 
-5. plant-details.html shows all of the specific plant's details (inputted when new plant is added)
+5. plant-details.html shows all of the specific plant's details (input when new plant is added)
     -can click button back to user-plants.html (DONE)
+    - not showing germination, transplant date or growing medium input data from new-plant.html (PENDING)
 
 6. new-plant.html form to add a new plant to user's plants page
     -takes in plant name and plant type, adds it to the user-plants.html (DONE)
@@ -100,12 +102,12 @@ display info from input-form.html on grow-log.html in tables (master log)
 8. plant-log.html shows log for each specific plant
     - has signout button that takes user back to homepage to log back in (DONE)
     - should show all the plant info along with most recent photo 
-    (PENDING - working on uploading/displaying photos)
+    (DONE)
 
 9. grow-log.html displays all the entries for that specific plant
     - has signout button that takes user back to homepage to log back in (DONE)
     - should show all the plant info along with most recent photo 
-    (PENDING - working on uploading/displaying photos)
+    (DONE)
     - looks like a master grow log
 
 *it goes from user-plant.html, to new-entry.html (or new-plant.html first),
