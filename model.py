@@ -75,6 +75,7 @@ class GrowLog(db.Model):
     timestamp = db.Column(db.DateTime)
     water= db.Column(db.String, nullable=True)
     nutrients = db.Column(db.String, nullable=True)
+    nute_type = db.Column(db.String, nullable=True)
     temp = db.Column(db.String, nullable=True)
     humidity = db.Column(db.String, nullable=True)
     photo_url = db.Column(db.String, nullable=True)

@@ -80,6 +80,7 @@ lights = ["sunlight", "fluorescent", "led", "hps", "cfl"]
 
 schedules = ["on mother nature's time", "12 on, 12 off", "6-10 on", "24 on"]
 
+nute_types = ["eggshells", "banana water", "fish fertilizer", "compost tea", "rabbit/chicken poo"]
 
 for n in range(10):
     email = f'user{n}@test.com'  
@@ -133,6 +134,8 @@ for n in range(10):
 
     nutrients = choice(nutes)
 
+    nute_type = choice(nute_types)
+
     humidity = choice(humidity_list)
 
     temp = choice(temps)
@@ -143,7 +146,7 @@ for n in range(10):
 
     new_entry = CRUD.create_entry(users_plant_id=users_plant_id,
         comment=comment, timestamp=timestamp, water=water, 
-        nutrients=nutrients, temp=temp, humidity=humidity, photo_url=photo_url)
+        nutrients=nutrients, nute_type=nute_type, temp=temp, humidity=humidity, photo_url=photo_url)
 
 
     

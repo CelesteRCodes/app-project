@@ -168,6 +168,7 @@ def process_new_entry_form(plant_id):
         timestamp = datetime.now()
         water = request.form.get('water')
         nutrients = request.form.get('nutrients')
+        nute_type = request.form.get('nute_type')
         temp = request.form.get('temp')
         humidity = request.form.get('humidity')
         my_file = request.files['my-file']
@@ -183,8 +184,8 @@ def process_new_entry_form(plant_id):
         
         print(img_url)
         CRUD.create_entry(plant_id, comment, timestamp, 
-            water=water, nutrients=nutrients, temp=temp, 
-            humidity=humidity, photo_url=img_url)
+            water=water, nutrients=nutrients, nute_type=nute_type, 
+            temp=temp, humidity=humidity, photo_url=img_url)
 
         return redirect(f'/plant-log/{plant_id}')
     

@@ -36,10 +36,11 @@
           
         <br><br>
         
-          <label><strong>Nutrients Given?</strong></label><br>
+          <label><strong>Nutrient Type Given?</strong></label><br>
 
-          <input name="nutrientname" type="text" placeholder="Name of Nutrient/Type" /> 
+          <input name="nute_type" type="text" placeholder="Name of Nutrient/Type" /> 
           <br>
+          <label><strong>Amount?</strong></label><br>
           <select name="nutrients">
             <option value="None"></option>
             <option value="0.5-3mL">0.5-3 mL</option>
@@ -50,10 +51,6 @@
             <option value="20-30mL">20-30 mL</option>
             <option value="30mL+">Greater than 30 mL</option>
           </select> <br><br>
-
-  
-          
-         <br><br>
         
           
           <strong> Choose current temp range of environment:</strong>
@@ -88,9 +85,10 @@
           </select> <br><br>
        
         <label><strong>Comments</strong></label><br>
+        <center>(psst.. can add any additional nutrients here)</center>
         <input name="comment" type="text" placeholder="How are the leaves looking?"/>
           
-        <br>
+        <br><br>
       
           <label><strong>Upload Photo</strong></label><br><br>
 
@@ -99,14 +97,12 @@
           <button type="submit">Add New Entry</button> 
           <br> <br>
 
+    </div></center></form>
 
     <center>
-    <div class="container">
-     
-      <a href='/show-user-plants'><button type="cancel">Cancel</button></a>
-    </div></center>
+      <a href="/show-user-plants/{{session['id']}}"><button type="cancel">Cancel</button></a>
+    </center>
 
-    
 </body>
 
 {% endblock %}

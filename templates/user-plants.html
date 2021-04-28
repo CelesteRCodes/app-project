@@ -49,21 +49,11 @@
         <br>
     </div>
 
-      <form action="/show-new-plant-form">
-        <input type="submit" value="Add New Plant"/>
-        </form>
-        <br>
-
-        
-          <!-- this should actually be a list of plants (maybe as objects 
-            that we can manipulate or turn into links?)
-          each plant should have the option to 'Add New Log Entry' -->
-
-        <form action="/grow-log">
-          <input type="submit" value="Show Master Log"/>
-          </form>
-          <br>
-    
+          <center><div class="container">
+            <a href="/show-new-plant-form"><button type="submit">Add A New Plant</button></a><br><br>
+            <a href="/grow-log"><button type="submit">Show Master Log</button></a><br><br>
+            <a href="/"><button type="submit">Logout</button></a>
+          </div></center>
   </body>
 
 {% endblock %}

@@ -32,19 +32,21 @@
     <strong>Transplant Date:</strong>  {{ plant.transplant_date }} <br><br> 
     <strong>Growing Medium:</strong>  {{ plant.growing_medium }} <br><br>
     <strong>Plant Environment: </strong> {{ plant.environment }} <br><br>
-    <strong>Lighting Used:</strong>  {{ plant.lighting }} <br><br>
+    <strong>Type of Lighting Used:</strong>  {{ plant.lighting }} <br><br>
     <strong>Lighting Schedule: </strong>{{ plant.schedule }}<br>
-    </div></center>
+    </div></center><br><br>
   
 
        <center> <div class="container">
-     
-        <a href="/show-new-entry-form/{{ plant.id }}"><button type="submit">Update Plant's Log</button></a>
+        <a href="/plant-log/{{ plant.id }}"><button type="submit">Show {{plant.plant_name}}'s Log</button></a>
+        <br><br>
+        <a href="/show-new-entry-form/{{ plant.id }}"><button type="submit">Update {{plant.plant_name}}'s Log</button></a>
             <br><br>
-        <a href="/show-user-plants/{{session['id']}}"><button type="submit">Show My Plants</button></a>
+        <a href="/show-user-plants/{{session['id']}}"><button type="submit">Show All Plants</button></a>
       
         <br><br>
         <a href="/"><button type="submit">Logout</button></a>
+        
       </div></center>
     
 

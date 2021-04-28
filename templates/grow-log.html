@@ -29,8 +29,9 @@ how to populate multiple to show multiple grow-logs at once?-->
   <th>User_Plant_Id</th>
   <th>Comment</th>
   <th>Timestamp</th>
-  <th>Water</th>
-  <th>Nutrients</th>
+  <th>Water Amount</th>
+  <th>Nutrient Used</th>
+  <th>Nutrient Amount</th>
   <th>Temp</th>
   <th>Humidity</th>         
   <th>Photo</th>
@@ -45,6 +46,7 @@ how to populate multiple to show multiple grow-logs at once?-->
   <td>{{ entry.comment }}</td>
   <td>{{ entry.timestamp }}</td>
   <td>{{ entry.water }}</td>
+  <td> {{entry.nute_type }}</td>
   <td>{{ entry.nutrients }}</td>
   <td>{{ entry.temp }}</td>
   <td>{{ entry.humidity }}</td>
