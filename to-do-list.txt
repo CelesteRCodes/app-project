@@ -9,12 +9,11 @@ Bootstrap Resources
 
 
 trying to add an update plant log button on plant-log.html and getting jinja errors 
-     
-<a href="/show-new-entry-form/{{ plantlog.id }}"><button type="submit">Update Log</button></a>
+     <a href="/show-new-entry-form/{{ plantlog.id }}"><button type="submit">Update Log</button></a>
     <br><br>
-
-    i've tried {{ plant.id }} {{ id }} and am getting the same errors
-    
+i've tried {{ plant.id }} {{ id }} and am getting the same errors
+    only works if inside for loop, which will create a new button with each new log; messes up the format
+    taking the button off the page; it's not needed
 
 create a new user, store new user information
 (DONE)
