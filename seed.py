@@ -35,18 +35,20 @@ comments = ["watered with ph water and no nutrients",
             "added amethyst to soil",
             "added citrine to soil"]
 
-photo_urls = ["/static/aloe.jpg",
-             "/static/bamboo.jpg",
-              "/static/ginger.jpg",
-              "/static/spiderplant.jpg",
-              "/static/lavendar.jpg",
-              "/static/orchid.jpg",
-              "/static/sage.jpg",
-              "/static/tomato.jpg",
-              "/static/avocado.jpg",
-              "/static/celery.jpg",
-              "/static/spinach.jpg",
-              "/static/cucumber.jpg"]
+photo_urls = ["\static\img\\aloe.jpg",
+             "\static\img\\bamboo.jpg",
+              "\static\img\ginger.jpg",
+              "\static\img\spiderplant.jpg",
+              "\static\img\lavendar.jpg",
+              "\static\img\orchid.jpg",
+              "\static\img\sage.jpg",
+              "\static\img\\tomato.jpg",
+              "\static\img\\avocado.jpg",
+              "\static\img\celery.jpg",
+              "\static\img\spinach.jpg",
+              "\static\img\cucumber.jpg"]
+
+        
 
 temps = ["45", "50-55", "60-65", "70-75", "80-85", "90"]
 

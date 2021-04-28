@@ -53,25 +53,3 @@ html {
   }
   
   
-  /* change styles for span and cancel button on extra small screens */
-
-  @media screen and (max-width: 300px) {
-    span.psw {
-       display: block;
-       float: none;
-    }
-    .cancelbtn {
-       width: 100%;
-    }
-  }
-
-
-  .center {
-    margin: auto;
-    width: 50%;
-    border: 3px solid black;
-    padding: 10px;
-  }
-
-
-  
