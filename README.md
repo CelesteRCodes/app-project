@@ -1,5 +1,5 @@
 # Grow Better
-See Where You’ve Been And See How You Grow
+See Where You’ve Been To See How You Grow
 
 # Description
 A web app where users can log data, including photos, to document every step of their plant's growth. The idea is for the user to learn from past mistakes/mishaps and have the opportunity to watch their grow in real time with photo documentation. Users can learn from trial and error with the logs to reference in the future as needed. 
