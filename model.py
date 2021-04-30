@@ -52,7 +52,6 @@ class UserPlant(db.Model):
 
 # making the class UserPlant and plants table
 # id is the primary key, it autoincrements with each new plant
-# column names = id, user_id, plant_name
 # user_id is the foreign key that connects UserPlant to User
 # using backref to create relationship between the 2 tables
 # and saving that relationship in a variable, user
@@ -84,7 +83,6 @@ class GrowLog(db.Model):
 
 # making the class GrowLog and growlogs table
 # id is the primary key, it autoincrements with each new plant
-# column names = users_plant_id, comment, timestamp, photo_url
 # users_plant_id is the foreign key that connects GrowLog to UserPlant
 # using backref to create relationship between the 2 tables
 # and saving that relationship in a variable, userplants
@@ -104,16 +102,4 @@ def connect_to_db(flask_app, db_uri='postgresql:///project', echo=True):
 if __name__ == '__main__':
     from server import app
 
-    # Call connect_to_db(app, echo=False) if your program output gets
-    # too annoying; this will tell SQLAlchemy not to print out every
-    # query it executes.
-
-    # connect_to_db(app)
-
     
-# get user info, create new one, store info in db
-# when they log in, you check that and see if that matches
-# isn't safe to store their data in plain text (can do for our MVP)
-# will use hashlib (Python library), creates a hash of password
-# we store that hash in our db and compare the hash of what they typed in 
-# with what we have stored in our db

@@ -7,6 +7,10 @@ Bootstrap Resources
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
+demo day = 5/13
+need to write a script for demo of app
+current demo video is 1:30 long; only need to introduce myself and reason for app
+
 
 trying to add an update plant log button on plant-log.html and getting jinja errors 
      <a href="/show-new-entry-form/{{ plantlog.id }}"><button type="submit">Update Log</button></a>
@@ -54,6 +58,7 @@ unit tests can be docstrings
 - added tests to CRUD.py
 - need tests for model.py and seed.py
 - URL testing complete, all pages/routes/functions work as intended 
+- wanting to make a seperate testing file; also the tests added should be in docstrings (PENDING)
 
 
 styling of pages (PENDING)
@@ -155,3 +160,6 @@ data from new-entry not being stored or being accessed
 check routes?
 is it being saved in db?
 problem entering or getting things out of db?
+
+4/30:
+wanting to add an organic grow yes or no button to new-plant.html; would need to add a column to model.py

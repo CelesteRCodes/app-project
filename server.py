@@ -80,7 +80,6 @@ def process_new_user_form():
     
     return redirect("/login")
 
-# new users are not being created, stored in db; no errors are thrown
 
 @app.route('/show-user-plants/<int:user_id>', methods=['GET'])
 def show_user_plants(user_id):
@@ -98,11 +97,6 @@ def show_plant_details(id):
 
     return render_template('plant-details.html', plant=plant)
 
-
-
-# need to store id in a session to ensure that the entry 
-# is being stored with that id
-# when rendering template, show plant's name on top
 
 @app.route('/show-new-plant-form', methods=['GET', 'POST'])
 def show_new_plant_form():

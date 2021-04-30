@@ -58,7 +58,6 @@ nutes = ["0.5-1mL", "2-3mL", "4-5mL", "6-9mL", "10-15mL"]
 
 humidity_list = ["30-35%", "40-45%", "50-55%", "60-65%", "70-75%", "80-85%"]
 
-# timestamps = ["13:33", "16:16", "12:22", "14:44", "11:11", "15:55"]
 
 plant_ids = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
@@ -152,14 +151,3 @@ for n in range(10):
 
 
     
-    
-# datetime.strptime([growlog'timestamp'], '%Y-%m-%d')
-# is this correct to get a timestamp of current time from user's input?
-
-    # db.session.commit()
-    # creates the new entry for grow log
-
-
-
-# logs = GrowLog.query.filter_by(id=id).order_by(desc(timestamp)).all()
-# shows us the growlog by most recent posting first (descending order)

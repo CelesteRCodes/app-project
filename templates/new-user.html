@@ -5,30 +5,15 @@
 {% block content %}
 
 <head>
-  
-
-
-  <link href= "/static/new-user.css" rel="stylesheet" type="text/css">
-
-  <link rel="stylesheet" href="/static/new-user.css">
-  <center>
-  <h2>
-      <a>Hi, New User! </a>
-    </h2>
-    
-    <!-- <h4>See where you’ve been and see how you grow!</h4> -->
-  </center>
-    
+  <center><h2><a>Hi, New User! </a></h2></center> 
 </head>
+
 <body>
   <div>
-    
-
-
     <center><h3>Sign up to start tracking your plant's growth here!</h3></center>
    
-  <form action="/process-new-user-form" method='POST' id="new-user-form">
-   <center><div class="form-group">
+    <form action="/process-new-user-form" method='POST' id="new-user-form">
+      <center><div class="form-group">
       <br>
       <label><strong>Email</strong> <br>
         
@@ -48,23 +33,15 @@
       </label><br>
 
       
-     <center><button type="submit"><a href="/process-new-user-form"></a>Add New User</button>
+     <button type="submit"><a href="/process-new-user-form"></a>Add New User</button>
       <label><br><br>
-        
-        </center>
-      </form>
+      </div></center>
+   
 
       <button type="submit"><a href="/"></a>Cancel</button>
       
-        <br>
-
-      
-
-  <!-- both buttons should take user to grow-log.html -->
-  
-  <!-- when clicking add new plant, I get a 404, instead of button taking 
-  user back to user-plants.html with a new plant added -->
- 
+        <br> 
+    </form>
 </body>
 
 {% endblock %}
