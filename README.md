@@ -17,8 +17,8 @@ Cloudinary Media Optimizer
 * Jinja
 
 # Installation
-* git clone
-* Virtual Studio was used (version control)
+* git clone https://github.com/CelesteRCodes/app-project.git
+* Virtual Studio (version control)
 * pip3 install requirements.txt
 * source env/bin/activate (work in virutal environment)
 * source secrets.sh (for Cloudinary API)
@@ -26,9 +26,10 @@ Cloudinary Media Optimizer
 # Usage
 
 # Support 
-Feel free to email me with any questions about this code at: celestercodes@gmail.com 
+Feel free to email me with any questions at: celestercodes@gmail.com 
 
 # Roadmap
+Coming Soon:
 * Problems/issues page: where users can add/view/edit (resolve) a list of problems for each plant
 This page will create an alert that will be displayed on user-plants.html until user resolves the issue
 * Set up a resource page with links/information on specific plant types for users to gather more information for their grows on user-plants.html
