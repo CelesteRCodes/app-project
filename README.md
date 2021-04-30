@@ -2,7 +2,7 @@
 See Where You’ve Been And See How You Grow
 
 # Description
-A web app where users can log data, including photos, to document every step of their plant's growth. The idea is for the user to learn from past mistakes/mishaps. Learn from trial and error with the logs to reference in the future as needed. 
+A web app where users can log data, including photos, to document every step of their plant's growth. The idea is for the user to learn from past mistakes/mishaps and have the opportunity to watch their grow in real time with photo documentation. Users can learn from trial and error with the logs to reference in the future as needed. 
 
 # Visuals
 
@@ -10,20 +10,23 @@ A web app where users can log data, including photos, to document every step of 
 Cloudinary Media Optimizer
 
 # Technology Used
-Python
-HTML
-CSS
-SQLAlchemy (Database)
-Jinja
-Version Control - Virtual Studio
+* Python
+* HTML
+* CSS
+* SQLAlchemy (Database)
+* Jinja
 
 # Installation
-See requirements.txt
+* git clone
+* Virtual Studio was used (version control)
+* pip3 install requirements.txt
+* source env/bin/activate (work in virutal environment)
+* source secrets.sh (for Cloudinary API)
 
 # Usage
 
 # Support 
-celestercodes@gmail.com
+Feel free to email me with any questions about this code at: celestercodes@gmail.com 
 
 # Roadmap
 * Problems/issues page: where users can add/view/edit (resolve) a list of problems for each plant
@@ -38,6 +41,10 @@ Hackbright Staff
 
 # License
 This project is licensed under the terms of the MIT license.
+Copyright 2021, Celeste Rowe, All rights reserved.
 
 # Project Status
 Currently Updating Project
+
+# Release History
+0.1.0 beta - Initial release of MVP
