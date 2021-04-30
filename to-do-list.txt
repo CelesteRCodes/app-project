@@ -163,3 +163,5 @@ problem entering or getting things out of db?
 
 4/30:
 wanting to add an organic grow yes or no button to new-plant.html; would need to add a column to model.py
+
+changelog needed?
