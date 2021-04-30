@@ -165,3 +165,9 @@ problem entering or getting things out of db?
 wanting to add an organic grow yes or no button to new-plant.html; would need to add a column to model.py
 
 changelog needed?
+
+# app-project
+tell them what it is (with context)
+show them what it looks like in action
+show them how they use it
+tell them any other relevant details
