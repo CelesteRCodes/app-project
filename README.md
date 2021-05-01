@@ -13,29 +13,28 @@ Programming allows her to continue using that curious/solution focused mindset e
 # Features
 * Homepage: 
     * users can register, login or retrieve login information from forgot password 
-    * (homepage.html)
+    
 * New User: 
     * registers new user and creates a new database for user to add/update plants and their logs 
-    * (new-user.html)
+    
 * Forgot Password: 
     * form where user enters login retrieval information to receive an email to change password 
-    * (forgotpw.html)
+    
 * User's Plants: 
     * has links for each specific plant to: show plant's detail page, show the plant's log, and to update the plant's log
     * can also add a new plant to the user's plants list 
-    * (user-plants.html)
+    
 * New Plant: 
     * adds a new plant to user's plant's page 
-    * (new-plant.html)
+    
 * New Entry: 
     * updates a specific plant log 
-    * (new-entry.html)
+    
 * Plant Log: 
     * shows all entries for each specific plant 
-    * (plant-log.html)
-* Master Grow Log: 
+
+* Master Grow Log
     * for admin to view all logs submitted by all users 
-    * (growlog.html)
 
 # API Used
 Cloudinary Media Optimizer
