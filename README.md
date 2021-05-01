@@ -27,11 +27,11 @@ A web app where users can log data, including photos, to document every step of 
 
 # <a name="visuals"></a>
 # Visuals
-![Homepage](\static\img\printscreen\homepage.jpg.png) 
+![Homepage](project\static\img\printscreen\homepage.jpg.png) 
 
-![Forgot PW](\static\img\printscreen\forgot.jpg) 
+![Forgot PW](project\static\img\printscreen\forgot.jpg) 
 
-![Add New User](\static\img\printscreen\newuser.jpg) 
+![Add New User](project\static\img\printscreen\newuser.jpg) 
 
 ![User's Plants](\static\img\printscreen\userplants.jpg)
 
