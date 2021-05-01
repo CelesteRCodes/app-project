@@ -1,3 +1,4 @@
+
 # Grow Better
 See Where You’ve Been To See How You Grow
 
@@ -11,30 +12,31 @@ Programming allows her to continue using that curious/solution focused mindset e
 # Visuals
 
 # Features
-* Homepage: 
+* Homepage
     * users can register, login or retrieve login information from forgot password 
     
-* New User: 
+* New User
     * registers new user and creates a new database for user to add/update plants and their logs 
     
-* Forgot Password: 
+* Forgot Password
     * form where user enters login retrieval information to receive an email to change password 
     
-* User's Plants: 
+* User's Plants
     * has links for each specific plant to: show plant's detail page, show the plant's log, and to update the plant's log
     * can also add a new plant to the user's plants list 
     
-* New Plant: 
+* New Plant
     * adds a new plant to user's plant's page 
     
-* New Entry: 
+* New Entry
     * updates a specific plant log 
     
-* Plant Log: 
+* Plant Log
     * shows all entries for each specific plant 
 
 * Master Grow Log
     * for admin to view all logs submitted by all users 
+
 
 # API Used
 Cloudinary Media Optimizer
@@ -54,16 +56,6 @@ Cloudinary Media Optimizer
 * source env/bin/activate (work in virutal environment)
 * source secrets.sh (for Cloudinary API)
 
-
-# Roadmap
-Coming Soon:
-* Problems/issues page: where users can add/view/edit (resolve) a list of problems for each plant.
-This page will create an alert that will be displayed on user-plants.html until user resolves the issue
-* Set up a resource page with links/information on specific plant types for users to gather more information for their grows on user-plants.html
-* Set up a snapshot of most recent updates to plant-log.html that will be displayed on user-plants.html
-* Set up a weekly summary snapshot from data entered into each plant-log.html to be displayed on plant-details.html 
-* Make all snapshots easily "shareable" 
-
 # Support 
 Feel free to email me with any questions at: celestercodes@gmail.com 
 
@@ -76,6 +68,14 @@ Copyright 2021, Celeste Rowe, All rights reserved.
 
 # Project Status
 Currently Updating Project
+
+# Coming Soon
+* Problems/issues page: where users can add/view/edit (resolve) a list of problems for each plant.
+This page will create an alert that will be displayed on user-plants.html until user resolves the issue
+* Set up a resource page with links/information on specific plant types for users to gather more information for their grows on user-plants.html
+* Set up a snapshot of most recent updates to plant-log.html that will be displayed on user-plants.html
+* Set up a weekly summary snapshot from data entered into each plant-log.html to be displayed on plant-details.html 
+* Make all snapshots easily "shareable" 
 
 # Release History
 0.1.0 beta - Initial release of MVP
