@@ -4,8 +4,13 @@ from datetime import datetime
 
 
 def create_user(username, email, password):
-    """ create_user("celestercodes", "celestercodes@gmail.com", "bestcoderever")
-        <User 11> new user is made. """
+    """ 
+    For example:
+
+    >>> create_user("celestercodes", "celestercodes@gmail.com", "bestcoderever")
+
+    [<User 12>]
+    """
     user = User(username = username, email = email, password = password)
     
     db.session.add(user)
@@ -14,25 +19,39 @@ def create_user(username, email, password):
 
 
 def get_all_users():
+    """ For example:
+    >>> get_all_users()
+
+    [<User 1>, <User 2>, <User 3>, <User 4>, <User 5>, <User 6>,
+    <User 7>, <User 8>, <User 9>, <User 10>,<User 12>, <User 12>]
+    """ 
     return User.query.all()
 
 def get_user_by_email(email):
-    """ get_user_by_email("celestercodes@gmail.com")
-    <User 11>
-""" 
+    """ For example:
+    >>> get_user_by_email("celestercodes@gmail.com")
+
+    [<User 12>]
+    """ 
     return User.query.filter_by(email=email).one()
 
 
 
 def get_user_by_username(username):
-    """ get_user_by_username("celestercodes")
-    <User 11>""" 
+    """ For example:
+    >>> get_user_by_username("celestercodes")
+
+    [<User 12>]
+    """ 
     return User.query.filter_by(username=username).first()
 
 
 def get_user_by_id(id):
-    """ get_user_by_id(11)
-    <User 11>""" 
+    """ For example:
+    >>> get_user_by_id(11)
+
+    [<User 11>]
+    """ 
     user_id = User.query.filter_by(id = id).first()
     
     return user_id
@@ -41,8 +60,12 @@ def get_user_by_id(id):
 def create_plant(user_id, plant_name, plant_type, photo_url, germinate_date,
                     directsow, transplant_date, growing_medium, location,
                     environment, lighting, schedule):
-    """ create_plant(1, "Nadine") 
-                    <UserPlant 11> """ 
+    """ For example:
+    >>> create_plant(1, "Nadine", "Aloe", "/static/img/aloe.jpg", "11/11/2020", 
+    "direct sow", "11/11/2020", "soil", "indoor", "windowsill", "sunlight", "mother natures time") 
+
+    [<UserPlant 12>] 
+    """ 
 
     plant = UserPlant(user_id=user_id, plant_name=plant_name, 
             plant_type=plant_type, germinate_date=germinate_date,
@@ -56,32 +79,46 @@ def create_plant(user_id, plant_name, plant_type, photo_url, germinate_date,
 
 
 def get_all_plants():
-    """ [<UserPlant 1>, <UserPlant 2>, <UserPlant 3>... <UserPlant 10>] """
+    """ For example: 
+    >>> get_all_plants()
+
+    [<UserPlant 1>, <UserPlant 2>, <UserPlant 3>, <UserPlant 4>, <UserPlant 5>, <UserPlant 6>, <UserPlant 7>,
+    <UserPlant 8>, <UserPlant 9>, <UserPlant 10>, <UserPlant 11>, <UserPlant 12>] 
+    """
     plants = UserPlant.query.all()
     return plants
 
 
 def get_plant_by_plant_id(id):
-    """ get_user_plant_by_id(3)
-    <UserPlant 3>""" 
+    """ For example:
+    >>> get_plant_plant_by_id(3)
+
+    [<UserPlant 3>]
+    """ 
     plant_by_id = UserPlant.query.filter_by(id = id).first()
     
     return plant_by_id
    
 
 def get_user_plants_by_user_id(user_id):
-    """ get_user_plants_by_user_id(5)
-   [<UserPlant 3>, <UserPlant 7>, <UserPlant 10>] """ 
+    """ For example:
+    >>> get_user_plants_by_user_id(3)
+
+   [<UserPlant 4>] 
+   """ 
     user_plants = UserPlant.query.filter_by(user_id=user_id).all()
     return user_plants
 
-   
 
 def create_entry(users_plant_id, comment, timestamp, 
     water=None, nutrients=None, nute_type=None, temp=None, 
     humidity=None, photo_url=None):
-    """ create_entry(1, "leaves are green", datetime.now(), "1-5ml", "5-10ml", "70-75", "30-35%")
-    <GrowLog 12> """ 
+    """ For example:
+    >>> create_entry(1, "leaves are green", datetime.now(), "1-5ml", 
+    "5-10ml", "eggshells", "70-75", "30-35%", "/static/img/aloe.jpg")
+
+    [<GrowLog 12>] 
+    """ 
 
     new_entry = GrowLog(users_plant_id=users_plant_id, 
         comment=comment, timestamp=timestamp, water=water, 
@@ -94,18 +131,27 @@ def create_entry(users_plant_id, comment, timestamp,
 
 
 def get_all_entries():
-    """get_all_entries()
-    <GrowLog 1> ... <GrowLog12> """ 
+    """ For example:
+    >>> get_all_entries()
+    [<GrowLog 1>, <GrowLog 2>, <GrowLog 3>, <GrowLog 4>, <GrowLog 5>, <GrowLog 6>, <GrowLog 7>,
+    <GrowLog 8>, <GrowLog 9>, <GrowLog 10>, <GrowLog 11>, <GrowLog 12>] """ 
     return GrowLog.query.all()
 
 
 def get_entries_by_plant_id(users_plant_id):
+    """ For example:
+    >>> get_entries_by_plant_id(4)
+    [<GrowLog 4>]
+    """
     return GrowLog.query.filter_by(users_plant_id = users_plant_id).all()
+    
 
 
 def get_entry_by_id(id):
-    """get_entry_by_id(2)
-    <GrowLog2> """ 
+    """ For example:
+    >>> get_entry_by_id(2)
+    [<GrowLog2>] 
+    """ 
     return GrowLog.query.filter_by(id = id).first()
 
 
@@ -113,3 +159,6 @@ def get_entry_by_id(id):
 if __name__ == '__main__':
     from server import app
     connect_to_db(app)
+
+
+    # $ python3 -m doctest CRUD.py to run doctests
