@@ -5,7 +5,6 @@ See Where You’ve Been To See How You Grow
 # Table of Contents
 * [About Me](#about-me)
 * [Description](#description)
-* [Visuals](#visuals)
 * [Features](#features)
 * [Technologies](#tech)
 * [Installation](#install)
@@ -25,59 +24,59 @@ Programming allows her to continue using that curious/solution focused mindset e
 A web app where users can log data, including photos, to document every step of their plant's growth. The idea is for the user to learn from past mistakes/mishaps and have the opportunity to watch their grow in real time with photo documentation. Users can learn from trial and error with the logs to reference in the future as needed. 
 </a>
 
-# <a name="visuals"></a>
-# Visuals
-Homepage<br>
-![Homepage](https://github.com/CelesteRCodes/app-project/blob/main/homepage.jpg.png) 
-
-Forgot PW <br>
-![Forgot PW](https://github.com/CelesteRCodes/app-project/blob/main/forgot.jpg) 
-
-Add New User <br>
-![Add New User](https://github.com/CelesteRCodes/app-project/blob/main/newuser.jpg) 
-
-User's Plants <br>
-![User's Plants](https://github.com/CelesteRCodes/app-project/blob/main/userplants.jpg)
-
-Add New Plant <br>
-![Add New Plant](https://github.com/CelesteRCodes/app-project/blob/main/newplant.jpg.png) 
-
-New Entry <br>
-![New Entry](https://github.com/CelesteRCodes/app-project/blob/main/newentry.jpg.png) 
-
-Show Plantlog <br>
-![Show Plantlog](https://github.com/CelesteRCodes/app-project/blob/main/plantlog.jpg) 
-
-Master Growlog <br>
-![Master Growlog](https://github.com/CelesteRCodes/app-project/blob/main/masterlog.jpg) 
-
-
 # <a name="feautures">
 # Features
 * Homepage
     * users can register, login or retrieve login information from forgot password 
-    
+
+Homepage<br>
+![Homepage](https://github.com/CelesteRCodes/app-project/blob/main/homepage.jpg.png)     
+
 * New User
     * registers new user and creates a new database for user to add/update plants and their logs 
+
+Add New User <br>
+![Add New User](https://github.com/CelesteRCodes/app-project/blob/main/newuser.jpg)    
     
+
 * Forgot Password
     * form where user enters login retrieval information to receive an email to change password 
+
+Forgot PW <br>
+![Forgot PW](https://github.com/CelesteRCodes/app-project/blob/main/forgot.jpg) 
     
 * User's Plants
     * has links for each specific plant to: show plant's detail page, show the plant's log, and to update the plant's log
     * can also add a new plant to the user's plants list 
-    
+
+User's Plants <br>
+![User's Plants](https://github.com/CelesteRCodes/app-project/blob/main/userplants.jpg) 
+
 * New Plant
     * adds a new plant to user's plant's page 
     
+Add New Plant <br>
+![Add New Plant](https://github.com/CelesteRCodes/app-project/blob/main/newplant.jpg.png) 
+
 * New Entry
     * updates a specific plant log 
-    
+
+New Entry <br>
+![New Entry](https://github.com/CelesteRCodes/app-project/blob/main/newentry.jpg.png) 
+
+
 * Plant Log
     * shows all entries for each specific plant 
 
+Show Plantlog <br>
+![Show Plantlog](https://github.com/CelesteRCodes/app-project/blob/main/plantlog.jpg) 
+
 * Master Grow Log
     * for admin to view all logs submitted by all users </a>
+
+Master Growlog <br>
+![Master Growlog](https://github.com/CelesteRCodes/app-project/blob/main/masterlog.jpg) 
+
 
 # <a name="tech">
 # Technologies Used
