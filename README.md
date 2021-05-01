@@ -27,9 +27,9 @@ A web app where users can log data, including photos, to document every step of 
 
 # <a name="visuals"></a>
 # Visuals
-![Homepage](\img\printscreen\homepage.jpg.png) 
+![Homepage](https://github.com/CelesteRCodes/app-project/blob/main/homepage.jpg.png) 
 
-![Forgot PW](project\static\img\printscreen\forgot.jpg) 
+![Forgot PW] (project\static\img\printscreen\forgot.jpg) 
 
 ![Add New User](project\static\img\printscreen\newuser.jpg) 
 
