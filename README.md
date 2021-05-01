@@ -3,7 +3,7 @@
 # Grow Better
 See Where You’ve Been To See How You Grow <br>
 
-![Grow Better](https://github.com/CelesteRCodes/app-project/blob/main/logo.jpg) 
+![Grow Better](https://github.com/CelesteRCodes/app-project/blob/main/static/img/logo.jpg) 
 
 # Table of Contents
 * [About Me](#about-me)
