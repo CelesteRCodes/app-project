@@ -30,50 +30,50 @@ A web app where users can log data, including photos, to document every step of 
 ![Homepage](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/homepage.jpg.png)   
 
 ## Homepage
-    * users can register, login or retrieve login information from forgot password 
+* users can register, login or retrieve login information from forgot password 
 <br>
 
 ![Add New User](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/newuser.jpg) 
 
 ## Add New User
-    * registers new user and creates a new database for user to add/update plants and their logs 
+* registers new user and creates a new database for user to add/update plants and their logs 
  <br>   
 
 ![Forgot PW](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/forgot.jpg) 
 
 ## Forgot Password
-    * form where user enters login retrieval information to receive an email to change password 
+* form where user enters login retrieval information to receive an email to change password 
 <br>
 
 ![User's Plants](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/userplants.jpg)
 
 ## Show User's Plants
-    * has links for each specific plant to: show plant's detail page, show the plant's log, and to update the plant's log
-    * can also add a new plant to the user's plants list 
+* has links for each specific plant to: show plant's detail page, show the plant's log, and to update the plant's log
+* can also add a new plant to the user's plants list 
 <br>
 
 ![Add New Plant](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/newplant.jpg.png) 
 
 ## Add New Plant
-    * adds a new plant to user's plant's page 
+* adds a new plant to user's plant's page 
 <br>  
 
 ![New Entry](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/newentry.jpg.png) 
 
 ## Add New Entry
-    * updates a specific plant log 
+* updates a specific plant log 
 <br>
 
 ![Show Plantlog](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/plantlog.jpg) 
 
 ## Show Plant's Log
-    * shows all entries for each specific plant 
+* shows all entries for each specific plant 
 <br>
 
 ![Master Growlog](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/masterlog.jpg) 
 
 ## Show The Master Growlog
-    * for admin to view all logs submitted by all users </a>
+* for admin to view all logs submitted by all users </a>
 
 
 
@@ -92,11 +92,11 @@ A web app where users can log data, including photos, to document every step of 
 
 # <a name="install">
 # Installation
-* git clone https://github.com/CelesteRCodes/app-project.git
-* Virtual Studio (version control)
-* pip3 install requirements.txt
-* source env/bin/activate (work in virutal environment)
-* source secrets.sh (for Cloudinary API)
+    * git clone https://github.com/CelesteRCodes/app-project.git
+    * Virtual Studio (version control)
+    * pip3 install requirements.txt
+    * source env/bin/activate (work in virutal environment)
+    * source secrets.sh (for Cloudinary API)
 </a>
 
 
