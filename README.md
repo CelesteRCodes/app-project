@@ -27,29 +27,29 @@ A web app where users can log data, including photos, to document every step of 
 
 # <a name="visuals"></a>
 # Visuals
-Homepage <br>
-(https://github.com/CelesteRCodes/app-project/blob/main/homepage.jpg.png) 
+Homepage<br>
+![Homepage](https://github.com/CelesteRCodes/app-project/blob/main/homepage.jpg.png) 
 
 Forgot PW <br>
-(https://github.com/CelesteRCodes/app-project/blob/main/forgot.jpg) 
+![Forgot PW](https://github.com/CelesteRCodes/app-project/blob/main/forgot.jpg) 
 
 Add New User <br>
-(https://github.com/CelesteRCodes/app-project/blob/main/newuser.jpg) 
+![Add New User](https://github.com/CelesteRCodes/app-project/blob/main/newuser.jpg) 
 
 User's Plants <br>
-(https://github.com/CelesteRCodes/app-project/blob/main/userplants.jpg)
+![User's Plants](https://github.com/CelesteRCodes/app-project/blob/main/userplants.jpg)
 
 Add New Plant <br>
-(https://github.com/CelesteRCodes/app-project/blob/main/newplant.jpg.png) 
+![Add New Plant](https://github.com/CelesteRCodes/app-project/blob/main/newplant.jpg.png) 
 
 New Entry <br>
-(https://github.com/CelesteRCodes/app-project/blob/main/newentry.jpg.png) 
+![New Entry](https://github.com/CelesteRCodes/app-project/blob/main/newentry.jpg.png) 
 
 Show Plantlog <br>
-(https://github.com/CelesteRCodes/app-project/blob/main/plantlog.jpg) 
+![Show Plantlog](https://github.com/CelesteRCodes/app-project/blob/main/plantlog.jpg) 
 
-Master Growlog<br> 
-(https://github.com/CelesteRCodes/app-project/blob/main/masterlog.jpg) 
+Master Growlog <br>
+![Master Growlog](https://github.com/CelesteRCodes/app-project/blob/main/masterlog.jpg) 
 
 
 # <a name="feautures">
