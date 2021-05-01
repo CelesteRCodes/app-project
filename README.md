@@ -25,7 +25,7 @@ Programming allows her to continue using that curious/solution focused mindset e
 A web app where users can log data, including photos, to document every step of their plant's growth. The idea is for the user to learn from past mistakes/mishaps and have the opportunity to watch their grow in real time with photo documentation. Users can learn from trial and error with the logs to reference in the future as needed. 
 </a>Description
 
-# <a name="visuals"></a>Visuals
+# <a name="visuals"></a>
 # Visuals
 
 # <a name="feautures">
@@ -95,6 +95,7 @@ This page will create an alert that will be displayed on user-plants.html until 
 # <a name="release-history">
 # Release History
 0.1.0 beta - Initial release of MVP
+![beta logo](https://img.shields.io/badge/[GrowBetter-Beta]-[0.1.0]-[evergreen].svg) 
 </a>Release History
 
 
