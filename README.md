@@ -27,7 +27,7 @@ A web app where users can log data, including photos, to document every step of 
 
 # <a name="visuals"></a>
 # Visuals
-![Homepage](project\static\img\printscreen\homepage.jpg.png) 
+![Homepage](\img\printscreen\homepage.jpg.png) 
 
 ![Forgot PW](project\static\img\printscreen\forgot.jpg) 
 
