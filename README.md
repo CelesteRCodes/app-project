@@ -6,19 +6,20 @@ A web app where users can log data, including photos, to document every step of 
 
 # About Me
 Celeste is an ICU RN of 5 years, who recently found out that she's in love with computer programming. After facing burnout from working 12 hr shifts on the floors during these trying times, she finally decided to make a career change. Being a lifelong learner, jumping into a completely new field was actually enticing for this one. She enjoys adding new skills to her toolbelt and "I learn something new everyday," is one of her favorite mantras. 
-Programming allows her to use that curious/solution focused mindset every day. It also allows for "rubber-ducking" or "thinking outloud," which turned out to be a pleasant surprise for her, since this is one of her innate talents. Having the opportunity to create an app that she's been itching to make with assistance from talented instructors, is probably the best part of all. Grow Better came from a place of personal need. Her OCD struck her while gardening and created a desire for a log to store detailed documentation neatly with photos. So, Grow Better was born!    
+Programming allows her to continue using that curious/solution focused mindset every day. It also allows for "rubber-ducking" or "thinking outloud," which turned out to be a pleasant surprise for her, since this is one of her innate talents. Having the opportunity to create an app that she's been itching to make with assistance from talented instructors, is probably the best part of all. Grow Better came from a place of personal need. Her OCD struck her while gardening and created a desire for a log to store detailed documentation neatly with photos. So, Grow Better was born!    
 
 # Visuals
 
 # API Used
 Cloudinary Media Optimizer
 
-# Technology Used
+# Technologies Used
 * Python
 * HTML
 * CSS
 * SQLAlchemy (Database)
-* Jinja
+* Jinja2
+* PostgresQL
 
 # Installation
 * git clone https://github.com/CelesteRCodes/app-project.git
@@ -31,6 +32,17 @@ Cloudinary Media Optimizer
 
 # Support 
 Feel free to email me with any questions at: celestercodes@gmail.com 
+
+# Features
+* Log In (homepage.html)
+* Add New User Form page; registers new user and creates new database for user to add/update plants their (new-user.html)
+* Forgot Password Form page; user enters login retrieval information to receive an email to change password (forgotpw.html)
+* User's Plants shows all plants added by user with links to show specific plant's log, update log; can also add a new plant (user-plants.html)
+    * where you can update/view plant log, and plant details for each specific plant
+* New Plant Form page to add a new plant to user's plant's page (new-plant.html)
+* New Entry Form page to update specific plant log (new-entry.html)
+* Plant log on plant-log.html; shows all entries for each specific plant (plant-log.html)
+* Master Grow Log page for admin to view all logs submitted by all users (growlog.html)
 
 # Roadmap
 Coming Soon:
