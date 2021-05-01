@@ -27,21 +27,21 @@ A web app where users can log data, including photos, to document every step of 
 
 # <a name="visuals"></a>
 # Visuals
-![Homepage](C:\Users\celes_000\src\project\static\img\printscreen\homepage.jpg.png) 
+![Homepage](\static\img\printscreen\homepage.jpg.png) 
 
-![Forgot PW](C:\Users\celes_000\src\project\static\img\printscreen\forgot.jpg) 
+![Forgot PW](\static\img\printscreen\forgot.jpg) 
 
-![Add New User](C:\Users\celes_000\src\project\static\img\printscreen\newuser.jpg) 
+![Add New User](\static\img\printscreen\newuser.jpg) 
 
-![User's Plants](C:\Users\celes_000\src\project\static\img\printscreen\userplants.jpg)
+![User's Plants](\static\img\printscreen\userplants.jpg)
 
-![Add New Plant](C:\Users\celes_000\src\project\static\img\printscreen\newplant.jpg.png) 
+![Add New Plant](\static\img\printscreen\newplant.jpg.png) 
 
-![New Entry](C:\Users\celes_000\src\project\static\img\printscreen\newentry.jpg.png) 
+![New Entry](\static\img\printscreen\newentry.jpg.png) 
 
-![Show Plantlog](C:\Users\celes_000\src\project\static\img\printscreen\plantlog.jpg) 
+![Show Plantlog](\static\img\printscreen\plantlog.jpg) 
 
-![Master Growlog](C:\Users\celes_000\src\project\static\img\printscreen\masterlog.jpg) 
+![Master Growlog](\static\img\printscreen\masterlog.jpg) 
 
 
 # <a name="feautures">
