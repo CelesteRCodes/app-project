@@ -10,6 +10,17 @@ Programming allows her to continue using that curious/solution focused mindset e
 
 # Visuals
 
+# Features
+* Log In: users can register, login or retrieve login information from forgot password (homepage.html)
+* Add New User Form page: registers new user and creates new database for user to add/update plants their (new-user.html)
+* Forgot Password: user enters login retrieval information to receive an email to change password (forgotpw.html)
+* User's Plants: shows all plants added by user with links to show specific plant's log, update log; can also add a new plant (user-plants.html)
+    * where you can update/view plant log, and plant details for each specific plant
+* New Plant: adds a new plant to user's plant's page (new-plant.html)
+* New Entry: updates a specific plant log (new-entry.html)
+* Plant Log: shows all entries for each specific plant (plant-log.html)
+* Master Grow Log: page for admin to view all logs submitted by all users (growlog.html)
+
 # API Used
 Cloudinary Media Optimizer
 
@@ -28,21 +39,6 @@ Cloudinary Media Optimizer
 * source env/bin/activate (work in virutal environment)
 * source secrets.sh (for Cloudinary API)
 
-# Usage
-
-# Support 
-Feel free to email me with any questions at: celestercodes@gmail.com 
-
-# Features
-* Log In (homepage.html)
-* Add New User Form page; registers new user and creates new database for user to add/update plants their (new-user.html)
-* Forgot Password Form page; user enters login retrieval information to receive an email to change password (forgotpw.html)
-* User's Plants shows all plants added by user with links to show specific plant's log, update log; can also add a new plant (user-plants.html)
-    * where you can update/view plant log, and plant details for each specific plant
-* New Plant Form page to add a new plant to user's plant's page (new-plant.html)
-* New Entry Form page to update specific plant log (new-entry.html)
-* Plant log on plant-log.html; shows all entries for each specific plant (plant-log.html)
-* Master Grow Log page for admin to view all logs submitted by all users (growlog.html)
 
 # Roadmap
 Coming Soon:
@@ -52,6 +48,9 @@ This page will create an alert that will be displayed on user-plants.html until 
 * Set up a snapshot of most recent updates to plant-log.html that will be displayed on user-plants.html
 * Set up a weekly summary snapshot from data entered into each plant-log.html to be displayed on plant-details.html 
 * Make all snapshots easily "shareable" 
+
+# Support 
+Feel free to email me with any questions at: celestercodes@gmail.com 
 
 # Authors and Acknowledgment
 Hackbright Staff 
