@@ -1,6 +1,8 @@
 
-# Grow Better
+![Grow Better](https://github.com/CelesteRCodes/app-project/blob/main/logo.jpg)
+
 See Where You’ve Been To See How You Grow
+ 
 
 # Table of Contents
 * [About Me](#about-me)
