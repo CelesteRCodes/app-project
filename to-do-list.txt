@@ -49,9 +49,10 @@ and have buttons to update each specific plant's growlog (DONE)
 TESTS! (unit and integration tests)
 unit tests can be docstrings
 - added tests to CRUD.py (they're docstrings and all tests are failing due to how db is set up; unable to hardcode output)
-- need tests for model.py and seed.py
+- need tests for seed.py
 - URL testing complete, all pages/routes/functions work as intended 
-- wanting to make a seperate testing file; also the tests added should be in docstrings (PENDING)
+- wanting to make a seperate testing file (PENDING)
+- wanting to test flask routes as well (PENDING)
 
 
 
@@ -146,22 +147,6 @@ more tests
     unit tests
     no need to test model.py
 
-login is not tied to a specific user, all plants added to db show on user-plants.html
-regardless of who signed in
-
-
-data from new-entry not being stored or being accessed
-check routes?
-is it being saved in db?
-problem entering or getting things out of db?
 
 4/30:
 wanting to add an organic grow yes or no button to new-plant.html; would need to add a column to model.py
-
-changelog needed?
-
-# app-project
-tell them what it is (with context)
-show them what it looks like in action
-show them how they use it
-tell them any other relevant details
