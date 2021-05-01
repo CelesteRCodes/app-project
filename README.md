@@ -45,39 +45,38 @@ A web app where users can log data, including photos, to document every step of 
 
 ![Forgot PW](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/forgot.jpg) 
 
-
-
-![User's Plants](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/userplants.jpg)
-
 ## Show User's Plants
 * has links for each specific plant to: show plant's detail page, show the plant's log, and to update the plant's log
 * can also add a new plant to the user's plants list 
-<br>
 
-![Add New Plant](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/newplant.jpg.png) 
+![User's Plants](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/userplants.jpg)
 
 ## Add New Plant
 * adds a new plant to user's plant's page 
-<br>  
+ 
 
-![New Entry](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/newentry.jpg.png) 
+![Add New Plant](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/newplant.jpg.png) 
 
 ## Add New Entry
 * updates a specific plant log 
-<br>
 
-![Show Plantlog](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/plantlog.jpg) 
+
+![New Entry](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/newentry.jpg.png) 
 
 ## Show Plant's Log
 * shows all entries for each specific plant 
-<br>
+
+
+![Show Plantlog](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/plantlog.jpg) 
+
+## Show The Master Growlog
+* for admin to view all logs submitted by all users 
+
 
 ![Master Growlog](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/masterlog.jpg) 
 
-## Show The Master Growlog
-* for admin to view all logs submitted by all users </a>
 
-
+</a>
 
 
 # <a name="tech">
