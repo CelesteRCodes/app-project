@@ -31,12 +31,14 @@ A web app where users can log data, including photos, to document every step of 
     * users can register, login or retrieve login information from forgot password 
 
 <br>
+
 ![Homepage](https://github.com/CelesteRCodes/app-project/blob/main/homepage.jpg.png)     
 
 * Add New User
     * registers new user and creates a new database for user to add/update plants and their logs 
 
 <br>
+
 ![Add New User](https://github.com/CelesteRCodes/app-project/blob/main/newuser.jpg)    
     
 
@@ -44,6 +46,7 @@ A web app where users can log data, including photos, to document every step of 
     * form where user enters login retrieval information to receive an email to change password 
 
 <br>
+
 ![Forgot PW](https://github.com/CelesteRCodes/app-project/blob/main/forgot.jpg) 
     
 * Show User's Plants
@@ -51,18 +54,21 @@ A web app where users can log data, including photos, to document every step of 
     * can also add a new plant to the user's plants list 
 
 <br>
+
 ![User's Plants](https://github.com/CelesteRCodes/app-project/blob/main/userplants.jpg) 
 
 * Add New Plant
     * adds a new plant to user's plant's page 
     
 <br>
+
 ![Add New Plant](https://github.com/CelesteRCodes/app-project/blob/main/newplant.jpg.png) 
 
 * Add New Entry
     * updates a specific plant log 
 
 <br>
+
 ![New Entry](https://github.com/CelesteRCodes/app-project/blob/main/newentry.jpg.png) 
 
 
@@ -70,12 +76,14 @@ A web app where users can log data, including photos, to document every step of 
     * shows all entries for each specific plant 
 
  <br>
+
 ![Show Plantlog](https://github.com/CelesteRCodes/app-project/blob/main/plantlog.jpg) 
 
 * Show The Master Growlog
     * for admin to view all logs submitted by all users </a>
 
 <br>
+
 ![Master Growlog](https://github.com/CelesteRCodes/app-project/blob/main/masterlog.jpg) 
 
 
