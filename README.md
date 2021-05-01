@@ -20,11 +20,12 @@ See Where You’ve Been To See How You Grow <br>
 # <a name="about-me">
 # About Me
 Celeste is an ICU RN of 5 years, who recently found out that she's in love with computer programming. After facing burnout from working 12 hr shifts on the floors during these trying times, she finally decided to make a career change. Being a lifelong learner, jumping into a completely new field was actually enticing for this one. She enjoys adding new skills to her toolbelt and "I learn something new everyday," is one of her favorite sayings. <br>
-Programming allows her to continue using that curious/solution oriented mindset every day. It also allows for "rubber-ducking" or "thinking outloud," which turned out to be a pleasant surprise for her, since this is one of her innate talents. Having the opportunity to create an app that she's been itching to make with assistance from talented instructors, is probably the best part of all. Grow Better came from a place of personal need. Her OCD struck her while gardening and created a desire for a log to store detailed documentation neatly with photos. So, Grow Better was born!  </a>
+Programming allows her to continue using that curious/solution oriented mindset every day. It also allows for "rubber-ducking" or "thinking outloud," which turned out to be a pleasant surprise for her, since this is one of her innate talents.<br>
+Having the opportunity to create an app that she's been itching to make with assistance from talented instructors, is probably the best part of all. Grow Better came from a place of personal need. Her OCD struck her while gardening and created a desire for a log to store detailed documentation neatly with photos. So, Grow Better was born!  </a>
 
 # <a name="description">
 # Description
-A web app where users can log data, including photos, to document every step of their plant's growth. The idea is for the user to learn from past mistakes/mishaps and have the opportunity to watch their grow in real time with photo documentation. Users can learn from trial and error with the logs to reference in the future as needed. 
+Grow Better is a web app where users can log data, including photos, to document every step of their plant's growth. The idea is for the user to learn from past mistakes/mishaps and have the opportunity to watch their grow in real time with photo documentation. "See where you've been to see how you grow." Users can learn from trial and error with the logs to reference in the future as needed. 
 </a>
 
 # <a name="feautures">
