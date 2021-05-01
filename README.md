@@ -27,23 +27,25 @@ A web app where users can log data, including photos, to document every step of 
 # <a name="feautures">
 # Features
 
-![Homepage](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/homepage.jpg.png)   
-
 ## Homepage
 * users can register, login or retrieve login information from forgot password 
-<br>
 
-![Add New User](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/newuser.jpg) 
+
+![Homepage](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/homepage.jpg.png)   
 
 ## Add New User
 * registers new user and creates a new database for user to add/update plants and their logs 
- <br>   
+ 
 
-![Forgot PW](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/forgot.jpg) 
+![Add New User](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/newuser.jpg) 
 
 ## Forgot Password
 * form where user enters login retrieval information to receive an email to change password 
-<br>
+
+
+![Forgot PW](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/forgot.jpg) 
+
+
 
 ![User's Plants](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/userplants.jpg)
 
