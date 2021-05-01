@@ -26,55 +26,56 @@ A web app where users can log data, including photos, to document every step of 
 
 # <a name="feautures">
 # Features
+
 * Homepage
     * users can register, login or retrieve login information from forgot password 
 
-Homepage<br>
+<br>
 ![Homepage](https://github.com/CelesteRCodes/app-project/blob/main/homepage.jpg.png)     
 
-* New User
+* Add New User
     * registers new user and creates a new database for user to add/update plants and their logs 
 
-Add New User <br>
+<br>
 ![Add New User](https://github.com/CelesteRCodes/app-project/blob/main/newuser.jpg)    
     
 
 * Forgot Password
     * form where user enters login retrieval information to receive an email to change password 
 
-Forgot PW <br>
+<br>
 ![Forgot PW](https://github.com/CelesteRCodes/app-project/blob/main/forgot.jpg) 
     
-* User's Plants
+* Show User's Plants
     * has links for each specific plant to: show plant's detail page, show the plant's log, and to update the plant's log
     * can also add a new plant to the user's plants list 
 
-User's Plants <br>
+<br>
 ![User's Plants](https://github.com/CelesteRCodes/app-project/blob/main/userplants.jpg) 
 
-* New Plant
+* Add New Plant
     * adds a new plant to user's plant's page 
     
-Add New Plant <br>
+<br>
 ![Add New Plant](https://github.com/CelesteRCodes/app-project/blob/main/newplant.jpg.png) 
 
-* New Entry
+* Add New Entry
     * updates a specific plant log 
 
-New Entry <br>
+<br>
 ![New Entry](https://github.com/CelesteRCodes/app-project/blob/main/newentry.jpg.png) 
 
 
-* Plant Log
+* Show Plant's Log
     * shows all entries for each specific plant 
 
-Show Plantlog <br>
+ <br>
 ![Show Plantlog](https://github.com/CelesteRCodes/app-project/blob/main/plantlog.jpg) 
 
-* Master Grow Log
+* Show The Master Growlog
     * for admin to view all logs submitted by all users </a>
 
-Master Growlog <br>
+<br>
 ![Master Growlog](https://github.com/CelesteRCodes/app-project/blob/main/masterlog.jpg) 
 
 
