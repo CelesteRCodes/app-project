@@ -27,53 +27,52 @@ A web app where users can log data, including photos, to document every step of 
 # <a name="feautures">
 # Features
 
+![Homepage](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/homepage.jpg.png)   
+
+<br>
+
 * Homepage
     * users can register, login or retrieve login information from forgot password 
 
+![Add New User](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/newuser.jpg) 
 <br>
-
-![Homepage](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/homepage.jpg.png)     
-
 * Add New User
     * registers new user and creates a new database for user to add/update plants and their logs 
-
-<br>
-
-![Add New User](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/newuser.jpg)    
     
-
+![Forgot PW](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/forgot.jpg) 
+<br>
 * Forgot Password
     * form where user enters login retrieval information to receive an email to change password 
 
-![Forgot PW](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/forgot.jpg) 
-    
+![User's Plants](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/userplants.jpg)
+<br>
 * Show User's Plants
     * has links for each specific plant to: show plant's detail page, show the plant's log, and to update the plant's log
     * can also add a new plant to the user's plants list 
 
-![User's Plants](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/userplants.jpg) 
-
+![Add New Plant](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/newplant.jpg.png) 
+<br>
 * Add New Plant
     * adds a new plant to user's plant's page 
     
-![Add New Plant](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/newplant.jpg.png) 
-
+![New Entry](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/newentry.jpg.png) 
+<br>
 * Add New Entry
     * updates a specific plant log 
 
-![New Entry](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/newentry.jpg.png) 
 
-
+![Show Plantlog](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/plantlog.jpg) 
+<br>
 * Show Plant's Log
     * shows all entries for each specific plant 
 
-![Show Plantlog](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/plantlog.jpg) 
 
-
+![Master Growlog](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/masterlog.jpg) 
+<br>
 * Show The Master Growlog
     * for admin to view all logs submitted by all users </a>
 
-![Master Growlog](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/masterlog.jpg) 
+
 
 
 # <a name="tech">
@@ -123,8 +122,9 @@ This page will create an alert that will be displayed on user-plants.html until 
 # Project Status
 Currently Updating Project
 
-# Authors and Acknowledgment
+# Acknowledgments
 Hackbright Staff 
+
 
 # License
 This project is licensed under the terms of the MIT license.
