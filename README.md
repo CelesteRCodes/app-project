@@ -94,8 +94,8 @@ This page will create an alert that will be displayed on user-plants.html until 
 
 # <a name="release-history">
 # Release History
-Initial release of MVP
 ![GrowBetter-Beta](https://img.shields.io/badge/GrowBetter-0.1.0-evergreen.svg) 
+* Initial release of MVP
 </a>
 
 
