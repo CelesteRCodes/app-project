@@ -2,6 +2,27 @@
 # Grow Better
 See Where You’ve Been To See How You Grow
 
+# Table of Contents
+* [Description] (#description)
+* [About Me](#about-me)
+* [Visuals] (#visuals)
+* [Features] (#features)
+* [Technologies] (#tech)
+* [Installation] (#install)
+* [Support] (#support)
+* [Coming Soon] (#comming-soon)
+* [Release History] (#release-history)
+
+
+# <a name="about-me"></a>About Me
+# <a name="description"></a>Description
+# <a name="visuals"></a>Visuals
+# <a name="feautures"></a>Feautures
+# <a name="tech"></a>Technologies
+# <a name="support"></a>Support
+# <a name="coming-soon"></a>Coming Soon
+# <a name="release-history"></a>Release History
+
 # Description
 A web app where users can log data, including photos, to document every step of their plant's growth. The idea is for the user to learn from past mistakes/mishaps and have the opportunity to watch their grow in real time with photo documentation. Users can learn from trial and error with the logs to reference in the future as needed. 
 
