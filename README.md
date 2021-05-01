@@ -37,7 +37,7 @@ A web app where users can log data, including photos, to document every step of 
 
 ![Add New Plant](\static\img\printscreen\newplant.jpg.png) 
 
-![New Entry](\static\img\printscreen\newentry.jpg.png) 
+![New Entry](https://github.com/CelesteRCodes/app-project/blob/main/newentry.jpg.png) 
 
 ![Show Plantlog](\static\img\printscreen\plantlog.jpg) 
 
