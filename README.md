@@ -16,7 +16,6 @@ See Where You’ve Been To See How You Grow <br>
 * [Release History](#release-history)
 
 
-
 # <a name="about-me">
 # About Me
 Celeste is an ICU RN of 5 years, who recently found out that she's in love with computer programming. After facing burnout from working 12 hr shifts on the floors during these trying times, she finally decided to make a career change. Being a lifelong learner, jumping into a completely new field was actually enticing for this one. She enjoys adding new skills to her toolbelt and "I learn something new everyday," is one of her favorite sayings. <br><br>
@@ -135,6 +134,6 @@ Hackbright Staff
 
 
 # License
-This project is licensed under the terms of the MIT license.
+This project is licensed under the terms of the MIT license. <br>
 Copyright 2021, Celeste Rowe, All rights reserved.
 
