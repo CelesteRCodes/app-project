@@ -18,15 +18,31 @@ See Where You’ve Been To See How You Grow
 # <a name="about-me">
 # About Me
 Celeste is an ICU RN of 5 years, who recently found out that she's in love with computer programming. After facing burnout from working 12 hr shifts on the floors during these trying times, she finally decided to make a career change. Being a lifelong learner, jumping into a completely new field was actually enticing for this one. She enjoys adding new skills to her toolbelt and "I learn something new everyday," is one of her favorite mantras. 
-Programming allows her to continue using that curious/solution focused mindset every day. It also allows for "rubber-ducking" or "thinking outloud," which turned out to be a pleasant surprise for her, since this is one of her innate talents. Having the opportunity to create an app that she's been itching to make with assistance from talented instructors, is probably the best part of all. Grow Better came from a place of personal need. Her OCD struck her while gardening and created a desire for a log to store detailed documentation neatly with photos. So, Grow Better was born!  </a>About Me
+Programming allows her to continue using that curious/solution focused mindset every day. It also allows for "rubber-ducking" or "thinking outloud," which turned out to be a pleasant surprise for her, since this is one of her innate talents. Having the opportunity to create an app that she's been itching to make with assistance from talented instructors, is probably the best part of all. Grow Better came from a place of personal need. Her OCD struck her while gardening and created a desire for a log to store detailed documentation neatly with photos. So, Grow Better was born!  </a>
 
 # <a name="description">
 # Description
 A web app where users can log data, including photos, to document every step of their plant's growth. The idea is for the user to learn from past mistakes/mishaps and have the opportunity to watch their grow in real time with photo documentation. Users can learn from trial and error with the logs to reference in the future as needed. 
-</a>Description
+</a>
 
 # <a name="visuals"></a>
 # Visuals
+![Homepage](C:\Users\celes_000\src\project\static\img\printscreen\homepage.jpg.png) 
+
+![Forgot PW](C:\Users\celes_000\src\project\static\img\printscreen\forgot.jpg) 
+
+![Add New User](C:\Users\celes_000\src\project\static\img\printscreen\newuser.jpg) 
+
+![User's Plants](C:\Users\celes_000\src\project\static\img\printscreen\userplants.jpg)
+
+![Add New Plant](C:\Users\celes_000\src\project\static\img\printscreen\newplant.jpg.png) 
+
+![New Entry](C:\Users\celes_000\src\project\static\img\printscreen\newentry.jpg.png) 
+
+![Show Plantlog](C:\Users\celes_000\src\project\static\img\printscreen\plantlog.jpg) 
+
+![Master Growlog](C:\Users\celes_000\src\project\static\img\printscreen\masterlog.jpg) 
+
 
 # <a name="feautures">
 # Features
@@ -53,7 +69,7 @@ A web app where users can log data, including photos, to document every step of 
     * shows all entries for each specific plant 
 
 * Master Grow Log
-    * for admin to view all logs submitted by all users </a>Feautures
+    * for admin to view all logs submitted by all users </a>
 
 # <a name="tech">
 # Technologies Used
@@ -65,7 +81,7 @@ A web app where users can log data, including photos, to document every step of 
 * PostgresQL
 * API Used:
     * Cloudinary Media Optimizer
-</a>Technologies
+</a>
 
 # <a name="install">
 # Installation
@@ -74,13 +90,13 @@ A web app where users can log data, including photos, to document every step of 
 * pip3 install requirements.txt
 * source env/bin/activate (work in virutal environment)
 * source secrets.sh (for Cloudinary API)
-</a>Installation
+</a>
 
 
 # <a name="support"> 
 # Support
 Feel free to email me with any questions at: celestercodes@gmail.com 
-</a>Support
+</a>
 
 # <a name="coming-soon">
 # Coming Soon
@@ -90,7 +106,7 @@ This page will create an alert that will be displayed on user-plants.html until 
 * Set up a snapshot of most recent updates to plant-log.html that will be displayed on user-plants.html
 * Set up a weekly summary snapshot from data entered into each plant-log.html to be displayed on plant-details.html 
 * Make all snapshots easily "shareable" 
-</a>Coming Soon
+</a>
 
 # <a name="release-history">
 # Release History
