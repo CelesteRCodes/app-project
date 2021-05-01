@@ -31,49 +31,49 @@ Grow Better is a web app where users can log data, including photos, to document
 # <a name="feautures">
 # Features
 
-## Homepage
+**Homepage**
 * users can register, login or retrieve login information from forgot password 
 
 
 ![Homepage](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/homepage.jpg.png)   
 
-## Add New User
+**Add New User**
 * registers new user and creates a new database for user to add/update plants and their logs 
  
 
 ![Add New User](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/newuser.jpg) 
 
-## Forgot Password
+**Forgot Password**
 * form where user enters login retrieval information to receive an email to change password 
 
 
 ![Forgot PW](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/forgot.jpg) 
 
-## Show User's Plants
+**Show User's Plants**
 * has links for each specific plant to: show plant's detail page, show the plant's log, and to update the plant's log
 * can also add a new plant to the user's plants list 
 
 ![User's Plants](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/userplants.jpg)
 
-## Add New Plant
+**Add New Plant**
 * adds a new plant to user's plant's page 
  
 
 ![Add New Plant](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/newplant.jpg.png) 
 
-## Add New Entry
+**Add New Entry**
 * updates a specific plant log 
 
 
 ![New Entry](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/newentry.jpg.png) 
 
-## Show Plant's Log
+**Show Plant's Log**
 * shows all entries for each specific plant 
 
 
 ![Show Plantlog](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/plantlog.jpg) 
 
-## Show The Master Growlog
+**Show The Master Growlog**
 * for admin to view all logs submitted by all users 
 
 
