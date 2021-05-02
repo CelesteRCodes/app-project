@@ -7,7 +7,6 @@ See Where You’ve Been To See How You Grow <br>
 
 # <a name="table-contents">
 # Table of Contents
-* [About Me](#about-me)
 * [Description](#description)
 * [Features](#features)
 * [Technologies](#tech)
@@ -15,14 +14,8 @@ See Where You’ve Been To See How You Grow <br>
 * [Support](#support)
 * [Coming Soon](#comming-soon)
 * [Release History](#release-history)
+* [About Me](#about-me)
 
-
-# <a name="about-me">
-# About Me
-Celeste is an ICU RN of 5 years, who recently found out that she's in love with computer programming. After facing burnout from working 12 hr shifts on the floors during these trying times, she finally decided to make a career change. Being a lifelong learner, jumping into a completely new field was actually enticing for this one. "I learn something new everyday," is one of her favorite sayings and daily goals. She's driven by the desire to add new skills to her toolbelt. <br><br>
-Programming allows her to continue using that curious/solution oriented mindset every day. It also allows for "rubber-ducking" or "thinking outloud." This turned out to be a pleasant surprise for her, since "thinking out loud" is one of her innate talents.<br><br>
-Having the opportunity to create an app that she's been itching to make with assistance from talented instructors, is probably the best part of all. Grow Better came from a place of personal need. Her OCD struck while she was tending to her novice garden and created a desire for a log to store detailed documentation neatly with photos. So, Grow Better was born!  </a> <br><br>
-[Table Of Contents](#table-contents)
 
 # <a name="description">
 # Description
@@ -148,3 +141,10 @@ Hackbright Staff
 This project is licensed under the terms of the MIT license. <br>
 Copyright 2021, Celeste Rowe, All rights reserved.
 
+
+# <a name="about-me">
+# About Me
+Celeste is an ICU RN of 5 years, who recently found out that she's in love with computer programming. After facing burnout from working 12 hr shifts on the floors during these trying times, she finally decided to make a career change. Being a lifelong learner, jumping into a completely new field was actually enticing for this one. "I learn something new everyday," is one of her favorite sayings and daily goals. She's driven by the desire to add new skills to her toolbelt. <br><br>
+Programming allows her to continue using that curious/solution oriented mindset every day. It also allows for "rubber-ducking" or "thinking outloud." This turned out to be a pleasant surprise for her, since "thinking out loud" is one of her innate talents.<br><br>
+Having the opportunity to create an app that she's been itching to make with assistance from talented instructors, is probably the best part of all. Grow Better came from a place of personal need. Her OCD struck while she was tending to her novice garden and created a desire for a log to store detailed documentation neatly with photos. So, Grow Better was born!  </a> <br><br>
+[Table Of Contents](#table-contents)
