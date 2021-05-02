@@ -121,6 +121,7 @@ Feel free to email me with any questions at: celestercodes@gmail.com
 # Coming Soon
 * Problems/issues page: where users can add/view/edit (resolve) a list of problems for each plant.
 This page will create an alert that will be displayed on user-plants.html until user resolves the issue
+* Set up an alert that reminds users to feed/water plant 
 * Set up a resource page with links/information on specific plant types for users to gather more information for their grows on user-plants.html
 * Set up a snapshot of most recent updates to plant-log.html that will be displayed on user-plants.html
 * Set up a weekly summary snapshot from data entered into each plant-log.html to be displayed on plant-details.html 
