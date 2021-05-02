@@ -1,6 +1,11 @@
 
 PENDING:
 
+- cancel button on new-user.html does not work; 
+either a sqlalchemy error when inside the form 
+or it's not clickable outside of the form (PENDING)
+
+
 styling of pages (PENDING)
 - add bootstap 
 - Bootstrap Resources (layoutit.com for bootstrap layout)
