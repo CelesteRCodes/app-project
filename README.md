@@ -20,8 +20,8 @@ See Where You’ve Been To See How You Grow <br>
 # <a name="about-me">
 # About Me
 Celeste is an ICU RN of 5 years, who recently found out that she's in love with computer programming. After facing burnout from working 12 hr shifts on the floors during these trying times, she finally decided to make a career change. Being a lifelong learner, jumping into a completely new field was actually enticing for this one. She enjoys adding new skills to her toolbelt and "I learn something new everyday," is one of her favorite sayings. <br><br>
-Programming allows her to continue using that curious/solution oriented mindset every day. It also allows for "rubber-ducking" or "thinking outloud," which turned out to be a pleasant surprise for her, since this is one of her innate talents.<br><br>
-Having the opportunity to create an app that she's been itching to make with assistance from talented instructors, is probably the best part of all. Grow Better came from a place of personal need. Her OCD struck her while gardening and created a desire for a log to store detailed documentation neatly with photos. So, Grow Better was born!  </a> <br><br>
+Programming allows her to continue using that curious/solution oriented mindset every day. It also allows for "rubber-ducking" or "thinking outloud." This turned out to be a pleasant surprise for her, since "thinking out loud" is one of her innate talents.<br><br>
+Having the opportunity to create an app that she's been itching to make with assistance from talented instructors, is probably the best part of all. Grow Better came from a place of personal need. Her OCD struck while she was tending to her novice garden and created a desire for a log to store detailed documentation neatly with photos. So, Grow Better was born!  </a> <br><br>
 [Table Of Contents](#table-contents)
 
 # <a name="description">
@@ -34,13 +34,13 @@ Grow Better is a web app where users can log data, including photos, to document
 # Features
 
 **Homepage**
-* users can register, login or retrieve login information from forgot password 
+* users can register, login or retrieve login information if/when forgotten  
 
 
 ![Homepage](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/homepage.jpg)   
 
 **Add New User**
-* registers new user and creates a new database for user to add/update plants and their logs 
+* registers new user and creates a new database for user to add/update their plants and their specific logs 
  
 
 ![Add New User](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/newuser.jpg) 
@@ -52,8 +52,8 @@ Grow Better is a web app where users can log data, including photos, to document
 ![Forgot PW](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/forgotpw.jpg) 
 
 **Show User's Plants**
-* has links for each specific plant to: show plant's detail page, show the plant's log, and to update the plant's log
-* can also add a new plant to the user's plants list 
+* has links for each specific plant: 1) show plant's detail page, 2) show the plant's log, and 3) update the plant's log
+* can also add a new plant to the user's plants
 
 ![User's Plants](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/userplants.jpg)
 
