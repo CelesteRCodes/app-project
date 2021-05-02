@@ -92,7 +92,7 @@ Grow Better is a web app where users can log data, including photos, to document
 * CSS
 * SQLAlchemy (Database)
 * Jinja2
-* PostgresQL
+* PostgreSQL
 * API Used:
     * Cloudinary Media Optimizer
 
