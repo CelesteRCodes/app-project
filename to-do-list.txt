@@ -1,16 +1,42 @@
-add bootstap 
-Bootstrap Resources
+
+PENDING:
+
+styling of pages (PENDING)
+- add bootstap 
+- Bootstrap Resources (layoutit.com for bootstrap layout)
+
 - Bootstrap docs (use version 4) https://getbootstrap.com/docs/4.6/getting-started/introduction/
 - LayoutIt Bootstrap Builder: https://www.layoutit.com/
 - Bootstrap icons (see Usage link as well): https://icons.getbootstrap.com/
 - If you want to use the browser's responsive dev tools, make sure you throw this tag in the <head> </head> of your HTML:
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
 demo day = 5/13
-need to write a script for demo of app
+- need to write a script for demo of app (PENDING)
 current demo video is 1:30 long; only need to introduce myself and reason for app
 
+how to add a delete button for user plants and growlog to delete plants/entries? (PENDING)
+
+how to clear log and user plants to start fresh? (RE-SEEDED DATABASE)
+- on user's end? (PENDING)
+
+ability to delete a grow log entry/plant (PENDING)
+
+TESTS! (unit and integration tests)
+- unit tests can be docstrings
+- added tests to CRUD.py (they're docstrings and all tests are failing due to how db is set up; unable to hardcode output)
+- tests for seed.py (PENDING)
+- URL testing complete, all pages/routes/functions work as intended 
+- wanting to make a seperate testing file (PENDING)
+- wanting to test flask routes as well (PENDING)
+- integration tests: test GET with route and test POST with tearing down db/creating (PENDING)
+
+- wanting to add an organic grow yes or no button to new-plant.html; would need to add a column to model.py (PENDING)
+
+
+
+
+DONE/CLOSED:
 
 create a new user, store new user information
 (DONE)
@@ -34,36 +60,10 @@ it on the grow-log.html in it's respective table (DONE)
 how to upload a photo with each entry and display it on growlog.html? 
 (DONE)
 
-
-how to add a delete button for user plants and growlog to delete plants/entries? 
-(PENDING)
-
-how to clear log and user plants to start fresh? 
-(RE-SEEDED DATABASE)
-on user's end? (PENDING)
-
 user-plants.html should show all the user's plants (DONE) 
 and have buttons to update each specific plant's growlog (DONE)
 
-
-TESTS! (unit and integration tests)
-unit tests can be docstrings
-- added tests to CRUD.py (they're docstrings and all tests are failing due to how db is set up; unable to hardcode output)
-- need tests for seed.py
-- URL testing complete, all pages/routes/functions work as intended 
-- wanting to make a seperate testing file (PENDING)
-- wanting to test flask routes as well (PENDING)
-
-
-
-styling of pages (PENDING)
-
-
-ability to delete a grow log entry/plant (PENDING)
-
-
-make a README for project (PENDING)
-
+make a README for project (DONE)
 
 NEW FORMS CREATED, BUTTONS WORK EXCEPT FOR 'add new plant' on new-plant.html 
 and 'add new entry' on new-entry.html, geting a 404 (CLOSED, BUTTONS WORK - 4/19)
@@ -73,27 +73,25 @@ and 'add new entry' on new-entry.html, geting a 404 (CLOSED, BUTTONS WORK - 4/19
 the upload photo submit button also takes user back 
 to homepage (CLOSED, TAKES USER TO GROWLOG.HTML - 4/19)
 
-
 log out button/function (DONE)
-
 
 make sure that the info (commment at min) that user submits is actually 
 stored in the db as a new entry 
 (DONE)
 
-
 display info from input-form.html on grow-log.html in tables (master log)
 (DONE)
 
 
+
+
+DESCRIPTION OF PAGES: 
+
 9 web pages in total:
 
 1. homepage with login (works for one added user, not sure if it's allowing new additions to user)
-# need to query into database for email given, if object with email, 
-# grab password and compare it to password given
 
 2. forgot password page (still working on functionality with user info retrival)
-
 
 3. new-user.html register a new user, should add user's 
     info to db so login can check against it (DONE)
@@ -105,7 +103,7 @@ display info from input-form.html on grow-log.html in tables (master log)
 
 5. plant-details.html shows all of the specific plant's details (input when new plant is added)
     -can click button back to user-plants.html (DONE)
-    - not showing germination, transplant date or growing medium input data from new-plant.html (PENDING)
+    - not showing germination, transplant date or growing medium input data from new-plant.html (DONE)
 
 6. new-plant.html form to add a new plant to user's plants page
     -takes in plant name and plant type, adds it to the user-plants.html (DONE)
@@ -129,24 +127,3 @@ display info from input-form.html on grow-log.html in tables (master log)
 
 *it goes from user-plant.html, to new-entry.html (or new-plant.html first),
     then finally to grow-log.html for that specific plant
-
-
-
-4/23:
-no ajax needed
-
-start adding bootstrap (layout/structure)
-layoutit.com for bootstrap layout
-
-more tests
-    different kinds of test, one of each
-
-    integration tests:
-    test GET with route and test POST with tearing down db/creating
-
-    unit tests
-    no need to test model.py
-
-
-4/30:
-wanting to add an organic grow yes or no button to new-plant.html; would need to add a column to model.py

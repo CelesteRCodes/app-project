@@ -35,21 +35,20 @@ comments = ["watered with ph water and no nutrients",
             "added amethyst to soil",
             "added citrine to soil"]
 
-photo_urls = ["\static\img\\aloe.jpg",
-             "\static\img\\bamboo.jpg",
-              "\static\img\ginger.jpg",
-              "\static\img\spiderplant.jpg",
-              "\static\img\lavendar.jpg",
-              "\static\img\orchid.jpg",
-              "\static\img\sage.jpg",
-              "\static\img\\tomato.jpg",
-              "\static\img\\avocado.jpg",
-              "\static\img\celery.jpg",
-              "\static\img\spinach.jpg",
-              "\static\img\cucumber.jpg"]
+photo_urls = ["\static\img\plant-images\aloe.jpg",
+             "\static\img\plant-images\\bamboo.jpg",
+              "\static\img\plant-images\ginger.jpg",
+              "\static\img\plant-images\spiderplant.jpg",
+              "\static\img\plant-images\lavendar.jpg",
+              "\static\img\plant-images\orchid.jpg",
+              "\static\img\plant-images\sage.jpg",
+              "\static\img\plant-images\\tomato.jpg",
+              "\static\img\plant-images\\avocado.jpg",
+              "\static\img\plant-images\celery.jpg",
+              "\static\img\plant-images\spinach.jpg",
+              "\static\img\plant-images\cucumber.jpg"]
 
         
-
 temps = ["45", "50-55", "60-65", "70-75", "80-85", "90"]
 
 water_level = ["0.5-1mL", "2-3mL", "4-5mL", "6-9mL", "10-15mL"]

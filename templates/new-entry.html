@@ -1,25 +1,19 @@
 {% extends 'base.html' %}
 
 
-
 {% block content %}
 
 <head>
-
-  
   <center><h2>Add New Log Entry Below</h2></center>
-  
-    
 </head>
+
 <body>
+
   <div>
-  
-   
   <form action="/process-new-entry-form/{{ plant_id }}" method='post' id="entry-form" enctype="multipart/form-data">
    <center><div class="form-group">
       <br>
 
-      
           <label><strong>Watered?</strong></label><br>
           <select name="water">
             <option value="None"></option>
@@ -50,7 +44,6 @@
             <option value="30mL+">Greater than 30 mL</option>
           </select> <br><br>
         
-          
           <strong> Choose current temp range of environment:</strong>
             <br>(Fahrenheit)<br>
             <select name="temp">

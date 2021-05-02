@@ -1,7 +1,5 @@
 {% extends 'base.html' %}
 
-
-
 {% block content %}
 
 <head>
@@ -11,7 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   
     <link href= "/static/grow-log.css" rel="stylesheet" type="text/css">
-  
     <link rel="stylesheet" href="/static/grow-log.css">
   
   </head>
@@ -19,11 +16,8 @@
   
     <center><h1>{{plant.plant_name}}'s Details</h1></center>
     
-  
     <center><div id="plant-details">
       
-    
-    
       {% if plant.photo_url %} <br>
         <img src="{{plant.photo_url}}"><br>
         {% endif %}<br><br>
@@ -36,7 +30,6 @@
     <strong>Lighting Schedule: </strong>{{ plant.schedule }}<br>
     </div></center><br><br>
   
-
        <center> <div class="container">
         <a href="/plant-log/{{ plant.id }}"><button type="submit">Show {{plant.plant_name}}'s Log</button></a>
         <br><br>
@@ -48,10 +41,7 @@
         <a href="/"><button type="submit">Logout</button></a>
         
       </div></center>
-    
-
-  
- 
+     
 </body>
 
 {% endblock %}

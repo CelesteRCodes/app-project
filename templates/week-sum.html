@@ -1,7 +1,5 @@
 {% extends 'base.html' %}
 
-
-
 {% block content %}
 
 <head>
@@ -19,7 +17,6 @@
   
     <center><h1>{{plant.plant_name}} Weekly Summary</h1></center>
     
-  
     <center><div id="week-summary">
   <table style="width:100%">
 
@@ -44,29 +41,20 @@
     
   </tr> 
   
-  
-  
   </table></center>
   
     </div>
-
-  
-  
 
        <center> <div class="container">
      
         <a href="/show-user-plants"><button type="submit">Show My Plants</button></a>
       </div></center>
     
-
       <center><div class="container">
      
         <a href="/"><button type="submit">Logout</button></a>
       </div></center>
-    
-
   
- 
 </body>
 
 {% endblock %}

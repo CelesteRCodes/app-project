@@ -1,0 +1,27 @@
+html {
+    height: 100%;
+    background-image: url('/static/img/minimal.jpg');
+    opacity: 1;
+    background-size: cover;
+  }
+
+
+  body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("loginback.jpg");
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    
+  }
+  /* grid display to center it's contents align-items (vertically) 
+  and justify-items (horizontally) */
+  form {
+    border: 3px solid #f1f1f1;
+  
+  }
+
+
+ 
