@@ -34,7 +34,7 @@ Grow Better is a web app where users can log data, including photos, to document
 * users can register, login or retrieve login information from forgot password 
 
 
-![Homepage](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/homepage.jpg.png)   
+![Homepage](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/homepage.jpg)   
 
 **Add New User**
 * registers new user and creates a new database for user to add/update plants and their logs 
@@ -46,7 +46,7 @@ Grow Better is a web app where users can log data, including photos, to document
 * form where user enters login retrieval information to receive an email to change password 
 
 
-![Forgot PW](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/forgot.jpg) 
+![Forgot PW](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/forgotpw.jpg) 
 
 **Show User's Plants**
 * has links for each specific plant to: show plant's detail page, show the plant's log, and to update the plant's log
@@ -58,13 +58,13 @@ Grow Better is a web app where users can log data, including photos, to document
 * adds a new plant to user's plant's page 
  
 
-![Add New Plant](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/newplant.jpg.png) 
+![Add New Plant](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/newplant.jpg) 
 
 **Add New Entry**
 * updates a specific plant log 
 
 
-![New Entry](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/newentry.jpg.png) 
+![New Entry](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/newentry.jpg) 
 
 **Show Plant's Log**
 * shows all entries for each specific plant 
