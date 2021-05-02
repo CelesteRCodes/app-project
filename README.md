@@ -52,7 +52,7 @@ Grow Better is a web app where users can log data, including photos, to document
 ![Forgot PW](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/forgotpw.jpg) 
 
 **Show User's Plants**
-* has links for each specific plant: 1) show plant's detail page, 2) show the plant's log, and 3) update the plant's log
+* has 3 links for each specific plant: 1) show plant's detail page, 2) show the plant's log, and 3) update the plant's log
 * can also add a new plant to the user's plants
 
 ![User's Plants](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/userplants.jpg)
