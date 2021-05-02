@@ -106,6 +106,7 @@ Grow Better is a web app where users can log data, including photos, to document
     * pip3 install requirements.txt
     * source env/bin/activate (work in virutal environment)
     * source secrets.sh (for Cloudinary API)
+         * see Cloudinary docs for set-up
 </a><br>
 [Table Of Contents](#table-contents)
 
