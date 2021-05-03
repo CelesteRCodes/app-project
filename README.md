@@ -53,9 +53,10 @@ Form where user enters login retrieval information to receive an email to change
 
 **Show User's Plants** <br>
 Has links for each specific plant to: 
-    * show plant's detail page
-    * show the plant's log
-    * to update the plant's log
+<br>
+* show plant's detail page
+* show the plant's log
+* to update the plant's log
 Can also add a new plant to the user's plants list 
 
 ![User's Plants](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/userplants.jpg)
