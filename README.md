@@ -112,6 +112,7 @@ Feel free to email me with any questions at: celestercodes@gmail.com
 
 # <a name="coming-soon">
 # Coming Soon
+* Allow users to edit/delete plant logs
 * Problems/issues page: where users can add/view/edit (resolve) a list of problems for each plant.
 This page will create an alert that will be displayed on user-plants.html until user resolves the issue
 * Set up an alert that reminds users to feed/water plant 
