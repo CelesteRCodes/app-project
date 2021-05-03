@@ -34,49 +34,49 @@ Grow Better is a web app where users can log data, including photos, to document
 # Features
 
 **Homepage**
-* users can register, login or retrieve login information from forgot password 
+Users can register, login or retrieve login information from forgot password 
 
 
 ![Homepage](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/homepage.jpg)   
 
 **Add New User**
-* registers new user and creates a new database for user to add/update plants and their logs 
+Registers new user and creates a new database for user to add/update plants and their logs 
  
 
 ![Add New User](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/newuser.jpg) 
 
 **Forgot Password**
-* form where user enters login retrieval information to receive an email to change password 
+Form where user enters login retrieval information to receive an email to change password 
 
 
 ![Forgot PW](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/forgotpw.jpg) 
 
 **Show User's Plants**
-* has links for each specific plant to: show plant's detail page, show the plant's log, and to update the plant's log
-* can also add a new plant to the user's plants list 
+Has links for each specific plant to: show plant's detail page, show the plant's log, and to update the plant's log
+Can also add a new plant to the user's plants list 
 
 ![User's Plants](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/userplants.jpg)
 
 **Add New Plant**
-* adds a new plant to user's plant's page 
+Adds a new plant to user's plant's page 
  
 
 ![Add New Plant](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/newplant.jpg) 
 
 **Add New Entry**
-* updates a specific plant log 
+Updates a specific plant log 
 
 
 ![New Entry](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/newentry.jpg) 
 
 **Show Plant's Log**
-* shows all entries for each specific plant 
+Shows all entries for each specific plant 
 
 
 ![Show Plantlog](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/plantlog.jpg) 
 
 **Show The Master Growlog**
-* for admin to view all logs submitted by all users 
+For admin to view all logs submitted by all users 
 
 
 ![Master Growlog](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/masterlog.jpg) 
@@ -101,11 +101,26 @@ Grow Better is a web app where users can log data, including photos, to document
 
 # <a name="install">
 # Installation
-    * git clone https://github.com/CelesteRCodes/app-project.git
-    * Virtual Studio (version control)
-    * pip3 install requirements.txt
-    * source env/bin/activate (work in virutal environment)
-    * source secrets.sh (for Cloudinary API)
+* To clone/fork this repo:
+    * https://github.com/CelesteRCodes/app-project.git
+* Create and activate a virtual environment inside your project directory:
+    * virtualenv env
+    * source env/bin/activate
+* Install the dependencies:
+    * pip3 install -r requirements.txt
+* Sign up to use the [Cloudinary API](https://cloudinary.com/?utm_source=google&utm_medium=cpc&utm_campaign=Abrand&utm_content=507572878502&utm_term=cloudinary%20api&gclid=Cj0KCQjwvr6EBhDOARIsAPpqUPFrfsru9mbQuY89JR800DOLyWVIOvPx-99ZvFboVEupJBZ3Br41S7AaAgzgEALw_wcB) 
+* Save your API keys in a file called secrets.sh:
+    * export CLOUDINARY_KEY="YOUR_KEY"
+    * export CLOUDINARY_SECRET="YOUR_SECRET"
+* Source your keys from your secrets.sh file into your virtual environment:
+    * source secrets.sh
+* Set up the database:
+    * python3 model.py
+    * python3 seed.py
+* Run the app:
+    * python3 server.py
+Can now navigate to 'localhost:5000/' to access Grow Better
+    
 </a><br>
 [Table Of Contents](#table-contents)
 
