@@ -33,25 +33,25 @@ Grow Better is a web app where users can log data, including photos, to document
 # <a name="feautures">
 # Features
 
-**Homepage** <br><br><br>
+**Homepage** <br><br>
 Users can register, login or retrieve login information from forgot password 
 
 
 ![Homepage](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/homepage.jpg)   
 
-**Add New User** <br><br><br>
+**Add New User** <br><br>
 Registers new user and creates a new database for user to add/update plants and their logs 
  
 
 ![Add New User](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/newuser.jpg) 
 
-**Forgot Password** <br><br><br>
+**Forgot Password** <br><br>
 Form where user enters login retrieval information to receive an email to change password 
 
 
 ![Forgot PW](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/forgotpw.jpg) 
 
-**Show User's Plants** <br><br><br>
+**Show User's Plants** <br><br>
 Has links for each specific plant to:
 * show plant's detail page
 * show the plant's log
@@ -60,25 +60,25 @@ Can also add a new plant to the user's plants list
 
 ![User's Plants](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/userplants.jpg)
 
-**Add New Plant** <br><br><br>
+**Add New Plant** <br><br>
 Adds a new plant to user's plant's page 
  
 
 ![Add New Plant](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/newplant.jpg) 
 
-**Add New Entry** <br><br><br>
+**Add New Entry** <br><br>
 Updates a specific plant log 
 
 
 ![New Entry](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/newentry.jpg) 
 
-**Show Plant's Log** <br><br><br>
+**Show Plant's Log** <br><br>
 Shows all entries for each specific plant 
 
 
 ![Show Plantlog](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/plantlog.jpg) 
 
-**Show The Master Growlog** <br><br><br>
+**Show The Master Growlog** <br><br>
 For admin to view all logs submitted by all users 
 
 
