@@ -1,9 +1,9 @@
 
 
 # Grow Better
-See Where You’ve Been To See How You Grow <br>
+<center>See Where You’ve Been To See How You Grow <br>
 
-![Grow Better](https://github.com/CelesteRCodes/app-project/blob/main/static/img/logo.jpg) 
+![Grow Better](https://github.com/CelesteRCodes/app-project/blob/main/static/img/logo.jpg) </center>
 
 # <a name="table-contents">
 # Table of Contents
