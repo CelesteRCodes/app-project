@@ -155,7 +155,7 @@ Initial release of MVP (5/13/2021)
 
 
 # Project Status
-Currently Updating Project
+Currently Updating Grow Better
 
 # Acknowledgments
 Hackbright Staff 
