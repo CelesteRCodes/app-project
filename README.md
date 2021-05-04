@@ -112,7 +112,7 @@ For admin to view all logs submitted by all users
 * Install the dependencies: <br>
         `pip3 install -r requirements.txt`
 * Sign up to use the [Cloudinary API](https://cloudinary.com/?utm_source=google&utm_medium=cpc&utm_campaign=Abrand&utm_content=507572878502&utm_term=cloudinary%20api&gclid=Cj0KCQjwvr6EBhDOARIsAPpqUPFrfsru9mbQuY89JR800DOLyWVIOvPx-99ZvFboVEupJBZ3Br41S7AaAgzgEALw_wcB) 
-* Save your API keys in a file called secrets.sh: <br>
+* Save your API keys in a file called <strong>'secrets.sh'</strong>: <br>
         `export CLOUDINARY_KEY="YOUR_KEY"` <br>
         `export CLOUDINARY_SECRET="YOUR_API_SECRET"`
 * Source your keys from your secrets.sh file into your virtual environment: <br>
