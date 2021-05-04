@@ -136,7 +136,8 @@ Feel free to email me with any questions at: celestercodes@gmail.com
 
 # <a name="coming-soon">
 # Coming Soon
-* Problems/issues page: where users can add/view/edit (resolve) a list of problems for each plant. <br>
+* Problems/issues page: 
+    <br> where users can add/view/edit (resolve) a list of problems for each plant. <br>
     This page will create an alert that will be displayed on <strong>'user-plants.html'</strong> until user resolves the issue <br>
 * Set up a resource page with links/information on specific plant types for users to gather more information for their grows on <strong>'user-plants.html'</strong><br>
 * Set up a snapshot of most recent updates to plant-log.html that will be displayed on <strong>'user-plants.html'</strong><br>
