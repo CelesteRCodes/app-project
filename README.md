@@ -148,7 +148,7 @@ Feel free to email me with any questions at: celestercodes@gmail.com
 # <a name="release-history">
 # Release History
 ![GrowBetter-Beta](https://img.shields.io/badge/GrowBetter-0.1.0-evergreen.svg) 
-* Initial release of MVP (5/13/2021)
+Initial release of MVP (5/13/2021)
 </a><br><br>
 [Table Of Contents](#table-contents)
 
