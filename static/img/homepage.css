@@ -24,6 +24,7 @@ html {
   .header {
     color: white;
     text-shadow: 0px 0px 6px #042e0dfd;
+    outline: 2px solid white;
     
     font-size: 25px;
   }
@@ -38,18 +39,17 @@ html {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
     text-shadow: 2px 2px 4px #093f15ad;
+   
     
   }
  
-  /* .formcontainer {
-    
-  } */
+  
 
   form {
  
     text-align: center;
     display: inline-block;
-    font-size: 20px;
+    
     display: grid;
   
 }

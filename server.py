@@ -38,6 +38,8 @@ def show_login():
     else:
         return redirect('/') 
 
+        
+
 @app.route('/show-forgotpw', methods=['GET', 'POST'])
 def show_forgotpw():
     """ Show form to retrieve user's info."""
