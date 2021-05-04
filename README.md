@@ -123,7 +123,7 @@ For admin to view all logs submitted by all users
 * Run the app: <br>
         `python3 server.py`
         <br><br>
-Can now navigate to `localhost:5000/` to access Grow Better
+Can now navigate to `localhost:5000/` to access <strong>Grow Better</strong>
 </a><br><br>
 [Table Of Contents](#table-contents)
 
@@ -136,11 +136,11 @@ Feel free to email me with any questions at: celestercodes@gmail.com
 
 # <a name="coming-soon">
 # Coming Soon
-* Problems/issues page: where users can add/view/edit (resolve) a list of problems for each plant.
-This page will create an alert that will be displayed on user-plants.html until user resolves the issue
-* Set up a resource page with links/information on specific plant types for users to gather more information for their grows on user-plants.html
-* Set up a snapshot of most recent updates to plant-log.html that will be displayed on user-plants.html
-* Set up a weekly summary snapshot from data entered into each plant-log.html to be displayed on plant-details.html 
+* Problems/issues page: where users can add/view/edit (resolve) a list of problems for each plant. <br>
+    This page will create an alert that will be displayed on user-plants.html until user resolves the issue
+* Set up a resource page with links/information on specific plant types for users to gather more information for their grows on <strong>user-plants.html</strong>
+* Set up a snapshot of most recent updates to plant-log.html that will be displayed on <strong>user-plants.html</strong>
+* Set up a weekly summary snapshot from data entered into each plant log to be displayed on <strong>plant-log.html</strong> 
 * Make all snapshots easily "shareable" 
 </a><br><br>
 [Table Of Contents](#table-contents)
