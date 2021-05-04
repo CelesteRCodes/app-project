@@ -105,7 +105,7 @@ For admin to view all logs submitted by all users
 # <a name="install">
 # Installation
    * To clone/fork this repo:
-    * https://github.com/CelesteRCodes/app-project.git
+    https://github.com/CelesteRCodes/app-project.git
 * Create and activate a virtual environment inside your project directory:
     * virtualenv env
     * source env/bin/activate
@@ -123,7 +123,7 @@ For admin to view all logs submitted by all users
 * Run the app:
     * python3 server.py
 Can now navigate to 'localhost:5000/' to access Grow Better
-</a><br>
+</a><br><br>
 [Table Of Contents](#table-contents)
 
 
