@@ -104,24 +104,24 @@ For admin to view all logs submitted by all users
 
 # <a name="install">
 # Installation
-   * To clone/fork this repo:
+   * To clone/fork this repo: <br>
     https://github.com/CelesteRCodes/app-project.git
 * Create and activate a virtual environment inside your project directory:
-    * virtualenv env
-    * source env/bin/activate
+        * virtualenv env
+        * source env/bin/activate
 * Install the dependencies:
-    * pip3 install -r requirements.txt
+        * pip3 install -r requirements.txt
 * Sign up to use the [Cloudinary API](https://cloudinary.com/?utm_source=google&utm_medium=cpc&utm_campaign=Abrand&utm_content=507572878502&utm_term=cloudinary%20api&gclid=Cj0KCQjwvr6EBhDOARIsAPpqUPFrfsru9mbQuY89JR800DOLyWVIOvPx-99ZvFboVEupJBZ3Br41S7AaAgzgEALw_wcB) 
 * Save your API keys in a file called secrets.sh:
-    * export CLOUDINARY_KEY="YOUR_KEY"
-    * export CLOUDINARY_SECRET="YOUR_SECRET"
+        * export CLOUDINARY_KEY="YOUR_KEY"
+        * export CLOUDINARY_SECRET="YOUR_SECRET"
 * Source your keys from your secrets.sh file into your virtual environment:
-    * source secrets.sh
+        * source secrets.sh
 * Set up the database:
-    * python3 model.py
-    * python3 seed.py
+        * python3 model.py
+        * python3 seed.py
 * Run the app:
-    * python3 server.py
+        * python3 server.py
 Can now navigate to 'localhost:5000/' to access Grow Better
 </a><br><br>
 [Table Of Contents](#table-contents)
