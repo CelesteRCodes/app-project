@@ -122,7 +122,7 @@ For admin to view all logs submitted by all users
         `python3 seed.py`
 * Run the app: <br>
         `python3 server.py`
-        <br>
+        <br><br>
 Can now navigate to `localhost:5000/` to access Grow Better
 </a><br><br>
 [Table Of Contents](#table-contents)
