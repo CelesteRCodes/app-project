@@ -112,6 +112,8 @@ For admin to view all logs submitted by all users
 * Source your keys from your secrets.sh file into your virtual environment: <br>
         `source secrets.sh`
 * Set up the database: <br>
+        `createdb name-of-db` (create your db)<br>
+        `psql name-of-db` (to see your db/tables) <br>
         `python3 model.py` <br>
         `python3 seed.py`
 * Run the app: <br>
