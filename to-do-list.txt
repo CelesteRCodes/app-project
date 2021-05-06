@@ -38,6 +38,11 @@ TESTS! (unit and integration tests)
 
 - wanting to add an organic grow yes or no button to new-plant.html; would need to add a column to model.py (PENDING)
 
+integration test lecture
+test client 
+for testing server.py
+
+can use curl (url) in terminal to test routes in server.py as well 
 
 
 

@@ -1,0 +1,324 @@
+Recording Session: ‎5/‎6/‎2021 11:58:23 AM - 12:01:18 PM
+
+Recorded Steps: 79, Missed Steps: 0, Other Errors: 0
+
+Operating System: 9600.19994.amd64fre.winblue_ltsb_escrow.210331-1613 6.3.0.0.2.101
+
+Step 1: User left click on "Register New User (button)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Register New User, Register New User, Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 2: User left click on "Email Email (edit)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Email Email, Email Email, Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 3: User keyboard input on "Grow Better — Mozilla Firefox (window)" in "Grow Better — Mozilla Firefox" [... Tab ... Tab ...]
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 4: User left click on "Add New User (edit)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Add New User, Add New User, Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 5: User mouse drag start on "Grow Better (document)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 6: User mouse drag end on "Grow Better (document)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 7: User left click on "Enter Username (edit)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Enter Username, Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 8: User keyboard input on "Grow Better — Mozilla Firefox (window)" in "Grow Better — Mozilla Firefox" [... Tab ...]
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 9: User left click on "Login (edit)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Login, Login, Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 10: User left click on "Add A New Plant (button)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Add A New Plant, Add A New Plant, Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 11: User left click on "Plant's Name Name of Plant (edit)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Plant's Name Name of Plant, Plant's Name Name of Plant, Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 12: User keyboard input on "Grow Better — Mozilla Firefox (window)" in "Grow Better — Mozilla Firefox" [... Tab ... Tab ...]
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 13: User left click on "11/11/2020 (list item)"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: 11/11/2020, MozillaDropShadowWindowClass
+
+Step 14: User left click on "Grow Better (document)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 15: User mouse drag start on "Grow Better (document)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 16: User mouse drag end on "Grow Better (document)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 17: User left click on "Transplant/Direct Sow Date (Direct Sow Date = Germination Date) 00/00/0000 (edit)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Transplant/Direct Sow Date (Direct Sow Date = Germination Date) 00/00/0000, Transplant/Direct Sow Date (Direct Sow Date = Germination Date) 00/00/0000, Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 18: User keyboard input on "Grow Better — Mozilla Firefox (window)" in "Grow Better — Mozilla Firefox" [...]
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 19: User left click on "11/11/2020 (list item)"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: 11/11/2020, MozillaDropShadowWindowClass
+
+Step 20: User left click on "Indoor (radio button)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Indoor, Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 21: User left click on "Grow Better (document)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 22: User left click on "Windowsill (list item)"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Windowsill, MozillaWindowClass
+
+Step 23: User mouse drag start on "Grow Better (document)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 24: User mouse drag end on "Grow Better (document)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 25: User left click on "Grow Better (document)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 26: User left click on "Soil (list item)"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Soil, MozillaWindowClass
+
+Step 27: User left click on "Grow Better (document)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 28: User left click on "Sunlight (list item)"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Sunlight, MozillaWindowClass
+
+Step 29: User left click on "Grow Better (document)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 30: User left click on "On Mother Nature's Time (radio button)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: On Mother Nature's Time, Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 31: User left click on "Browse… (button)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Browse…, Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 32: User left click on "aloe (list item)" in "File Upload"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: aloe, UIItem, Items View, UIItemsView, Shell Folder View, DUIListView, Folder Layout Pane, Element, Explorer Pane, HWNDView, DUIViewWndClassName, File Upload, #32770, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 33: User left click on "Open (button)" in "File Upload"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Open, Button, File Upload, #32770, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 34: User left click on "Add New Plant (button)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Add New Plant, Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 35: User left click in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: 
+
+Step 36: User mouse drag start on "Grow Better (document)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 37: User mouse drag end on "Grow Better (document)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 38: User left click on "Update Nadine's Log (button)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Update Nadine's Log, Update Nadine's Log, Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 39: User left click on "Grow Better (document)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 40: User left click on "3-5 mL (list item)"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: 3-5 mL, MozillaWindowClass
+
+Step 41: User left click on "Name of Nutrient/Type (edit)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Name of Nutrient/Type, Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 42: User keyboard input on "Grow Better — Mozilla Firefox (window)" in "Grow Better — Mozilla Firefox" [...]
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 43: User left click on "eggshells (list item)"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: eggshells, MozillaDropShadowWindowClass
+
+Step 44: User left click on "Grow Better (document)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 45: User left click on "3-5 mL (list item)"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: 3-5 mL, MozillaWindowClass
+
+Step 46: User left click on "Grow Better (document)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 47: User left click on "70-75 (list item)"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: 70-75, MozillaWindowClass
+
+Step 48: User left click on "Grow Better (document)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 49: User left click on "40-49% (list item)"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: 40-49%, MozillaWindowClass
+
+Step 50: User mouse drag start on "Grow Better (document)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 51: User mouse drag end on "Grow Better (document)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 52: User left click on "How are the leaves looking? (edit)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: How are the leaves looking?, Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 53: User keyboard input on "Grow Better — Mozilla Firefox (window)" in "Grow Better — Mozilla Firefox" [...]
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 54: User left click on "Green leaves. (list item)"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Green leaves., MozillaDropShadowWindowClass
+
+Step 55: User left click on "Browse… (button)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Browse…, Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 56: User left click on "aloe (list item)" in "File Upload"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: aloe, UIItem, Items View, UIItemsView, Shell Folder View, DUIListView, Folder Layout Pane, Element, Explorer Pane, HWNDView, DUIViewWndClassName, File Upload, #32770, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 57: User left click on "Open (button)" in "File Upload"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Open, Button, File Upload, #32770, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 58: User left click on "Add New Entry (button)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Add New Entry, Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 59: User left click on "Show My Plants (button)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Show My Plants, Show My Plants, Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 60: User mouse drag start on "Grow Better (document)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 61: User mouse drag end on "Grow Better (document)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 62: User left click on "Show Master Log (button)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Show Master Log, Show Master Log, Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 63: User mouse drag start on "Grow Better (document)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 64: User left click on "Logout (button)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Logout, Logout, Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 65: User mouse drag start on "Grow Better (document)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 66: User mouse drag end on "Grow Better (document)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 67: User left click on "Forgot password? (button)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Forgot password?, Forgot password?, Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 68: User left click on "Email: Email (edit)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Email: Email, Email: Email, Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 69: User keyboard input on "Grow Better — Mozilla Firefox (window)" in "Grow Better — Mozilla Firefox" [...]
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 70: User left click on "celeste@gmail.com (edit)"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: celeste@gmail.com, celeste@gmail.com, celeste@gmail.com, celeste@gmail.com, MozillaDropShadowWindowClass
+
+Step 71: User left click on "Username: Username (edit)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Username: Username, Username: Username, Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 72: User keyboard input on "Grow Better — Mozilla Firefox (window)" in "Grow Better — Mozilla Firefox" [...]
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 73: User left click on "Username: Username (edit)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Username: Username, Username: Username celeste, Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 74: User keyboard input on "Grow Better — Mozilla Firefox (window)" in "Grow Better — Mozilla Firefox" [...]
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 75: User mouse wheel up on "Username: Username (edit)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Username: Username, Username: Username celeste, Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 76: User keyboard input on "Grow Better — Mozilla Firefox (window)" in "Grow Better — Mozilla Firefox" [Ctrl]
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 77: User left click on "Find My Info! (button)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Find My Info!, Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 78: User mouse drag start on "Grow Better (document)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+Step 79: User mouse drag end on "Grow Better (document)" in "Grow Better — Mozilla Firefox"
+Program: Firefox, 88.0, Mozilla Corporation, FIREFOX.EXE, FIREFOX.EXE
+UI Elements: Grow Better, Grow Better — Mozilla Firefox, MozillaWindowClass
+
+
+    
