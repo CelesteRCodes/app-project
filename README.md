@@ -90,7 +90,7 @@ For admin to view all logs submitted by all users
 * SQLAlchemy (Database)
 * Jinja2
 * PostgreSQL
-* flask
+* Flask
 * API Used:
     * Cloudinary Media Optimizer
 
