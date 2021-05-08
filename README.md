@@ -61,7 +61,7 @@ Adds a new plant to user's plant's page
 ![Add New Plant](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/newplant.jpg) 
 
 **Show Plant Details** <br><br>
-Show's plant's details added on 'add new plant' page
+Shows plant's details from 'add new plant' page
  
 
 ![Plant Details](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/plantdetails.jpg) 
