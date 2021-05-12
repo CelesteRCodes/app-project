@@ -28,8 +28,7 @@ Grow Better is a web app where users can log data, including photos, to document
 # Features
 
 **Homepage** <br><br>
-Users can register, login or retrieve login information from forgot password 
-
+Users can register, login or retrieve login information from clicking forgot password
 
 ![Homepage](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/homepage.jpg)   
 
@@ -49,8 +48,8 @@ Form where user enters login retrieval information to receive an email to change
 Has links for each specific plant to:
 * show plant's detail page
 * show the plant's log
-* to update the plant's log <br>
-Can also add a new plant to the user's plants list 
+* to update the plant's log <br><br>
+* can also add a new plant to the user's plants list 
 
 ![User's Plants](https://github.com/CelesteRCodes/app-project/blob/main/static/img/printscreen/userplants.jpg)
 
@@ -116,17 +115,17 @@ For admin to view all logs submitted by all users
 * Save your API keys in a file called <strong>'secrets.sh'</strong>: <br>
         `export CLOUDINARY_KEY="YOUR_KEY"` <br>
         `export CLOUDINARY_SECRET="YOUR_API_SECRET"`
-* Source your keys from your secrets.sh file into your virtual environment: <br>
+* Source your keys from your <strong>'secrets.sh'</strong> file into your virtual environment: <br>
         `source secrets.sh`
 * Set up the database: <br>
-        `createdb name-of-db` (create your db)<br>
+        `createdb name-of-db` (create your database)<br>
         `psql name-of-db` (to see your db/tables) <br>
         `python3 model.py` <br>
         `python3 seed.py`
 * Run the app: <br>
         `python3 server.py`
         <br><br>
-Can now navigate to `localhost:5000/` to access <strong>Grow Better</strong>
+User can now navigate to `localhost:5000/` to access <strong>Grow Better</strong>
 </a><br><br>
 [Table Of Contents](#table-contents)
 
