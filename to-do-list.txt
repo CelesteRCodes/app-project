@@ -1,24 +1,15 @@
 
 PENDING:
 
-- cancel button on new-user.html does not work; 
-either a sqlalchemy error when inside the form 
-or it's not clickable outside of the form (PENDING)
+week summary page (PENDING)
+- will need another table in model.py to hold weekly summary
+- will need functions in crud.py that average out amounts to create a summary
+- adding routes in server.py to display week=sum.html
 
+make site mobile friendly (PENDING)
 
-styling of pages (PENDING)
-- add bootstap 
-- Bootstrap Resources (layoutit.com for bootstrap layout)
-
-- Bootstrap docs (use version 4) https://getbootstrap.com/docs/4.6/getting-started/introduction/
-- LayoutIt Bootstrap Builder: https://www.layoutit.com/
-- Bootstrap icons (see Usage link as well): https://icons.getbootstrap.com/
-- If you want to use the browser's responsive dev tools, make sure you throw this tag in the <head> </head> of your HTML:
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-demo day = 5/13
-- need to write a script for demo of app (PENDING)
-current demo video is 1:30 long; only need to introduce myself and reason for app
+forgot password function actually sends an emails to user with password retrival (PENDING)
+- may be using an API (ship it off to a third party like google/FB/apple)
 
 how to add a delete button for user plants and growlog to delete plants/entries? (PENDING)
 
@@ -26,6 +17,17 @@ how to clear log and user plants to start fresh? (RE-SEEDED DATABASE)
 - on user's end? (PENDING)
 
 ability to delete a grow log entry/plant (PENDING)
+- added comments to crud.py about new functions needed 
+
+allow user to change main photo of plant on plant-details.html (PENDING)
+- would need to add an upload button (form?) to plant-details.html and new route in server to process
+
+add a user profile for the user's info (name, location (city, state/country), birthday, random fact/bio, photo of user) (PENDING)
+- can access the user's profile from user-plants.html 
+
+can enlarge any photo once it's clicked (PENDING)
+
+allow for sharing of plantlog, plant-details, user profile (PENDING)
 
 TESTS! (unit and integration tests)
 - unit tests can be docstrings
@@ -36,17 +38,31 @@ TESTS! (unit and integration tests)
 - wanting to test flask routes as well (PENDING)
 - integration tests: test GET with route and test POST with tearing down db/creating (PENDING)
 
-- wanting to add an organic grow yes or no button to new-plant.html; would need to add a column to model.py (PENDING)
+- integration test lecture
 
-integration test lecture
-test client 
-for testing server.py
+- can use curl (url) in terminal to test routes in server.py as well 
 
-can use curl (url) in terminal to test routes in server.py as well 
+- background image, no repeat, full cover (PENDING)
 
+styling of pages with bootstrap (PENDING)
+- add bootstap 
+- Bootstrap Resources (layoutit.com for bootstrap layout)
+
+- Bootstrap docs (use version 4) https://getbootstrap.com/docs/4.6/getting-started/introduction/
+- LayoutIt Bootstrap Builder: https://www.layoutit.com/
+- Bootstrap icons (see Usage link as well): https://icons.getbootstrap.com/
+- If you want to use the browser's responsive dev tools, make sure you throw this tag in the <head> </head> of your HTML:
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 DONE/CLOSED:
+
+wanting to add an organic grow yes or no button to new-plant.html; 
+would need to add a column to model.py (DONE)
+
+cancel button on new-user.html does not work; 
+either a sqlalchemy error when inside the form 
+or it's not clickable outside of the form (DONE)
 
 create a new user, store new user information
 (DONE)

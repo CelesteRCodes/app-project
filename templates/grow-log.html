@@ -20,15 +20,19 @@
   <center><div id="growlog-entry">
 <table style="width:100%">
 <tr>
-  <th>User_Plant_Id</th>
+   
+  <th>User Id</th>
+  <th>Photo</th>
   <th>Comment</th>
   <th>Timestamp</th>
+  <th>Temp</th>
+  <th>Humidity</th> 
   <th>Water Amount</th>
   <th>Nutrient Used</th>
   <th>Nutrient Amount</th>
-  <th>Temp</th>
-  <th>Humidity</th>         
-  <th>Photo</th>
+  <th>Organic Nutrient?</th>
+          
+
 </tr>
 
 
@@ -37,17 +41,20 @@
 
 <tr>
   <td>{{ entry.users_plant_id }}</td>
-  <td>{{ entry.comment }}</td>
-  <td>{{ entry.timestamp }}</td>
-  <td>{{ entry.water }}</td>
-  <td> {{entry.nute_type }}</td>
-  <td>{{ entry.nutrients }}</td>
-  <td>{{ entry.temp }}</td>
-  <td>{{ entry.humidity }}</td>
   <td>{% if entry.photo_url %} 
-      <img src="{{entry.photo_url}}">
+      <img src="{{entry.photo_url}}" width="50" height="50">
       {% endif %}
   </td>
+  <td>{{ entry.comment }}</td>
+  <td>{{ entry.timestamp }}</td>
+  <td>{{ entry.temp }}</td>
+  <td>{{ entry.humidity }}</td>
+  <td>{{ entry.water }}</td>
+  <td>{{ entry.nute_type }}</td>
+  <td>{{ entry.nutrients }}</td>
+  <td>{{ entry.organic }}</td>
+ 
+  
 </tr> 
 
 {% endfor %}

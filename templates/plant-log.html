@@ -15,31 +15,36 @@
   <center><div id="plantlog-entry">
 <table style="width:100%">
 <tr>
-  
+
+  <th>Photo</th>
   <th>Comment</th>
   <th>Timestamp</th>
+  <th>Temp</th>
+  <th>Humidity</th>   
   <th>Water Amount</th>
   <th>Nutrient Used</th>
   <th>Nutrient Amount </th>
-  <th>Temp</th>
-  <th>Humidity</th>         
-  <th>Photo</th>
+  <th>Organic Nutrient?</th>
+        
+  
 </tr>
 
 {% for plantlog in plantlogs %}
 <tr>
-  
+  <td>{% if plantlog.photo_url %} 
+    <img src="{{plantlog.photo_url}}" width="150" heigh="150">
+    {% endif %}
+  </td>
   <td>{{ plantlog.comment }}</td>
   <td>{{ plantlog.timestamp }}</td>
+  <td>{{ plantlog.temp }}</td>
+  <td>{{ plantlog.humidity }}</td>
   <td>{{ plantlog.water }}</td>
   <td>{{ plantlog.nute_type }}</td>
   <td>{{ plantlog.nutrients }}</td>
-  <td>{{ plantlog.temp }}</td>
-  <td>{{ plantlog.humidity }}</td>
-  <td>{% if plantlog.photo_url %} 
-    <img src="{{plantlog.photo_url}}">
-    {% endif %}
-  </td>
+  <td><strong>{{ plantlog.organic }}</strong></td>
+  
+  
   
 </tr> 
 

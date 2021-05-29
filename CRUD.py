@@ -17,6 +17,9 @@ def create_user(username, email, password):
     db.session.commit()
     return user
 
+    # can have function that deletes user (for when they want to deactivate their profile)
+    # will also have to ensure it deletes all the user's data in db like the plants/entries
+
 
 def get_all_users():
     """ For example:
@@ -88,6 +91,10 @@ def get_all_plants():
     plants = UserPlant.query.all()
     return plants
 
+# to combine all get_all functions
+# pass in variable 
+# def get_all_plants(n):
+# value = (n).query.all()
 
 def get_plant_by_plant_id(id):
     """ For example:
@@ -99,6 +106,8 @@ def get_plant_by_plant_id(id):
     
     return plant_by_id
    
+   # can also have function that deletes plant by plant ID
+   # will remove this plant from plant-details.html and the db
 
 def get_user_plants_by_user_id(user_id):
     """ For example:
@@ -111,7 +120,7 @@ def get_user_plants_by_user_id(user_id):
 
 
 def create_entry(users_plant_id, comment, timestamp, 
-    water=None, nutrients=None, nute_type=None, temp=None, 
+    water=None, nutrients=None, nute_type=None, organic=None, temp=None, 
     humidity=None, photo_url=None):
     """ For example:
     >>> create_entry(1, "leaves are green", datetime.now(), "1-5ml", 
@@ -122,13 +131,14 @@ def create_entry(users_plant_id, comment, timestamp,
 
     new_entry = GrowLog(users_plant_id=users_plant_id, 
         comment=comment, timestamp=timestamp, water=water, 
-        nutrients=nutrients, nute_type=nute_type, temp=temp, 
-        humidity=humidity, photo_url=photo_url)
+        nutrients=nutrients, nute_type=nute_type, organic=organic, 
+        temp=temp, humidity=humidity, photo_url=photo_url)
 
     db.session.add(new_entry)
     db.session.commit()
     return new_entry
 
+# need to actually format datetime so it's adaptable to timezones per user
 
 def get_all_entries():
     """ For example:
@@ -144,6 +154,9 @@ def get_entries_by_plant_id(users_plant_id):
     [<GrowLog 4>]
     """
     return GrowLog.query.filter_by(users_plant_id = users_plant_id).all()
+
+    # can also have function that deletes all entries by plant ID
+    # which will clear the plant-log for that plant
     
 
 
@@ -153,6 +166,8 @@ def get_entry_by_id(id):
     [<GrowLog2>] 
     """ 
     return GrowLog.query.filter_by(id = id).first()
+
+# can also have function that deletes entry by ID
 
 
 

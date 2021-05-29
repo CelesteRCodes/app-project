@@ -82,6 +82,8 @@ schedules = ["on mother nature's time", "12 on, 12 off", "6-10 on", "24 on"]
 
 nute_types = ["eggshells", "banana water", "fish fertilizer", "compost tea", "rabbit/chicken poo"]
 
+organic = ["Y", "N"]
+
 for n in range(10):
     email = f'user{n}@test.com'  
     password = 'test'
@@ -91,11 +93,12 @@ for n in range(10):
     
     user = CRUD.create_user(username=username, email=email, password=password)
 
+# function that creates 10 test users for the users table in model.py
 
 for n in range(10):
 
     plant_type = choice(plants)
-    # randomly chooses a plant
+    # choice(plants) randomly chooses a plant
     
     plant_name = choice(names)
     
@@ -121,7 +124,7 @@ for n in range(10):
             growing_medium=growing_medium, location=location,
             environment=environment, lighting=lighting, schedule=schedule)
 
-
+# function that creates 10 test plants for the plants table 
 
 
 for n in range(10):
@@ -136,6 +139,8 @@ for n in range(10):
 
     nute_type = choice(nute_types)
 
+    organic = choice(organic)
+
     humidity = choice(humidity_list)
 
     temp = choice(temps)
@@ -146,7 +151,8 @@ for n in range(10):
 
     new_entry = CRUD.create_entry(users_plant_id=users_plant_id,
         comment=comment, timestamp=timestamp, water=water, 
-        nutrients=nutrients, nute_type=nute_type, temp=temp, humidity=humidity, photo_url=photo_url)
+        nutrients=nutrients, nute_type=nute_type, organic=organic, 
+        temp=temp, humidity=humidity, photo_url=photo_url)
 
 
-    
+    # function creates 10 test entries for the growlog table
